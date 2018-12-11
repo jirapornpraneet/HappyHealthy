@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="420" y="44"/>
         </scene>
-        <!--Item 2-->
+        <!--รายงาน-->
         <scene sceneID="h0S-c1-YX1">
             <objects>
                 <viewController id="rrm-V5-a6c" sceneMemberID="viewController">
@@ -36,11 +36,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uoq-aA-2Lv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="G4q-fZ-hwq"/>
+                    <tabBarItem key="tabBarItem" title="รายงาน" image="iconreport" id="G4q-fZ-hwq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6B-ib-sXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2265" y="-305"/>
+            <point key="canvasLocation" x="861" y="956"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mXt-0f-Ccd">
+            <objects>
+                <viewController id="4Xp-23-dhe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pLZ-Ym-rxM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ERr-n6-b5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="iconheart" id="RPT-Wm-s9Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdW-NG-kqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="973"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fny-tF-Kxf">
@@ -51,10 +67,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.34509803921568627" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="rrm-V5-a6c" kind="relationship" relationship="viewControllers" id="Z6P-VN-wED"/>
-                        <segue destination="JUL-Q4-IJH" kind="relationship" relationship="viewControllers" id="TaI-dT-CrR"/>
+                        <segue destination="JUL-Q4-IJH" kind="relationship" relationship="viewControllers" id="TH1-cD-ZpI"/>
+                        <segue destination="rrm-V5-a6c" kind="relationship" relationship="viewControllers" id="Ua5-ob-GVj"/>
+                        <segue destination="4Xp-23-dhe" kind="relationship" relationship="viewControllers" id="56g-xi-fRU"/>
+                        <segue destination="5aC-z3-Hnr" kind="relationship" relationship="viewControllers" id="sPu-Dd-5Xs"/>
+                        <segue destination="UDs-HQ-bvq" kind="relationship" relationship="viewControllers" id="2aq-d2-WiT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMn-LN-uDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -233,17 +253,54 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SgW-0j-QlL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="หน้าหลัก" id="2PI-7F-ksw"/>
+                    <tabBarItem key="tabBarItem" title="หน้าหลัก" image="iconhome" id="2PI-7F-ksw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04M-Lw-ucn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849" y="-1026"/>
+            <point key="canvasLocation" x="152" y="956"/>
+        </scene>
+        <!--ข้อมูลผู้ใช้-->
+        <scene sceneID="UpM-0g-ejU">
+            <objects>
+                <viewController id="UDs-HQ-bvq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="32B-52-dki">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mFi-YU-aJ6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ข้อมูลผู้ใช้" image="iconuser" id="Vhs-th-t2r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIy-JE-lS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077" y="989"/>
+        </scene>
+        <!--คำแนะนำ-->
+        <scene sceneID="Xnr-IX-oS2">
+            <objects>
+                <viewController id="5aC-z3-Hnr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rn5-Ps-wzz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LA1-4Y-r5g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="คำแนะนำ" image="iconintro" id="daH-N9-SoL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvW-xL-tWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2359" y="989"/>
         </scene>
     </scenes>
     <resources>
         <image name="diabetes" width="330" height="300"/>
         <image name="exercise" width="477" height="300"/>
         <image name="food" width="321" height="300"/>
+        <image name="iconheart" width="36" height="36"/>
+        <image name="iconhome" width="20" height="20"/>
+        <image name="iconintro" width="20" height="20"/>
+        <image name="iconreport" width="20" height="20"/>
+        <image name="iconuser" width="20" height="20"/>
         <image name="kidney" width="312" height="300"/>
         <image name="pressure" width="495" height="300"/>
     </resources>
