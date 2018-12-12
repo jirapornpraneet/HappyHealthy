@@ -9,13 +9,13 @@
 import Foundation
 import RealmSwift
 
-class UserResource: NSObject {
-    var name: String?
-    var gender: String?
-    var age: Int?
-    var weight: Double?
-    var height: Int?
-    var bmi: Double?
-    var bmr: Double?
-    var isDiabetes: String?
+class UserResource: Object {
+    @objc dynamic var name: String?
+    @objc dynamic var gender: String?
+//    var age: Int?
+//    var weight: Double?
+//    var height: Int?
+//    var bmi: Double?
+//    var bmr: Double?
+//    var isDiabetes: String?
 }
