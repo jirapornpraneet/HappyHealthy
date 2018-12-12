@@ -84,7 +84,7 @@
         <!--หน้าหลัก-->
         <scene sceneID="Vgd-lG-VcK">
             <objects>
-                <viewController id="JUL-Q4-IJH" customClass="HomeViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JUL-Q4-IJH" customClass="ViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MYQ-AH-dbT"/>
                         <viewControllerLayoutGuide type="bottom" id="vAS-ER-qH1"/>
