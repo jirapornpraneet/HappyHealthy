@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		41751EB8DE27E8D3EB57967A /* Pods_HappyHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200045BFE06E339D21F57F7C /* Pods_HappyHealthy.framework */; };
 		AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB38AC7421C0F253000D1383 /* UserResource.swift */; };
+		AB59CEB221F84DA80068849E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59CEB121F84DA80068849E /* R.generated.swift */; };
 		AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC721BFA36800267BD3 /* AppDelegate.swift */; };
 		AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC921BFA36800267BD3 /* ViewController.swift */; };
 		AB91CECD21BFA36800267BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB91CECB21BFA36800267BD3 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		1DEB8BB4DFA90D556DC000B4 /* Pods-HappyHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyHealthy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyHealthy/Pods-HappyHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 		200045BFE06E339D21F57F7C /* Pods_HappyHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB38AC7421C0F253000D1383 /* UserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResource.swift; sourceTree = "<group>"; };
+		AB59CEB121F84DA80068849E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AB91CEC421BFA36800267BD3 /* HappyHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB91CEC721BFA36800267BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB91CEC921BFA36800267BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				AB91CECE21BFA36A00267BD3 /* Assets.xcassets */,
 				AB91CED021BFA36A00267BD3 /* LaunchScreen.storyboard */,
 				AB91CED321BFA36A00267BD3 /* Info.plist */,
+				AB59CEB121F84DA80068849E /* R.generated.swift */,
 			);
 			path = HappyHealthy;
 			sourceTree = "<group>";
@@ -118,6 +121,7 @@
 			buildConfigurationList = AB91CED621BFA36A00267BD3 /* Build configuration list for PBXNativeTarget "HappyHealthy" */;
 			buildPhases = (
 				EC4BB9B3BBF38533225A5BBB /* [CP] Check Pods Manifest.lock */,
+				AB59CEB021F84A9A0068849E /* R.swift */,
 				AB91CEC021BFA36800267BD3 /* Sources */,
 				AB91CED921BFA8A100267BD3 /* Swiftlint */,
 				AB91CEC121BFA36800267BD3 /* Frameworks */,
@@ -180,6 +184,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AB59CEB021F84A9A0068849E /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		AB91CED921BFA8A100267BD3 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,11 +225,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HappyHealthy/Pods-HappyHealthy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -241,6 +267,7 @@
 			files = (
 				AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */,
 				AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */,
+				AB59CEB221F84DA80068849E /* R.generated.swift in Sources */,
 				ABA5902921F7184A0071BB5D /* ProfileViewController.swift in Sources */,
 				AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */,
 			);

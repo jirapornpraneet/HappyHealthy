@@ -5,5 +5,6 @@ target 'HappyHealthy' do
 
   pod 'SwiftLint', '~> 0.29.1'
   pod 'RealmSwift', '~> 3.12.0'
+  pod 'R.swift', '~> 5.0.2'
 
 end
