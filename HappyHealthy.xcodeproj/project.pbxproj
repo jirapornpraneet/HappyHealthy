@@ -10,6 +10,7 @@
 		41751EB8DE27E8D3EB57967A /* Pods_HappyHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200045BFE06E339D21F57F7C /* Pods_HappyHealthy.framework */; };
 		AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB38AC7421C0F253000D1383 /* UserResource.swift */; };
 		AB59CEB221F84DA80068849E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59CEB121F84DA80068849E /* R.generated.swift */; };
+		AB59CEB621F861580068849E /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59CEB521F861580068849E /* InstructionViewController.swift */; };
 		AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC721BFA36800267BD3 /* AppDelegate.swift */; };
 		AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC921BFA36800267BD3 /* ViewController.swift */; };
 		AB91CECD21BFA36800267BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB91CECB21BFA36800267BD3 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		200045BFE06E339D21F57F7C /* Pods_HappyHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB38AC7421C0F253000D1383 /* UserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResource.swift; sourceTree = "<group>"; };
 		AB59CEB121F84DA80068849E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		AB59CEB521F861580068849E /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		AB91CEC421BFA36800267BD3 /* HappyHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB91CEC721BFA36800267BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB91CEC921BFA36800267BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		ABA5902721F718370071BB5D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AB59CEB521F861580068849E /* InstructionViewController.swift */,
 				ABA5902821F7184A0071BB5D /* ProfileViewController.swift */,
 			);
 			path = ViewController;
@@ -194,7 +197,7 @@
 			);
 			name = R.swift;
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -266,6 +269,7 @@
 				AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */,
 				AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */,
 				AB59CEB221F84DA80068849E /* R.generated.swift in Sources */,
+				AB59CEB621F861580068849E /* InstructionViewController.swift in Sources */,
 				ABA5902921F7184A0071BB5D /* ProfileViewController.swift in Sources */,
 				AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */,
 			);

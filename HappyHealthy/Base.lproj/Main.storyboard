@@ -262,18 +262,33 @@
         <!--คำแนะนำ-->
         <scene sceneID="Xnr-IX-oS2">
             <objects>
-                <viewController id="5aC-z3-Hnr" sceneMemberID="viewController">
+                <viewController id="5aC-z3-Hnr" customClass="InstructionViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rn5-Ps-wzz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6S-Z0-IT4" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q6S-Z0-IT4" firstAttribute="top" secondItem="LA1-4Y-r5g" secondAttribute="top" id="8NU-re-D5V"/>
+                            <constraint firstItem="q6S-Z0-IT4" firstAttribute="trailing" secondItem="LA1-4Y-r5g" secondAttribute="trailing" id="Cdk-XH-lXM"/>
+                            <constraint firstItem="q6S-Z0-IT4" firstAttribute="leading" secondItem="LA1-4Y-r5g" secondAttribute="leading" id="OZM-9g-cFx"/>
+                            <constraint firstItem="LA1-4Y-r5g" firstAttribute="bottom" secondItem="q6S-Z0-IT4" secondAttribute="bottom" id="Vn0-Zg-X6t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LA1-4Y-r5g"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="คำแนะนำ" image="iconintro" id="daH-N9-SoL"/>
+                    <connections>
+                        <outlet property="slideshow" destination="q6S-Z0-IT4" id="YGS-ny-GOj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvW-xL-tWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2359" y="989"/>
+            <point key="canvasLocation" x="2358.75" y="988.73239436619724"/>
         </scene>
         <!--ข้อมูลผู้ใช้งาน-->
         <scene sceneID="Irs-UH-Z2E">
