@@ -30,6 +30,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
+        getDataUser()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -81,6 +82,24 @@ class ProfileViewController: UIViewController {
 
         try? realm?.write {
             realm?.add(user)
+        }
+    }
+
+    func getDataUser() {
+        let results = realm?.objects(UserResource.self)
+        nameUserTextField.text = results!.last!.name!
+        ageUserTextField.text = String(format: "%i", results!.last!.age)
+        weightUserTextField.text = String(format: "%.02f", results!.last!.weight)
+        heightUserTextField.text = String(format: "%.02f", results!.last!.height)
+        bmiUserLabel.text = String(format: "%.02f", results!.last!.bmi)
+        bmrUserLabel.text = String(format: "%.02f", results!.last!.bmr)
+
+        if results?.last?.gender == "female" {
+            genderSegmentedControl.selectedSegmentIndex = 1
+        }
+
+        if (results?.last?.isDiabetes)! {
+            diabetesSegmentedControl.selectedSegmentIndex = 1
         }
     }
 }
