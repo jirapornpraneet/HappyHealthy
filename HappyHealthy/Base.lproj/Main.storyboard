@@ -278,7 +278,7 @@
         <!--ข้อมูลผู้ใช้งาน-->
         <scene sceneID="Irs-UH-Z2E">
             <objects>
-                <viewController id="cN2-1w-H8a" customClass="UserViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cN2-1w-H8a" customClass="ProfileViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wjo-3w-4zS"/>
                         <viewControllerLayoutGuide type="bottom" id="3U6-vc-xmf"/>
@@ -382,9 +382,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="inputNameUser:" destination="cN2-1w-H8a" eventType="editingChanged" id="Dj5-H5-Byx"/>
-                                                </connections>
                                             </textField>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YCM-0F-193">
                                                 <rect key="frame" x="140" y="70" width="121" height="29"/>
@@ -398,7 +395,7 @@
                                                 </segments>
                                                 <color key="tintColor" red="0.9311929941" green="0.46995601059999997" blue="0.50986510519999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="selectGenderSegmented:" destination="cN2-1w-H8a" eventType="valueChanged" id="mas-i1-VQl"/>
+                                                    <action selector="segmentSelectGenderTypeValueChange:" destination="cN2-1w-H8a" eventType="valueChanged" id="cwq-IU-OhE"/>
                                                 </connections>
                                             </segmentedControl>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="T2P-dq-1E8">
@@ -413,7 +410,7 @@
                                                 </segments>
                                                 <color key="tintColor" red="0.9311929941" green="0.46995601059999997" blue="0.50986510519999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="selectPeopleDiabetes:" destination="cN2-1w-H8a" eventType="valueChanged" id="diG-Lj-KXF"/>
+                                                    <action selector="segmentSelectIsDiabetesTypeValueChange:" destination="cN2-1w-H8a" eventType="valueChanged" id="HHO-E6-6y6"/>
                                                 </connections>
                                             </segmentedControl>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zwn-2P-xuh">
@@ -425,9 +422,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                <connections>
-                                                    <action selector="inputAgeUser:" destination="cN2-1w-H8a" eventType="editingChanged" id="R5y-Uh-SDb"/>
-                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kM6-E1-007">
                                                 <rect key="frame" x="140" y="220" width="100" height="30"/>
@@ -438,9 +432,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                <connections>
-                                                    <action selector="inputWeightUser:" destination="cN2-1w-H8a" eventType="editingChanged" id="z6n-wS-mdZ"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcL-d7-3P2">
                                                 <rect key="frame" x="105" y="355" width="110" height="21"/>
@@ -552,9 +543,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                <connections>
-                                                    <action selector="inputHeightUser:" destination="cN2-1w-H8a" eventType="editingChanged" id="6Ex-N9-auP"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ซม." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ta-5d-EhH">
                                                 <rect key="frame" x="256" y="282" width="24" height="14"/>
@@ -657,10 +645,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="ข้อมูลผู้ใช้งาน" image="iconuser" id="xYP-wC-suZ"/>
                     <toolbarItems>
-                        <barButtonItem enabled="NO" title="บันทึก" id="4rk-lr-G9w">
+                        <barButtonItem title="บันทึก" id="4rk-lr-G9w">
                             <color key="tintColor" red="1" green="0.48813878849999998" blue="0.56102057579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="saveDataUserButton:" destination="cN2-1w-H8a" id="AtH-65-gg6"/>
+                                <action selector="saveDataClicked:" destination="cN2-1w-H8a" id="7zo-kz-LM2"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -668,18 +656,17 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="690"/>
                     <connections>
-                        <outlet property="ageUserTextField" destination="zwn-2P-xuh" id="tss-H0-wEm"/>
-                        <outlet property="bmiUserLabel" destination="EuT-OF-QV1" id="q5O-sd-e0o"/>
-                        <outlet property="bmrUserLabel" destination="UcL-d7-3P2" id="XDX-1q-aK1"/>
-                        <outlet property="diabetesSegmentedControl" destination="T2P-dq-1E8" id="KDm-N1-w5Z"/>
-                        <outlet property="genderSegmentedControl" destination="YCM-0F-193" id="tg5-Mh-6RY"/>
-                        <outlet property="heightUserTextField" destination="bbj-QR-Bxj" id="aGi-qk-g9U"/>
-                        <outlet property="nameUserTextField" destination="c7P-or-t7E" id="eEa-Ne-UDj"/>
-                        <outlet property="saveData" destination="4rk-lr-G9w" id="3qT-Tx-u9e"/>
-                        <outlet property="scrollView" destination="W1A-6f-nb1" id="yri-hh-GOg"/>
-                        <outlet property="showBmiUserLabel" destination="8Zl-Dm-PLP" id="nbr-XI-FII"/>
-                        <outlet property="showImageBmi" destination="HEg-li-Qyy" id="KgI-Mc-2QA"/>
-                        <outlet property="weightUserTextField" destination="kM6-E1-007" id="HJD-ei-bea"/>
+                        <outlet property="ageUserTextField" destination="zwn-2P-xuh" id="dY9-cr-7A6"/>
+                        <outlet property="bmiUserLabel" destination="EuT-OF-QV1" id="XOx-2J-zKE"/>
+                        <outlet property="bmrUserLabel" destination="UcL-d7-3P2" id="cmH-MN-yQE"/>
+                        <outlet property="diabetesSegmentedControl" destination="T2P-dq-1E8" id="2R9-uY-WE9"/>
+                        <outlet property="genderSegmentedControl" destination="YCM-0F-193" id="36t-gh-A30"/>
+                        <outlet property="heightUserTextField" destination="bbj-QR-Bxj" id="Cp6-Rj-br0"/>
+                        <outlet property="nameUserTextField" destination="c7P-or-t7E" id="jki-k2-Ceq"/>
+                        <outlet property="saveData" destination="4rk-lr-G9w" id="BSX-WY-loZ"/>
+                        <outlet property="showBmiUserLabel" destination="8Zl-Dm-PLP" id="O1z-yV-2nG"/>
+                        <outlet property="showImageBmi" destination="HEg-li-Qyy" id="Fsx-j8-R4U"/>
+                        <outlet property="weightUserTextField" destination="kM6-E1-007" id="C18-O8-YDM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R9-yu-KsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
