@@ -382,6 +382,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="nameTextFieldValueChanged:" destination="cN2-1w-H8a" eventType="valueChanged" id="Vuk-Ru-2xY"/>
+                                                </connections>
                                             </textField>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YCM-0F-193">
                                                 <rect key="frame" x="140" y="70" width="121" height="29"/>
@@ -422,6 +425,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="ageTextFieldValueChanged:" destination="cN2-1w-H8a" eventType="valueChanged" id="0CO-DG-LDc"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kM6-E1-007">
                                                 <rect key="frame" x="140" y="220" width="100" height="30"/>
@@ -432,6 +438,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="weightTextFieldValueChanged:" destination="cN2-1w-H8a" eventType="valueChanged" id="hMH-BR-EZH"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcL-d7-3P2">
                                                 <rect key="frame" x="105" y="355" width="110" height="21"/>
@@ -543,6 +552,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="heightTextFieldValueChanged:" destination="cN2-1w-H8a" eventType="valueChanged" id="fGe-BH-ior"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ซม." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ta-5d-EhH">
                                                 <rect key="frame" x="256" y="282" width="24" height="14"/>
@@ -656,17 +668,18 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="690"/>
                     <connections>
-                        <outlet property="ageUserTextField" destination="zwn-2P-xuh" id="dY9-cr-7A6"/>
-                        <outlet property="bmiUserLabel" destination="EuT-OF-QV1" id="XOx-2J-zKE"/>
-                        <outlet property="bmrUserLabel" destination="UcL-d7-3P2" id="cmH-MN-yQE"/>
+                        <outlet property="ageTextField" destination="zwn-2P-xuh" id="lbD-qn-HbG"/>
+                        <outlet property="bmiLabel" destination="EuT-OF-QV1" id="tlJ-eg-LvK"/>
+                        <outlet property="bmrLabel" destination="UcL-d7-3P2" id="Vi8-p5-EiY"/>
                         <outlet property="diabetesSegmentedControl" destination="T2P-dq-1E8" id="2R9-uY-WE9"/>
                         <outlet property="genderSegmentedControl" destination="YCM-0F-193" id="36t-gh-A30"/>
-                        <outlet property="heightUserTextField" destination="bbj-QR-Bxj" id="Cp6-Rj-br0"/>
-                        <outlet property="nameUserTextField" destination="c7P-or-t7E" id="jki-k2-Ceq"/>
+                        <outlet property="heightTextField" destination="bbj-QR-Bxj" id="50z-uG-ATj"/>
+                        <outlet property="nameTextField" destination="c7P-or-t7E" id="jer-gi-mTM"/>
                         <outlet property="saveData" destination="4rk-lr-G9w" id="BSX-WY-loZ"/>
-                        <outlet property="showBmiUserLabel" destination="8Zl-Dm-PLP" id="O1z-yV-2nG"/>
-                        <outlet property="showImageBmi" destination="HEg-li-Qyy" id="Fsx-j8-R4U"/>
-                        <outlet property="weightUserTextField" destination="kM6-E1-007" id="C18-O8-YDM"/>
+                        <outlet property="scrollView" destination="W1A-6f-nb1" id="rX9-Lb-MeB"/>
+                        <outlet property="showBmiImageView" destination="HEg-li-Qyy" id="sR9-4o-M4U"/>
+                        <outlet property="showBmiLabel" destination="8Zl-Dm-PLP" id="d4r-8M-XKk"/>
+                        <outlet property="weightTextField" destination="kM6-E1-007" id="HZu-yL-pXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R9-yu-KsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
