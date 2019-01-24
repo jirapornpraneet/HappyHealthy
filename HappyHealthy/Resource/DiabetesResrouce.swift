@@ -13,5 +13,5 @@ class DiabetesResrouce: Object {
     @objc dynamic var dateTime: String?
     @objc dynamic var costSugar = 0
     @objc dynamic var diabetesLevel: String?
-    @objc dynamic var diabetesStatus: String?
+    @objc dynamic var statusEating: String?
 }
