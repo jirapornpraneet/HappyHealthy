@@ -56,15 +56,15 @@ class DiabetesViewController: UIViewController {
             let userResource = realm?.objects(UserResource.self)
             let isDiabetes = userResource?.last?.isDiabetes
             var diabetesStatus = "คนปกติ"
-            if isDiabetes == true {
-                diabetesStatus = "เบาหวาน"
+            if isDiabetes == false {
+                diabetesStatus = "คนปกติ"
                 if statusEating == "ก่อนอาหาร" {
                     diabetesLevel = peopleNormalBefore()
                 } else {
                     diabetesLevel = peopleNormalAfter()
                 }
             } else {
-                diabetesStatus = "คนปกติ"
+                diabetesStatus = "เบาหวาน"
                 if statusEating == "ก่อนอาหาร" {
                     diabetesLevel = peopleDiabetesBefore()
                 } else {
