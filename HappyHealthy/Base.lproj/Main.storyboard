@@ -262,7 +262,7 @@
             </objects>
             <point key="canvasLocation" x="152" y="956"/>
         </scene>
-        <!--Diabetes View Controller-->
+        <!--เบาหวาน-->
         <scene sceneID="kwZ-h1-077">
             <objects>
                 <viewController id="1UT-Nf-M85" customClass="DiabetesViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
@@ -401,6 +401,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bQK-ch-LB9"/>
                     </view>
+                    <navigationItem key="navigationItem" title="เบาหวาน" id="iI0-7j-JIT">
+                        <barButtonItem key="rightBarButtonItem" image="history" id="6IJ-jn-O2l">
+                            <connections>
+                                <segue destination="ceh-4F-7ZM" kind="show" id="6kT-sx-amq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="costSugarTextField" destination="GKs-Vk-0Df" id="Ohh-UD-B4d"/>
                         <outlet property="dateTimePicker" destination="cZr-eW-Ee8" id="SOQ-hG-LMr"/>
@@ -994,9 +1001,10 @@
                         <viewLayoutGuide key="safeArea" id="GCy-uq-PtV"/>
                     </view>
                     <navigationItem key="navigationItem" title="ข้อมูลเบาหวาน" id="Rc1-qW-aPk">
-                        <barButtonItem key="rightBarButtonItem" id="7HZ-4b-Oih">
-                            <inset key="imageInsets" minX="30" minY="20" maxX="5" maxY="15"/>
-                            <color key="tintColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <barButtonItem key="rightBarButtonItem" image="history" id="UVv-4b-M2B">
+                            <connections>
+                                <segue destination="ceh-4F-7ZM" kind="show" id="DVt-5o-YnY"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1014,7 +1022,7 @@
         <!--ประวัติบันทึกเบาหวาน-->
         <scene sceneID="Pg6-eU-dlN">
             <objects>
-                <viewController title="ประวัติบันทึกเบาหวาน" id="ceh-4F-7ZM" customClass="HistoryDiabetesViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ประวัติบันทึกเบาหวาน" id="ceh-4F-7ZM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W7L-Sd-dG3"/>
                         <viewControllerLayoutGuide type="bottom" id="mM9-1D-3s3"/>
@@ -1027,7 +1035,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellHistoryDiabetes" rowHeight="75" id="SOw-Xl-7qp" customClass="HistoryDiabetesTableViewCell" customModule="HappyHealthy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="SOw-Xl-7qp">
                                         <rect key="frame" x="0.0" y="28" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SOw-Xl-7qp" id="OaS-c1-wwj">
@@ -1122,13 +1130,14 @@
     <resources>
         <image name="ageUser" width="64" height="64"/>
         <image name="bmi1" width="560" height="95"/>
-        <image name="calender" width="16" height="16"/>
+        <image name="calender" width="60" height="60"/>
         <image name="diabetes" width="330" height="300"/>
         <image name="diabetesUser" width="64" height="64"/>
         <image name="exercise" width="477" height="300"/>
         <image name="food" width="321" height="300"/>
         <image name="gendersUser" width="64" height="64"/>
         <image name="heightUser" width="64" height="64"/>
+        <image name="history" width="36" height="36"/>
         <image name="iconheart" width="36" height="36"/>
         <image name="iconhome" width="20" height="20"/>
         <image name="iconintro" width="20" height="20"/>
@@ -1140,4 +1149,7 @@
         <image name="pressure" width="495" height="300"/>
         <image name="weightUser" width="64" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DVt-5o-YnY"/>
+    </inferredMetricsTieBreakers>
 </document>
