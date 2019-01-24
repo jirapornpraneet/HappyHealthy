@@ -262,10 +262,10 @@
             </objects>
             <point key="canvasLocation" x="152" y="956"/>
         </scene>
-        <!--View Controller-->
+        <!--Diabetes View Controller-->
         <scene sceneID="kwZ-h1-077">
             <objects>
-                <viewController id="1UT-Nf-M85" sceneMemberID="viewController">
+                <viewController id="1UT-Nf-M85" customClass="DiabetesViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nOr-hv-iC0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,6 +283,9 @@
                                             <!--2017-06-14 03:42:06 +0000-->
                                         </date>
                                         <locale key="locale" localeIdentifier="th"/>
+                                        <connections>
+                                            <action selector="selectDatePicker:" destination="1UT-Nf-M85" eventType="valueChanged" id="FnY-bY-T6M"/>
+                                        </connections>
                                     </datePicker>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-Vk-0Df">
                                         <rect key="frame" x="28.5" y="189.5" width="208" height="30"/>
@@ -294,9 +297,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFY-pa-315" customClass="FlatButton" customModule="SwiftyButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFY-pa-315">
                                         <rect key="frame" x="5" y="283.5" width="255" height="40.5"/>
-                                        <color key="backgroundColor" red="0.76470588235294112" green="0.50196078431372548" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.82352941180000006" green="0.62596922233611119" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                         <color key="tintColor" red="0.76470588235294112" green="0.50196078431372548" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="บันทึก"/>
@@ -304,19 +307,11 @@
                                             <color key="titleColor" red="0.83260682139999997" green="0.74424861959999999" blue="0.90402918779999997" alpha="0.55549015410000002" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" red="0.70935887099999995" green="0.59102725980000004" blue="0.85887146000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
-                                                <color key="value" red="0.76558694890000001" green="0.50090187870000003" blue="0.85887146000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="disabledColor">
-                                                <color key="value" red="0.70935887099999995" green="0.59102725980000004" blue="0.85887146000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveDataClicked:" destination="1UT-Nf-M85" eventType="touchUpInside" id="U9Z-rJ-zmi"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ค่าน้ำตาลในเลือดของผู้ใช้งาน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-JL-UFU">
                                         <rect key="frame" x="32.5" y="71" width="200" height="21"/>
@@ -349,6 +344,9 @@
                                             <segment title="หลังอาหาร"/>
                                         </segments>
                                         <color key="tintColor" red="0.73334293100000003" green="0.58502760499999995" blue="0.87873046870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="segmentSelectStatusEatingValueChange:" destination="1UT-Nf-M85" eventType="valueChanged" id="5rj-HK-g79"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(กรณีเจาะเลือดปลายนิ้ว)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcg-Yq-DU5">
                                         <rect key="frame" x="62.5" y="95" width="140" height="14.5"/>
@@ -403,6 +401,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bQK-ch-LB9"/>
                     </view>
+                    <connections>
+                        <outlet property="costSugarTextField" destination="GKs-Vk-0Df" id="Ohh-UD-B4d"/>
+                        <outlet property="dateTimePicker" destination="cZr-eW-Ee8" id="SOQ-hG-LMr"/>
+                        <outlet property="saveButton" destination="FFY-pa-315" id="NDw-yj-Jfq"/>
+                        <outlet property="statusEatingSegmented" destination="Fb1-kk-6BI" id="gup-P2-HMK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IH-8d-Bb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
