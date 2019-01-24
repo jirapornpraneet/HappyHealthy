@@ -858,7 +858,7 @@
         <!--แสดงข้อมูลเบาหวาน-->
         <scene sceneID="1WY-tU-muR">
             <objects>
-                <viewController storyboardIdentifier="ShowDiabetes" title="แสดงข้อมูลเบาหวาน" id="vhB-xj-4Yf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowDiabetes" title="แสดงข้อมูลเบาหวาน" id="vhB-xj-4Yf" customClass="ShowDiabetesViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PaU-Ru-HLW"/>
                         <viewControllerLayoutGuide type="bottom" id="7CX-Iu-DFc"/>
@@ -932,15 +932,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQS-uT-HmH">
-                                        <rect key="frame" x="16" y="270" width="288" height="31"/>
+                                        <rect key="frame" x="10" y="270" width="300" height="42"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="288" id="TgH-nK-OZv"/>
-                                            <constraint firstAttribute="height" constant="31" id="vSg-fX-qGT"/>
+                                            <constraint firstAttribute="height" constant="42" id="vSg-fX-qGT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V0Y-UE-Zlb">
                                         <rect key="frame" x="145" y="230" width="30" height="30"/>
@@ -950,7 +953,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelDiabetes1" translatesAutoresizingMaskIntoConstraints="NO" id="6Xp-WU-hX2">
-                                        <rect key="frame" x="16" y="326" width="288" height="50"/>
+                                        <rect key="frame" x="16" y="337" width="288" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="0fq-pr-NLS"/>
                                             <constraint firstAttribute="width" constant="288" id="dFk-Sk-JEf"/>
@@ -958,8 +961,10 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xQS-uT-HmH" secondAttribute="trailing" constant="10" id="20u-2M-7g2"/>
                                     <constraint firstItem="eAT-GP-bYQ" firstAttribute="centerX" secondItem="mgl-uw-jiA" secondAttribute="centerX" id="5lG-J7-viH"/>
                                     <constraint firstItem="hQS-ub-sXC" firstAttribute="top" secondItem="Iaz-7R-f2Y" secondAttribute="bottom" constant="5" id="7zn-L2-KIl"/>
+                                    <constraint firstItem="xQS-uT-HmH" firstAttribute="leading" secondItem="mgl-uw-jiA" secondAttribute="leading" constant="10" id="GG4-no-ZS1"/>
                                     <constraint firstItem="xQS-uT-HmH" firstAttribute="centerX" secondItem="mgl-uw-jiA" secondAttribute="centerX" id="TPe-f2-NEE"/>
                                     <constraint firstItem="6Xp-WU-hX2" firstAttribute="top" secondItem="xQS-uT-HmH" secondAttribute="bottom" constant="25" id="XMh-3B-bBJ"/>
                                     <constraint firstItem="NWf-sJ-NIA" firstAttribute="top" secondItem="QDL-8u-cPy" secondAttribute="bottom" constant="3" id="YdB-mV-kHf"/>
@@ -995,11 +1000,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="alertLevelDiabetesImage" destination="V0Y-UE-Zlb" id="ecL-LZ-Owc"/>
-                        <outlet property="costSugarLabel" destination="8IF-CN-Ao6" id="aQC-4E-jeS"/>
-                        <outlet property="levelDiabetesLabel" destination="xQS-uT-HmH" id="gC1-KX-la6"/>
-                        <outlet property="lineAlertLevelDiabetesImage" destination="6Xp-WU-hX2" id="9mn-MW-rfC"/>
-                        <outlet property="showDatatimeLabel" destination="eAT-GP-bYQ" id="ekR-bd-14O"/>
+                        <outlet property="costSugarLabel" destination="8IF-CN-Ao6" id="GQj-6P-3q3"/>
+                        <outlet property="datatimeLabel" destination="eAT-GP-bYQ" id="0xS-pF-beB"/>
+                        <outlet property="levelDiabetesImageView" destination="6Xp-WU-hX2" id="cKe-Rd-mc7"/>
+                        <outlet property="levelDiabetesLabel" destination="xQS-uT-HmH" id="Occ-vb-Cch"/>
+                        <outlet property="warningImageView" destination="V0Y-UE-Zlb" id="qBo-5z-d8J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRj-U7-u48" userLabel="First Responder" sceneMemberID="firstResponder"/>
