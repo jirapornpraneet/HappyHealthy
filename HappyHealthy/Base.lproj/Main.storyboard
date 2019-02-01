@@ -1276,11 +1276,151 @@
                         <outlet property="costGFRTextField" destination="kN4-2N-l6H" id="1h6-Ob-m29"/>
                         <outlet property="dateTimePicker" destination="tWS-D5-pKZ" id="RgH-hs-4i4"/>
                         <outlet property="saveButton" destination="sGb-Vw-fhM" id="ABW-TW-uxq"/>
+                        <segue destination="Huo-u9-FG9" kind="show" identifier="ShowKidney" id="Avm-fy-k1K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24Z-sk-dAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="324.375" y="2523.5915492957747"/>
+        </scene>
+        <!--แสดงข้อมูลโรคไต-->
+        <scene sceneID="8Sd-22-tah">
+            <objects>
+                <viewController title="แสดงข้อมูลโรคไต" id="Huo-u9-FG9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZQ2-27-TR5"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAM-NX-uXF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RoZ-Zg-leV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1E-6R-iDp">
+                                <rect key="frame" x="22" y="99" width="282" height="439"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/06/2017  16:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llj-eg-hFx">
+                                        <rect key="frame" x="23.5" y="30" width="235" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="VNK-lT-CZ5"/>
+                                            <constraint firstAttribute="width" constant="235" id="j5k-d2-Atw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-oK-oOR">
+                                        <rect key="frame" x="39" y="118" width="204" height="38"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="N99-D5-x6L"/>
+                                            <constraint firstAttribute="width" constant="204" id="NbP-Ww-boW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ค่าการทำงานไต(GFR)ของผู้ใช้งาน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="743-Ur-VnK">
+                                        <rect key="frame" x="22" y="78" width="238" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="4gE-F8-uue"/>
+                                            <constraint firstAttribute="width" constant="238" id="Fs0-KW-AMy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="มล./นาที/1.73 ตร.ม" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVd-Jr-liX">
+                                        <rect key="frame" x="80" y="166" width="122" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="MhI-kH-Hjq"/>
+                                            <constraint firstAttribute="width" constant="122" id="gmn-Bw-BOJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(มิลลิลิตร./นาที/1.73 ตารางเมตร)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Br9-XH-pz6">
+                                        <rect key="frame" x="56" y="189" width="170" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="8zq-PB-Ed4"/>
+                                            <constraint firstAttribute="width" constant="170" id="RUv-7O-gLO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IRM-WL-B6a">
+                                        <rect key="frame" x="126" y="213" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="0iB-Op-RLi"/>
+                                            <constraint firstAttribute="height" constant="30" id="vCO-gT-Nw1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkP-9O-lIs">
+                                        <rect key="frame" x="16" y="253" width="250" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="aI5-2H-fpM"/>
+                                            <constraint firstAttribute="height" constant="40" id="hBz-1f-VRf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelKidney1" translatesAutoresizingMaskIntoConstraints="NO" id="1EG-Wc-U25">
+                                        <rect key="frame" x="0.0" y="301" width="282" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1fp-Qw-QEP"/>
+                                            <constraint firstAttribute="width" constant="282" id="dad-eJ-CLE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wnq-oK-oOR" firstAttribute="top" secondItem="743-Ur-VnK" secondAttribute="bottom" constant="19" id="5cQ-qr-QxY"/>
+                                    <constraint firstItem="SVd-Jr-liX" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="7Oc-Bk-fbh"/>
+                                    <constraint firstItem="Br9-XH-pz6" firstAttribute="top" secondItem="SVd-Jr-liX" secondAttribute="bottom" constant="2" id="9eh-R9-sb3"/>
+                                    <constraint firstItem="743-Ur-VnK" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="AyP-Td-3H3"/>
+                                    <constraint firstItem="bkP-9O-lIs" firstAttribute="top" secondItem="IRM-WL-B6a" secondAttribute="bottom" constant="10" id="D6z-ms-YOx"/>
+                                    <constraint firstItem="1EG-Wc-U25" firstAttribute="top" secondItem="bkP-9O-lIs" secondAttribute="bottom" constant="8" id="E33-DH-2bv"/>
+                                    <constraint firstItem="IRM-WL-B6a" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="LJ3-iT-dJe"/>
+                                    <constraint firstItem="SVd-Jr-liX" firstAttribute="top" secondItem="Wnq-oK-oOR" secondAttribute="bottom" constant="10" id="T2e-1e-TMx"/>
+                                    <constraint firstItem="Br9-XH-pz6" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="WAD-g7-qUj"/>
+                                    <constraint firstItem="Llj-eg-hFx" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="bZR-mT-V3P"/>
+                                    <constraint firstItem="bkP-9O-lIs" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="fho-uJ-Nn8"/>
+                                    <constraint firstItem="IRM-WL-B6a" firstAttribute="top" secondItem="Br9-XH-pz6" secondAttribute="bottom" constant="3" id="i0c-u0-BZC"/>
+                                    <constraint firstItem="743-Ur-VnK" firstAttribute="top" secondItem="Llj-eg-hFx" secondAttribute="bottom" constant="8" id="mce-IS-sSa"/>
+                                    <constraint firstItem="Llj-eg-hFx" firstAttribute="top" secondItem="w1E-6R-iDp" secondAttribute="top" constant="30" id="pGz-uE-dZ6"/>
+                                    <constraint firstItem="Wnq-oK-oOR" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="pVZ-qE-Kar"/>
+                                    <constraint firstItem="1EG-Wc-U25" firstAttribute="centerX" secondItem="w1E-6R-iDp" secondAttribute="centerX" id="tL6-yw-0c6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95312339069999996" green="0.98260229830000001" blue="0.98369759320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w1E-6R-iDp" firstAttribute="leading" secondItem="RoZ-Zg-leV" secondAttribute="leadingMargin" constant="6" id="ANA-7o-59T"/>
+                            <constraint firstItem="w1E-6R-iDp" firstAttribute="top" secondItem="ZQ2-27-TR5" secondAttribute="bottom" constant="35" id="D8j-4e-Gwp"/>
+                            <constraint firstItem="w1E-6R-iDp" firstAttribute="trailing" secondItem="RoZ-Zg-leV" secondAttribute="trailingMargin" id="E9y-Dc-PeC"/>
+                            <constraint firstItem="LAM-NX-uXF" firstAttribute="top" secondItem="w1E-6R-iDp" secondAttribute="bottom" constant="30" id="sgI-gN-9Bm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iv0-nN-3uB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ข้อมูลไต" id="gxn-Fz-fhN">
+                        <barButtonItem key="rightBarButtonItem" image="listhistory" id="WCn-Bc-a6H">
+                            <inset key="imageInsets" minX="30" minY="20" maxX="5" maxY="15"/>
+                            <color key="tintColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alertLevelGFRImage" destination="IRM-WL-B6a" id="1Cu-JP-FwU"/>
+                        <outlet property="costGFRLabel" destination="Wnq-oK-oOR" id="ngc-bn-L9e"/>
+                        <outlet property="levelKidneyLabel" destination="bkP-9O-lIs" id="ciV-cr-RM7"/>
+                        <outlet property="lineAlertLevelKidneyImage" destination="1EG-Wc-U25" id="abs-TD-b0e"/>
+                        <outlet property="showDatetimeLabel" destination="Llj-eg-hFx" id="dL0-yE-DLZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uo-wy-LwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="2524"/>
         </scene>
     </scenes>
     <resources>
@@ -1301,6 +1441,8 @@
         <image name="iconuser" width="20" height="20"/>
         <image name="kidney" width="312" height="300"/>
         <image name="levelDiabetes1" width="700" height="110"/>
+        <image name="levelKidney1" width="700" height="110"/>
+        <image name="listhistory" width="16" height="16"/>
         <image name="nameUser" width="64" height="64"/>
         <image name="pressure" width="495" height="300"/>
         <image name="weightUser" width="64" height="64"/>
