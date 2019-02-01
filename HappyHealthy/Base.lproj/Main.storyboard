@@ -129,6 +129,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJZ-Sz-nkZ">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                                         <color key="backgroundColor" red="0.71764705880000002" green="0.81960784310000001" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="fpg-Gd-pz5" kind="show" id="J9t-4R-7rp"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="knp-fu-CgA">
                                         <rect key="frame" x="115" y="0.5" width="90" height="90"/>
@@ -300,6 +303,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFY-pa-315">
                                         <rect key="frame" x="5" y="283.5" width="255" height="40.5"/>
                                         <color key="backgroundColor" red="0.82352941180000006" green="0.62596922233611119" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40.5" id="M6V-eT-HPJ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                         <color key="tintColor" red="0.76470588235294112" green="0.50196078431372548" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="บันทึก"/>
@@ -388,7 +394,6 @@
                                     <constraint firstItem="MKL-JL-UFU" firstAttribute="top" secondItem="cZr-eW-Ee8" secondAttribute="bottom" constant="3" id="nXz-Lp-F6N"/>
                                     <constraint firstItem="GKs-Vk-0Df" firstAttribute="top" secondItem="Fb1-kk-6BI" secondAttribute="bottom" constant="26" id="ubr-95-DnU"/>
                                     <constraint firstItem="kcg-Yq-DU5" firstAttribute="top" secondItem="MKL-JL-UFU" secondAttribute="bottom" constant="3" id="vpU-gR-juh"/>
-                                    <constraint firstAttribute="bottom" secondItem="FFY-pa-315" secondAttribute="bottom" constant="8" id="w5G-sT-Kiw"/>
                                     <constraint firstItem="cZr-eW-Ee8" firstAttribute="centerX" secondItem="f7B-JY-pLQ" secondAttribute="centerX" id="wWV-JT-CG6"/>
                                 </constraints>
                             </view>
@@ -1148,6 +1153,135 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3b-jH-b0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1854.375" y="1719.7183098591549"/>
+        </scene>
+        <!--ไต-->
+        <scene sceneID="P4x-JE-GZc">
+            <objects>
+                <viewController title="ไต" id="fpg-Gd-pz5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4gP-Na-cmr"/>
+                        <viewControllerLayoutGuide type="bottom" id="gEP-So-DQE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhB-RV-Lsc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iI4-cw-kva">
+                                <rect key="frame" x="27" y="121" width="266" height="279"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kN4-2N-l6H">
+                                        <rect key="frame" x="29" y="119" width="208" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AIV-VZ-bYQ"/>
+                                            <constraint firstAttribute="width" constant="208" id="g7b-dK-YWw"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="inputCostGFR:" destination="fpg-Gd-pz5" eventType="editingChanged" id="sRW-sA-4in"/>
+                                        </connections>
+                                    </textField>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-D5-pKZ">
+                                        <rect key="frame" x="0.0" y="8" width="261" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="261" id="6Jk-Oh-EGH"/>
+                                            <constraint firstAttribute="height" constant="60" id="gX9-pQ-G24"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="519104526.86652702">
+                                            <!--2017-06-14 03:42:06 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="th"/>
+                                        <connections>
+                                            <action selector="selectDatePicker:" destination="fpg-Gd-pz5" eventType="valueChanged" id="4lu-NY-8iy"/>
+                                        </connections>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ค่าการทำงานไต(GFR)ของผู้ใช้งาน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0h-uE-8e9">
+                                        <rect key="frame" x="14" y="76" width="238" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Pm1-jK-GyP"/>
+                                            <constraint firstAttribute="width" constant="238" id="jXt-vc-tV8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="มล./นาที/1.73 ตร.ม" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGr-Ej-znp">
+                                        <rect key="frame" x="72" y="167" width="122" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="122" id="62b-ea-0dp"/>
+                                            <constraint firstAttribute="height" constant="21" id="oet-xd-4ZK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(มิลลิลิตร./นาที/1.73 ตารางเมตร)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoe-R5-WfZ">
+                                        <rect key="frame" x="48" y="188" width="170" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="DM6-fq-oAM"/>
+                                            <constraint firstAttribute="height" constant="21" id="fVr-Yu-yaS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGb-Vw-fhM">
+                                        <rect key="frame" x="5" y="229" width="256" height="42"/>
+                                        <color key="backgroundColor" red="0.5927686695492379" green="0.76955946579528611" blue="0.94441372156143188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <color key="tintColor" red="0.36333583178300971" green="0.59845080185791644" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="บันทึก"/>
+                                        <state key="disabled" title="บันทึก">
+                                            <color key="titleColor" red="0.83260682139999997" green="0.74424861959999999" blue="0.90402918779999997" alpha="0.55549015410000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveDataClicked:" destination="1UT-Nf-M85" eventType="touchUpInside" id="W1S-FF-pKH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84755355119999998" green="0.93772226569999995" blue="0.96152681110000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sGb-Vw-fhM" secondAttribute="trailing" constant="5" id="AcI-4f-Jcf"/>
+                                    <constraint firstItem="sGb-Vw-fhM" firstAttribute="top" secondItem="Hoe-R5-WfZ" secondAttribute="bottom" constant="20" id="ESv-Hq-Wss"/>
+                                    <constraint firstItem="OGr-Ej-znp" firstAttribute="centerX" secondItem="iI4-cw-kva" secondAttribute="centerX" id="F9K-Pm-jNw"/>
+                                    <constraint firstItem="sGb-Vw-fhM" firstAttribute="leading" secondItem="iI4-cw-kva" secondAttribute="leading" constant="5" id="O8o-7N-3JN"/>
+                                    <constraint firstItem="tWS-D5-pKZ" firstAttribute="centerX" secondItem="iI4-cw-kva" secondAttribute="centerX" constant="-2.5" id="SRT-Js-X81"/>
+                                    <constraint firstItem="tWS-D5-pKZ" firstAttribute="top" secondItem="iI4-cw-kva" secondAttribute="top" constant="8" id="Vjz-e4-D46"/>
+                                    <constraint firstItem="Hoe-R5-WfZ" firstAttribute="top" secondItem="OGr-Ej-znp" secondAttribute="bottom" id="X3E-cm-5mJ"/>
+                                    <constraint firstItem="OGr-Ej-znp" firstAttribute="top" secondItem="kN4-2N-l6H" secondAttribute="bottom" constant="18" id="YmB-w7-sEQ"/>
+                                    <constraint firstAttribute="height" constant="279" id="YvT-W9-Wmt"/>
+                                    <constraint firstItem="W0h-uE-8e9" firstAttribute="centerX" secondItem="iI4-cw-kva" secondAttribute="centerX" id="cRV-WQ-aPP"/>
+                                    <constraint firstItem="Hoe-R5-WfZ" firstAttribute="centerX" secondItem="iI4-cw-kva" secondAttribute="centerX" id="o2z-6b-Bf0"/>
+                                    <constraint firstItem="W0h-uE-8e9" firstAttribute="top" secondItem="tWS-D5-pKZ" secondAttribute="bottom" constant="8" id="qRO-L4-u2J"/>
+                                    <constraint firstItem="kN4-2N-l6H" firstAttribute="centerX" secondItem="iI4-cw-kva" secondAttribute="centerX" id="qYe-Ks-rG9"/>
+                                    <constraint firstItem="kN4-2N-l6H" firstAttribute="top" secondItem="W0h-uE-8e9" secondAttribute="bottom" constant="22" id="uek-r0-2jh"/>
+                                    <constraint firstAttribute="bottom" secondItem="sGb-Vw-fhM" secondAttribute="bottom" constant="8" id="vIc-Zd-HTo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95312339069999996" green="0.98260229830000001" blue="0.98369759320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iI4-cw-kva" secondAttribute="trailing" constant="11" id="IsA-rZ-xMM"/>
+                            <constraint firstItem="iI4-cw-kva" firstAttribute="top" secondItem="4gP-Na-cmr" secondAttribute="bottom" constant="57" id="WjG-Qi-pta"/>
+                            <constraint firstItem="iI4-cw-kva" firstAttribute="leading" secondItem="dhB-RV-Lsc" secondAttribute="leadingMargin" constant="11" id="XyS-He-QhY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BB6-9F-HY8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ไต" id="grs-LY-rVy">
+                        <barButtonItem key="rightBarButtonItem" image="history" id="D5D-3o-JuY"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateInputKidneyPicker" destination="tWS-D5-pKZ" id="IKX-fv-dbW"/>
+                        <outlet property="inputCostGFRTextField" destination="kN4-2N-l6H" id="l2O-nc-ACV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24Z-sk-dAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324.375" y="2523.5915492957747"/>
         </scene>
     </scenes>
     <resources>
