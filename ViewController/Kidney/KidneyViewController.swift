@@ -64,7 +64,7 @@ class KidneyViewController: UIViewController {
                                               handler: { (_) in
                                                 alertShow.dismiss(animated: true, completion: nil)
                                                 self.saveDataKidney()
-                                                self.performSegue(withIdentifier: "ShowDiabetes", sender: sender)
+                                                self.performSegue(withIdentifier: "ShowKidney", sender: sender)
             }))
             alertShow.addAction(UIAlertAction(title: "ยกเลิก",
                                               style: UIAlertAction.Style.default, handler: { (_) in
