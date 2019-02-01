@@ -1286,7 +1286,7 @@
         <!--แสดงข้อมูลโรคไต-->
         <scene sceneID="8Sd-22-tah">
             <objects>
-                <viewController title="แสดงข้อมูลโรคไต" id="Huo-u9-FG9" sceneMemberID="viewController">
+                <viewController title="แสดงข้อมูลโรคไต" id="Huo-u9-FG9" customClass="ShowKidneyViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZQ2-27-TR5"/>
                         <viewControllerLayoutGuide type="bottom" id="LAM-NX-uXF"/>
@@ -1364,8 +1364,12 @@
                                             <constraint firstAttribute="height" constant="40" id="hBz-1f-VRf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelKidney1" translatesAutoresizingMaskIntoConstraints="NO" id="1EG-Wc-U25">
                                         <rect key="frame" x="0.0" y="301" width="282" height="50"/>
@@ -1405,17 +1409,14 @@
                         <viewLayoutGuide key="safeArea" id="Iv0-nN-3uB"/>
                     </view>
                     <navigationItem key="navigationItem" title="ข้อมูลไต" id="gxn-Fz-fhN">
-                        <barButtonItem key="rightBarButtonItem" image="listhistory" id="WCn-Bc-a6H">
-                            <inset key="imageInsets" minX="30" minY="20" maxX="5" maxY="15"/>
-                            <color key="tintColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="history" id="WCn-Bc-a6H"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="alertLevelGFRImage" destination="IRM-WL-B6a" id="1Cu-JP-FwU"/>
-                        <outlet property="costGFRLabel" destination="Wnq-oK-oOR" id="ngc-bn-L9e"/>
-                        <outlet property="levelKidneyLabel" destination="bkP-9O-lIs" id="ciV-cr-RM7"/>
-                        <outlet property="lineAlertLevelKidneyImage" destination="1EG-Wc-U25" id="abs-TD-b0e"/>
-                        <outlet property="showDatetimeLabel" destination="Llj-eg-hFx" id="dL0-yE-DLZ"/>
+                        <outlet property="costGFRLabel" destination="Wnq-oK-oOR" id="fwx-sM-zf5"/>
+                        <outlet property="datatimeLabel" destination="Llj-eg-hFx" id="sAS-gO-9vp"/>
+                        <outlet property="levelKidneyImageView" destination="1EG-Wc-U25" id="X2O-3c-Fr9"/>
+                        <outlet property="levelKidneyLabel" destination="bkP-9O-lIs" id="e5l-Gk-MPO"/>
+                        <outlet property="warningImageView" destination="IRM-WL-B6a" id="XBJ-xG-j6a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uo-wy-LwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1442,12 +1443,11 @@
         <image name="kidney" width="312" height="300"/>
         <image name="levelDiabetes1" width="700" height="110"/>
         <image name="levelKidney1" width="700" height="110"/>
-        <image name="listhistory" width="16" height="16"/>
         <image name="nameUser" width="64" height="64"/>
         <image name="pressure" width="495" height="300"/>
         <image name="weightUser" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fox-S9-hdR"/>
+        <segue reference="XCP-4K-IKw"/>
     </inferredMetricsTieBreakers>
 </document>

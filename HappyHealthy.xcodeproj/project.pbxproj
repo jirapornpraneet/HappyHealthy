@@ -14,6 +14,7 @@
 		AB21D0F821F9BA1900F316D3 /* HistoryDiabetesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21D0F721F9BA1900F316D3 /* HistoryDiabetesTableViewController.swift */; };
 		AB282CD822044B9D00C45591 /* KidneyResrouce.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB282CD722044B9D00C45591 /* KidneyResrouce.swift */; };
 		AB282CDB22044C8200C45591 /* KidneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB282CDA22044C8200C45591 /* KidneyViewController.swift */; };
+		AB282CDD2204574600C45591 /* ShowKidneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB282CDC2204574600C45591 /* ShowKidneyViewController.swift */; };
 		AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB38AC7421C0F253000D1383 /* UserResource.swift */; };
 		AB59CEB221F84DA80068849E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59CEB121F84DA80068849E /* R.generated.swift */; };
 		AB59CEB621F861580068849E /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59CEB521F861580068849E /* InstructionViewController.swift */; };
@@ -34,6 +35,7 @@
 		AB21D0F721F9BA1900F316D3 /* HistoryDiabetesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDiabetesTableViewController.swift; sourceTree = "<group>"; };
 		AB282CD722044B9D00C45591 /* KidneyResrouce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidneyResrouce.swift; sourceTree = "<group>"; };
 		AB282CDA22044C8200C45591 /* KidneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidneyViewController.swift; sourceTree = "<group>"; };
+		AB282CDC2204574600C45591 /* ShowKidneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowKidneyViewController.swift; sourceTree = "<group>"; };
 		AB38AC7421C0F253000D1383 /* UserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResource.swift; sourceTree = "<group>"; };
 		AB59CEB121F84DA80068849E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AB59CEB521F861580068849E /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				AB282CDA22044C8200C45591 /* KidneyViewController.swift */,
+				AB282CDC2204574600C45591 /* ShowKidneyViewController.swift */,
 			);
 			path = Kidney;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB282CDD2204574600C45591 /* ShowKidneyViewController.swift in Sources */,
 				AB21D0F121F975CA00F316D3 /* DiabetesResrouce.swift in Sources */,
 				AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */,
 				AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */,
