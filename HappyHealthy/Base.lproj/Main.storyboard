@@ -163,6 +163,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbm-mu-yfa">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.78823529410000004" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="P7V-iC-UO3" kind="show" id="gvM-IA-pXz"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pressure" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-L9-Yt5">
                                         <rect key="frame" x="92.5" y="0.5" width="135" height="90"/>
@@ -1284,7 +1287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24Z-sk-dAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.375" y="2523.5915492957747"/>
+            <point key="canvasLocation" x="326" y="2405"/>
         </scene>
         <!--แสดงข้อมูลโรคไต-->
         <scene sceneID="8Sd-22-tah">
@@ -1429,7 +1432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uo-wy-LwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="2524"/>
+            <point key="canvasLocation" x="1129" y="2404"/>
         </scene>
         <!--History Kidney Table View Controller-->
         <scene sceneID="LpQ-PO-riW">
@@ -1535,7 +1538,244 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWA-98-dBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2109" y="2514"/>
+            <point key="canvasLocation" x="1854" y="2404"/>
+        </scene>
+        <!--ความดันโลหิต-->
+        <scene sceneID="zrw-hH-ZBS">
+            <objects>
+                <viewController title="ความดันโลหิต" id="P7V-iC-UO3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EXX-Eu-9pW"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Zg-IV-vhx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Fl-vg-uZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFc-Ul-biB">
+                                <rect key="frame" x="21" y="105" width="278" height="355"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="t87-Lh-pKm">
+                                        <rect key="frame" x="8" y="8" width="270" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Xw4-Xs-DwQ"/>
+                                            <constraint firstAttribute="width" constant="270" id="ohg-86-BvE"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="519104526.86652702">
+                                            <!--2017-06-14 03:42:06 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="th"/>
+                                        <connections>
+                                            <action selector="selectDatePicker:" destination="P7V-iC-UO3" eventType="valueChanged" id="djl-t7-gK3"/>
+                                        </connections>
+                                    </datePicker>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gcd-5k-bMC">
+                                        <rect key="frame" x="85" y="112" width="108" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="CKo-9F-rWI"/>
+                                            <constraint firstAttribute="width" constant="108" id="ZmR-8Z-LrB"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="inputCostPressureTop:" destination="P7V-iC-UO3" eventType="editingChanged" id="dMM-ei-yRu"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePQ-BG-Aka">
+                                        <rect key="frame" x="85" y="162" width="108" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="58A-aG-FLr"/>
+                                            <constraint firstAttribute="width" constant="108" id="GB0-4U-SV1"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="inputCostPressureDown:" destination="P7V-iC-UO3" eventType="editingChanged" id="8L6-4Q-wKB"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbg-OV-MaX">
+                                        <rect key="frame" x="69" y="231" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="AB7-Zv-7iB"/>
+                                            <constraint firstAttribute="height" constant="30" id="diR-Kg-LDY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="inputCostHeart:" destination="P7V-iC-UO3" eventType="editingChanged" id="TPZ-kN-TVU"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ค่าความดันโลหิตของผู้ใช้งาน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROT-jZ-IgM">
+                                        <rect key="frame" x="21.5" y="76" width="235" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="235" id="3zv-N8-19H"/>
+                                            <constraint firstAttribute="height" constant="21" id="fPE-Cu-7Sk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ตัวบน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK4-c6-7wT">
+                                        <rect key="frame" x="22" y="115" width="50" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="1qg-XA-gcD"/>
+                                            <constraint firstAttribute="width" constant="50" id="K0E-eF-PGS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ตัวล่าง" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-gG-jQP">
+                                        <rect key="frame" x="22" y="165" width="50" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="WPE-1Y-DWa"/>
+                                            <constraint firstAttribute="width" constant="50" id="omh-ev-q1H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="มม./ปรอท" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is8-oX-B4T">
+                                        <rect key="frame" x="196" y="116.5" width="64" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="56M-Mu-zIt"/>
+                                            <constraint firstAttribute="height" constant="18" id="Z40-wP-lqW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(มิลลิเมตร/ปรอท)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myv-79-zaH">
+                                        <rect key="frame" x="197" y="134.5" width="63" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="63" id="7mB-TZ-2Je"/>
+                                            <constraint firstAttribute="height" constant="11" id="ftR-0B-ml9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(มิลลิเมตร/ปรอท)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI2-Ld-mcf">
+                                        <rect key="frame" x="197" y="184.5" width="63" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="11" id="CEH-wN-sfm"/>
+                                            <constraint firstAttribute="width" constant="63" id="PwT-od-dDK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ค่าการเต้นหัวใจของผู้ใช้งาน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVf-WG-Xey">
+                                        <rect key="frame" x="21.5" y="202" width="235" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="235" id="Rwa-Cs-UhX"/>
+                                            <constraint firstAttribute="height" constant="21" id="nZz-7s-8cw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ครั้ง/นาที" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nG-Xl-2pv">
+                                        <rect key="frame" x="110" y="269" width="58" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="1ab-hS-Puc"/>
+                                            <constraint firstAttribute="width" constant="58" id="KCW-K6-qxh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="มม./ปรอท" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etk-nW-dFe">
+                                        <rect key="frame" x="196" y="166.5" width="64" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="8X3-TU-frb"/>
+                                            <constraint firstAttribute="height" constant="18" id="ejT-oB-VsD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <color key="textColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26U-ER-R12">
+                                        <rect key="frame" x="8" y="305" width="262" height="42"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.5702631959319362" blue="0.59860598298621959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <color key="tintColor" red="0.85882352939999995" green="0.37403652827845835" blue="0.38433908164320485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="บันทึก"/>
+                                        <state key="disabled" title="บันทึก">
+                                            <color key="titleColor" red="0.83260682139999997" green="0.74424861959999999" blue="0.90402918779999997" alpha="0.55549015410000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveDataClicked:" destination="fpg-Gd-pz5" eventType="touchUpInside" id="Rkw-oN-BV9"/>
+                                            <action selector="saveDataClicked:" destination="1UT-Nf-M85" eventType="touchUpInside" id="zdV-Kl-XKf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.90677023170000004" blue="0.92749097400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2nG-Xl-2pv" firstAttribute="top" secondItem="sbg-OV-MaX" secondAttribute="bottom" constant="8" id="3DE-sh-C7p"/>
+                                    <constraint firstItem="mVf-WG-Xey" firstAttribute="top" secondItem="tI2-Ld-mcf" secondAttribute="bottom" constant="6.5" id="8MA-jH-8zm"/>
+                                    <constraint firstItem="Etk-nW-dFe" firstAttribute="leading" secondItem="ePQ-BG-Aka" secondAttribute="trailing" constant="3" id="9gK-FE-Bpb"/>
+                                    <constraint firstItem="HK4-c6-7wT" firstAttribute="baseline" secondItem="Gcd-5k-bMC" secondAttribute="baseline" id="A8R-LH-whY"/>
+                                    <constraint firstAttribute="bottom" secondItem="26U-ER-R12" secondAttribute="bottom" constant="8" id="ApJ-kQ-jun"/>
+                                    <constraint firstItem="26U-ER-R12" firstAttribute="leading" secondItem="kFc-Ul-biB" secondAttribute="leading" constant="8" id="B5M-xv-wIp"/>
+                                    <constraint firstItem="mVf-WG-Xey" firstAttribute="centerX" secondItem="kFc-Ul-biB" secondAttribute="centerX" id="CUF-IU-KMu"/>
+                                    <constraint firstItem="Gcd-5k-bMC" firstAttribute="centerX" secondItem="kFc-Ul-biB" secondAttribute="centerX" id="E2N-IL-y7h"/>
+                                    <constraint firstAttribute="height" constant="355" id="ErQ-sG-I6r"/>
+                                    <constraint firstItem="DF0-gG-jQP" firstAttribute="baseline" secondItem="ePQ-BG-Aka" secondAttribute="baseline" id="Gx8-Fq-2oX"/>
+                                    <constraint firstItem="26U-ER-R12" firstAttribute="top" secondItem="2nG-Xl-2pv" secondAttribute="bottom" constant="15" id="H02-bJ-ZOM"/>
+                                    <constraint firstItem="ROT-jZ-IgM" firstAttribute="top" secondItem="t87-Lh-pKm" secondAttribute="bottom" constant="8" id="Hdx-tz-ZcO"/>
+                                    <constraint firstItem="is8-oX-B4T" firstAttribute="baseline" secondItem="Gcd-5k-bMC" secondAttribute="baseline" id="J02-MV-qcd"/>
+                                    <constraint firstItem="sbg-OV-MaX" firstAttribute="centerX" secondItem="kFc-Ul-biB" secondAttribute="centerX" id="Kas-pr-7o4"/>
+                                    <constraint firstItem="myv-79-zaH" firstAttribute="leading" secondItem="Gcd-5k-bMC" secondAttribute="trailing" constant="4" id="LR3-oM-FOF"/>
+                                    <constraint firstItem="ePQ-BG-Aka" firstAttribute="leading" secondItem="DF0-gG-jQP" secondAttribute="trailing" constant="13" id="Mwn-bf-kGa"/>
+                                    <constraint firstItem="myv-79-zaH" firstAttribute="top" secondItem="is8-oX-B4T" secondAttribute="bottom" id="P0K-32-AD3"/>
+                                    <constraint firstItem="2nG-Xl-2pv" firstAttribute="centerX" secondItem="kFc-Ul-biB" secondAttribute="centerX" id="ThD-Za-4O9"/>
+                                    <constraint firstItem="t87-Lh-pKm" firstAttribute="top" secondItem="kFc-Ul-biB" secondAttribute="top" constant="8" id="VuG-J1-Os1"/>
+                                    <constraint firstItem="is8-oX-B4T" firstAttribute="leading" secondItem="Gcd-5k-bMC" secondAttribute="trailing" constant="3" id="W9J-Uq-5lL"/>
+                                    <constraint firstItem="t87-Lh-pKm" firstAttribute="centerX" secondItem="kFc-Ul-biB" secondAttribute="centerX" constant="4" id="abh-7O-1yO"/>
+                                    <constraint firstItem="tI2-Ld-mcf" firstAttribute="top" secondItem="Etk-nW-dFe" secondAttribute="bottom" id="ctn-7r-QRZ"/>
+                                    <constraint firstItem="ROT-jZ-IgM" firstAttribute="centerX" secondItem="kFc-Ul-biB" secondAttribute="centerX" id="eUn-yj-iIS"/>
+                                    <constraint firstItem="Gcd-5k-bMC" firstAttribute="top" secondItem="ROT-jZ-IgM" secondAttribute="bottom" constant="15" id="gLM-pd-Hdy"/>
+                                    <constraint firstItem="ePQ-BG-Aka" firstAttribute="top" secondItem="Gcd-5k-bMC" secondAttribute="bottom" constant="20" id="mlS-gw-1iW"/>
+                                    <constraint firstItem="Gcd-5k-bMC" firstAttribute="leading" secondItem="HK4-c6-7wT" secondAttribute="trailing" constant="13" id="o8r-sG-NZD"/>
+                                    <constraint firstItem="ePQ-BG-Aka" firstAttribute="baseline" secondItem="Etk-nW-dFe" secondAttribute="baseline" id="p3a-2N-ugq"/>
+                                    <constraint firstItem="tI2-Ld-mcf" firstAttribute="leading" secondItem="ePQ-BG-Aka" secondAttribute="trailing" constant="4" id="s1I-15-u4e"/>
+                                    <constraint firstItem="ePQ-BG-Aka" firstAttribute="centerX" secondItem="kFc-Ul-biB" secondAttribute="centerX" id="vrQ-UN-wxi"/>
+                                    <constraint firstAttribute="trailing" secondItem="26U-ER-R12" secondAttribute="trailing" constant="8" id="x0Z-4C-4jK"/>
+                                    <constraint firstItem="sbg-OV-MaX" firstAttribute="top" secondItem="mVf-WG-Xey" secondAttribute="bottom" constant="8" id="xd0-Rb-1a4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99907074129999995" green="0.94414956569999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kFc-Ul-biB" firstAttribute="leading" secondItem="4Fl-vg-uZQ" secondAttribute="leadingMargin" constant="5" id="ZgP-5W-TPt"/>
+                            <constraint firstItem="kFc-Ul-biB" firstAttribute="top" secondItem="EXX-Eu-9pW" secondAttribute="bottom" constant="41" id="eDQ-td-bwn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kFc-Ul-biB" secondAttribute="trailing" constant="5" id="u8R-Gs-Ix2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8jI-nb-yNJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ความดันโลหิต" id="KPe-78-iZE">
+                        <barButtonItem key="rightBarButtonItem" image="listhistory" id="eL8-EQ-9eB">
+                            <inset key="imageInsets" minX="30" minY="20" maxX="5" maxY="15"/>
+                            <color key="tintColor" red="0.34170764590000002" green="0.34170764590000002" blue="0.34170764590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="costHeartTextField" destination="sbg-OV-MaX" id="ZrV-Ay-w0R"/>
+                        <outlet property="costPressureDownTextField" destination="ePQ-BG-Aka" id="I92-EL-xSa"/>
+                        <outlet property="costPressureTopTextField" destination="Gcd-5k-bMC" id="fpt-QR-Oy7"/>
+                        <outlet property="dateInputPressurePicker" destination="t87-Lh-pKm" id="1Nj-aH-0Yx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAz-uO-yPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-998" y="2405"/>
         </scene>
     </scenes>
     <resources>
@@ -1557,12 +1797,13 @@
         <image name="kidney" width="312" height="300"/>
         <image name="levelDiabetes1" width="700" height="110"/>
         <image name="levelKidney1" width="700" height="110"/>
+        <image name="listhistory" width="16" height="16"/>
         <image name="nameUser" width="64" height="64"/>
         <image name="pressure" width="495" height="300"/>
         <image name="weightUser" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="duM-Fx-yD8"/>
+        <segue reference="cwc-Qy-34Q"/>
         <segue reference="fox-S9-hdR"/>
     </inferredMetricsTieBreakers>
 </document>
