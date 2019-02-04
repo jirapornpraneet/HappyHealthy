@@ -25,6 +25,7 @@
 		AB91CED221BFA36A00267BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB91CED021BFA36A00267BD3 /* LaunchScreen.storyboard */; };
 		ABA5902921F7184A0071BB5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA5902821F7184A0071BB5D /* ProfileViewController.swift */; };
 		ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */; };
+		ABFACA442208245800F45500 /* PressureResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA432208245800F45500 /* PressureResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		AB91CED321BFA36A00267BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA5902821F7184A0071BB5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryKidneyTableViewController.swift; sourceTree = "<group>"; };
+		ABFACA432208245800F45500 /* PressureResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureResource.swift; sourceTree = "<group>"; };
 		E0C0E8FE8BFBAE1EF4840B72 /* Pods-HappyHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyHealthy.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyHealthy/Pods-HappyHealthy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				AB38AC7421C0F253000D1383 /* UserResource.swift */,
 				AB21D0F021F975CA00F316D3 /* DiabetesResrouce.swift */,
 				AB282CD722044B9D00C45591 /* KidneyResrouce.swift */,
+				ABFACA432208245800F45500 /* PressureResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			files = (
 				AB282CDD2204574600C45591 /* ShowKidneyViewController.swift in Sources */,
 				AB21D0F121F975CA00F316D3 /* DiabetesResrouce.swift in Sources */,
+				ABFACA442208245800F45500 /* PressureResource.swift in Sources */,
 				AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */,
 				AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */,
 				ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */,
