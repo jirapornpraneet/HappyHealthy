@@ -26,6 +26,7 @@
 		ABA5902921F7184A0071BB5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA5902821F7184A0071BB5D /* ProfileViewController.swift */; };
 		ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */; };
 		ABFACA442208245800F45500 /* PressureResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA432208245800F45500 /* PressureResource.swift */; };
+		ABFACA422208215E00F45500 /* PressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA412208215E00F45500 /* PressureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		ABA5902821F7184A0071BB5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryKidneyTableViewController.swift; sourceTree = "<group>"; };
 		ABFACA432208245800F45500 /* PressureResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureResource.swift; sourceTree = "<group>"; };
+		ABFACA412208215E00F45500 /* PressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureViewController.swift; sourceTree = "<group>"; };
 		E0C0E8FE8BFBAE1EF4840B72 /* Pods-HappyHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyHealthy.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyHealthy/Pods-HappyHealthy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 		ABA5902721F718370071BB5D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ABFACA402208214A00F45500 /* Pressure */,
 				AB282CD922044C7500C45591 /* Kidney */,
 				AB21D0F221F9771D00F316D3 /* Diabetes */,
 				AB59CEB521F861580068849E /* InstructionViewController.swift */,
@@ -150,6 +153,14 @@
 			);
 			path = ViewController;
 			sourceTree = SOURCE_ROOT;
+		};
+		ABFACA402208214A00F45500 /* Pressure */ = {
+			isa = PBXGroup;
+			children = (
+				ABFACA412208215E00F45500 /* PressureViewController.swift */,
+			);
+			path = Pressure;
+			sourceTree = "<group>";
 		};
 		D9C4C513CBA3E8A12091C70C /* Frameworks */ = {
 			isa = PBXGroup;
@@ -315,6 +326,7 @@
 				AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */,
 				AB38AC7521C0F253000D1383 /* UserResource.swift in Sources */,
 				ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */,
+				ABFACA422208215E00F45500 /* PressureViewController.swift in Sources */,
 				AB21D0F821F9BA1900F316D3 /* HistoryDiabetesTableViewController.swift in Sources */,
 				AB59CEB221F84DA80068849E /* R.generated.swift in Sources */,
 				AB59CEB621F861580068849E /* InstructionViewController.swift in Sources */,

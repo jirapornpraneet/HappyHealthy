@@ -1543,7 +1543,7 @@
         <!--ความดันโลหิต-->
         <scene sceneID="zrw-hH-ZBS">
             <objects>
-                <viewController title="ความดันโลหิต" id="P7V-iC-UO3" sceneMemberID="viewController">
+                <viewController title="ความดันโลหิต" id="P7V-iC-UO3" customClass="PressureViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EXX-Eu-9pW"/>
                         <viewControllerLayoutGuide type="bottom" id="3Zg-IV-vhx"/>
@@ -1566,7 +1566,7 @@
                                         </date>
                                         <locale key="locale" localeIdentifier="th"/>
                                         <connections>
-                                            <action selector="selectDatePicker:" destination="P7V-iC-UO3" eventType="valueChanged" id="djl-t7-gK3"/>
+                                            <action selector="selectDatePicker:" destination="P7V-iC-UO3" eventType="valueChanged" id="X1Z-Ow-Ha2"/>
                                         </connections>
                                     </datePicker>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gcd-5k-bMC">
@@ -1578,9 +1578,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
-                                        <connections>
-                                            <action selector="inputCostPressureTop:" destination="P7V-iC-UO3" eventType="editingChanged" id="dMM-ei-yRu"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePQ-BG-Aka">
                                         <rect key="frame" x="85" y="162" width="108" height="30"/>
@@ -1591,9 +1588,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
-                                        <connections>
-                                            <action selector="inputCostPressureDown:" destination="P7V-iC-UO3" eventType="editingChanged" id="8L6-4Q-wKB"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbg-OV-MaX">
                                         <rect key="frame" x="69" y="231" width="140" height="30"/>
@@ -1604,9 +1598,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
-                                        <connections>
-                                            <action selector="inputCostHeart:" destination="P7V-iC-UO3" eventType="editingChanged" id="TPZ-kN-TVU"/>
-                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ค่าความดันโลหิตของผู้ใช้งาน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROT-jZ-IgM">
                                         <rect key="frame" x="21.5" y="76" width="235" height="21"/>
@@ -1712,6 +1703,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="saveDataClicked:" destination="fpg-Gd-pz5" eventType="touchUpInside" id="Rkw-oN-BV9"/>
+                                            <action selector="saveDataClicked:" destination="P7V-iC-UO3" eventType="touchUpInside" id="nYc-bi-BFP"/>
                                             <action selector="saveDataClicked:" destination="1UT-Nf-M85" eventType="touchUpInside" id="zdV-Kl-XKf"/>
                                         </connections>
                                     </button>
@@ -1767,10 +1759,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="costHeartTextField" destination="sbg-OV-MaX" id="ZrV-Ay-w0R"/>
-                        <outlet property="costPressureDownTextField" destination="ePQ-BG-Aka" id="I92-EL-xSa"/>
-                        <outlet property="costPressureTopTextField" destination="Gcd-5k-bMC" id="fpt-QR-Oy7"/>
-                        <outlet property="dateInputPressurePicker" destination="t87-Lh-pKm" id="1Nj-aH-0Yx"/>
+                        <outlet property="costHeartTextField" destination="sbg-OV-MaX" id="W9s-j4-lBG"/>
+                        <outlet property="costPressureDownTextField" destination="ePQ-BG-Aka" id="sOA-xu-vgv"/>
+                        <outlet property="costPressureTopTextField" destination="Gcd-5k-bMC" id="jRM-8Z-jH6"/>
+                        <outlet property="dateTimePicker" destination="t87-Lh-pKm" id="TNP-KC-jOE"/>
+                        <outlet property="saveButton" destination="26U-ER-R12" id="yhx-hP-NyI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAz-uO-yPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
