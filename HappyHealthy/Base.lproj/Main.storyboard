@@ -1774,7 +1774,7 @@
         <!--แสดงข้อมูลความดันโลหิต-->
         <scene sceneID="h5J-hi-KoP">
             <objects>
-                <viewController storyboardIdentifier="ShowPressure" title="แสดงข้อมูลความดันโลหิต" id="7Fy-7X-b8y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowPressure" title="แสดงข้อมูลความดันโลหิต" id="7Fy-7X-b8y" customClass="ShowPressureViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cob-Og-5ny"/>
                         <viewControllerLayoutGuide type="bottom" id="umz-Hh-qr5"/>
@@ -1945,8 +1945,12 @@
                                     <constraint firstAttribute="height" constant="40" id="v2u-AW-gQE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2iJ-bI-Mc1">
                                 <rect key="frame" x="17.5" y="247.5" width="30" height="30"/>
@@ -1963,8 +1967,12 @@
                                     <constraint firstAttribute="width" constant="215" id="sNM-Td-iNJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98692899940000001" green="0.94481527809999999" blue="0.99993318320000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2019,16 +2027,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="650"/>
                     <connections>
-                        <outlet property="alertLevelHeartImage" destination="rpI-qR-emi" id="66a-vV-UaG"/>
-                        <outlet property="alertLevelPressureImage" destination="2iJ-bI-Mc1" id="NvO-jN-Qnf"/>
-                        <outlet property="costHeartLabel" destination="vcc-fS-eMX" id="Fxi-P4-MVb"/>
-                        <outlet property="costPressureDownLabel" destination="e6y-Ng-Nzh" id="7j7-BS-K1P"/>
-                        <outlet property="costPressureTopLabel" destination="nbU-36-ZLD" id="Cw7-yq-MnE"/>
-                        <outlet property="levelHeartLabel" destination="abq-Iw-ADZ" id="37P-eQ-s4N"/>
-                        <outlet property="levelPresureLabel" destination="Zgy-bA-T2g" id="tui-61-QMg"/>
-                        <outlet property="lineAlertLevelHeartImage" destination="6NQ-be-H2f" id="u6A-6q-r5X"/>
-                        <outlet property="lineAlertLevelPressureImage" destination="2CN-5Q-RPG" id="ZdB-9H-dzC"/>
-                        <outlet property="showDatetimeLabel" destination="Agf-kR-Wft" id="ccT-1a-tdi"/>
+                        <outlet property="costHeartLabel" destination="vcc-fS-eMX" id="9uX-YA-72X"/>
+                        <outlet property="costPresureDownLabel" destination="e6y-Ng-Nzh" id="qZ5-0T-Kng"/>
+                        <outlet property="costPresureTopLabel" destination="nbU-36-ZLD" id="iko-fp-7eu"/>
+                        <outlet property="datatimeLabel" destination="Agf-kR-Wft" id="xmw-7I-Whf"/>
+                        <outlet property="levelHeartImageView" destination="6NQ-be-H2f" id="oKM-8D-NsG"/>
+                        <outlet property="levelHeartLabel" destination="abq-Iw-ADZ" id="BWB-ow-yBZ"/>
+                        <outlet property="levelPresureImageView" destination="2CN-5Q-RPG" id="DrZ-JD-XhO"/>
+                        <outlet property="levelPresureLabel" destination="Zgy-bA-T2g" id="ncB-Od-4E4"/>
+                        <outlet property="warningHeartImageView" destination="rpI-qR-emi" id="jBV-ln-pRj"/>
+                        <outlet property="warningPresureImageView" destination="2iJ-bI-Mc1" id="Vkd-Qi-tOk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZp-v1-4Ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2063,7 +2071,7 @@
         <image name="weightUser" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cwc-Qy-34Q"/>
+        <segue reference="dhb-E4-Dgh"/>
         <segue reference="fox-S9-hdR"/>
     </inferredMetricsTieBreakers>
 </document>
