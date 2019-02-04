@@ -14,7 +14,6 @@ class HistoryDiabetesTableViewCell: UITableViewCell {
     @IBOutlet var costSugarLabel: UILabel!
     @IBOutlet var levelDiabetesLabel: UILabel!
     @IBOutlet var statusEatingLabel: UILabel!
-    @IBOutlet var iconImageView: UIImageView!
 }
 
 class HistoryDiabetesTableViewController: UITableViewController {
@@ -44,7 +43,7 @@ class HistoryDiabetesTableViewController: UITableViewController {
             return cellNotFound
         }
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.historyCells,
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.historyDiabetesCells,
                                                  for: indexPath as IndexPath)!
         let cellData = diabetesResource[indexPath.row]
         cell.dateTimeLabel.text = cellData.dateTime

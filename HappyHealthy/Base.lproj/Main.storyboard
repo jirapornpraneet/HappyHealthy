@@ -1033,7 +1033,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCells" rowHeight="78" id="ivq-UO-1rx" customClass="HistoryDiabetesTableViewCell" customModule="HappyHealthy" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryDiabetesCells" rowHeight="78" id="ivq-UO-1rx" customClass="HistoryDiabetesTableViewCell" customModule="HappyHealthy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ivq-UO-1rx" id="Eqc-9G-Za4">
@@ -1138,7 +1138,6 @@
                                 <connections>
                                     <outlet property="costSugarLabel" destination="nje-Mq-L7X" id="hEi-nk-aIZ"/>
                                     <outlet property="dateTimeLabel" destination="dIk-fd-nJ9" id="xrs-DN-0rO"/>
-                                    <outlet property="iconImageView" destination="vGa-wJ-2Zg" id="Qvm-pz-cFU"/>
                                     <outlet property="levelDiabetesLabel" destination="h17-Rh-N8e" id="XQP-TM-nlU"/>
                                     <outlet property="statusEatingLabel" destination="O5Z-nx-Sg7" id="uix-dV-dvR"/>
                                 </connections>
