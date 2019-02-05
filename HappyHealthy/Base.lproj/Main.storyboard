@@ -2213,11 +2213,10 @@
             </objects>
             <point key="canvasLocation" x="1050" y="3172"/>
         </scene>
-        <!--View Controller-->
+        <!--Report Health View Controller-->
         <scene sceneID="nyi-FG-Fug">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BKg-ES-Eng" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Gj7-8I-SnA" sceneMemberID="viewController">
+                <viewController id="Gj7-8I-SnA" customClass="ReportHealthViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MAd-p0-aB7"/>
                         <viewControllerLayoutGuide type="bottom" id="xs0-cQ-rbI"/>
@@ -2551,7 +2550,11 @@
                     <tabBarItem key="tabBarItem" title="" image="iconheart" id="uAc-RD-Emj"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="690"/>
+                    <connections>
+                        <outlet property="dateTimePicker" destination="Rb6-9g-Rwd" id="rGb-8V-xTm"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKg-ES-Eng" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1629" y="1020"/>
         </scene>
