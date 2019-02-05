@@ -1772,10 +1772,10 @@
             </objects>
             <point key="canvasLocation" x="311" y="3129"/>
         </scene>
-        <!--Table View Controller-->
+        <!--History Pressure Table View Controller-->
         <scene sceneID="1lL-wr-juR">
             <objects>
-                <tableViewController id="lWT-EU-ztx" sceneMemberID="viewController">
+                <tableViewController id="lWT-EU-ztx" customClass="HistoryPressureTableViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="111" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QXS-Pw-g2I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1936,13 +1936,12 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.98243527369999994" green="0.95431711679999998" blue="0.98595613240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="costHeartLabel" destination="4o0-V4-VPb" id="REC-c3-9jY"/>
-                                    <outlet property="costPressureDownLabel" destination="VNo-aO-OSz" id="p6I-TS-cIj"/>
-                                    <outlet property="costPressureTopLabel" destination="jXy-3d-0Df" id="alx-TJ-kBe"/>
-                                    <outlet property="dateHistoryLabel" destination="2Wk-Fi-OFb" id="5ks-AD-GFW"/>
-                                    <outlet property="iconHistoryImage" destination="YSJ-q5-oeP" id="d5S-wC-r9D"/>
-                                    <outlet property="levelHeartLabel" destination="Fnx-g7-oOx" id="I1i-JM-x8M"/>
-                                    <outlet property="levelPressureLabel" destination="2FJ-Ja-1ec" id="KFJ-R9-rv4"/>
+                                    <outlet property="costHeartLabel" destination="4o0-V4-VPb" id="GkB-1m-dDk"/>
+                                    <outlet property="costPressureDownLabel" destination="VNo-aO-OSz" id="v0a-eC-2rx"/>
+                                    <outlet property="costPressureTopLabel" destination="jXy-3d-0Df" id="mcw-lI-Aoc"/>
+                                    <outlet property="dateTimeLabel" destination="2Wk-Fi-OFb" id="s5R-qw-tV1"/>
+                                    <outlet property="levelHeartLabel" destination="Fnx-g7-oOx" id="FyD-tI-JqT"/>
+                                    <outlet property="levelPressureLabel" destination="2FJ-Ja-1ec" id="SGw-wf-ggf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
