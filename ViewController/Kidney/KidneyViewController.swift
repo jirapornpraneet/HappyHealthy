@@ -28,6 +28,15 @@ class KidneyViewController: UIViewController {
         let setDate = dateFormatter.string(from: dateTimePicker.date)
         dateTime = setDate
         print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
+
+        let tapGestureRecognizerKeyboard: UITapGestureRecognizer =
+            UITapGestureRecognizer(target: self,
+                                   action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tapGestureRecognizerKeyboard)
+    }
+
+    @objc func dismissKeyboard() {
+        self.view.endEditing(true)
     }
 
     @IBAction func selectDatePicker(_ sender: Any) {
