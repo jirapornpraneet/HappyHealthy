@@ -2197,16 +2197,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="650"/>
                     <connections>
-                        <outlet property="costHeartLabel" destination="vcc-fS-eMX" id="9uX-YA-72X"/>
-                        <outlet property="costPresureDownLabel" destination="e6y-Ng-Nzh" id="qZ5-0T-Kng"/>
-                        <outlet property="costPresureTopLabel" destination="nbU-36-ZLD" id="iko-fp-7eu"/>
-                        <outlet property="datatimeLabel" destination="Agf-kR-Wft" id="xmw-7I-Whf"/>
-                        <outlet property="levelHeartImageView" destination="6NQ-be-H2f" id="oKM-8D-NsG"/>
-                        <outlet property="levelHeartLabel" destination="abq-Iw-ADZ" id="BWB-ow-yBZ"/>
-                        <outlet property="levelPresureImageView" destination="2CN-5Q-RPG" id="DrZ-JD-XhO"/>
-                        <outlet property="levelPresureLabel" destination="Zgy-bA-T2g" id="ncB-Od-4E4"/>
-                        <outlet property="warningHeartImageView" destination="rpI-qR-emi" id="jBV-ln-pRj"/>
-                        <outlet property="warningPresureImageView" destination="2iJ-bI-Mc1" id="Vkd-Qi-tOk"/>
+                        <outlet property="costHeartLabel" destination="vcc-fS-eMX" id="E0J-ai-fJ1"/>
+                        <outlet property="costPressureDownLabel" destination="e6y-Ng-Nzh" id="7vh-8l-qB3"/>
+                        <outlet property="costPressureTopLabel" destination="nbU-36-ZLD" id="x5X-lR-srE"/>
+                        <outlet property="datatimeLabel" destination="Agf-kR-Wft" id="fkn-8a-hch"/>
+                        <outlet property="levelHeartImageView" destination="6NQ-be-H2f" id="9uK-Ho-ZiC"/>
+                        <outlet property="levelHeartLabel" destination="abq-Iw-ADZ" id="3UY-rW-ypA"/>
+                        <outlet property="levelPressureImageView" destination="2CN-5Q-RPG" id="MN5-Jr-IGf"/>
+                        <outlet property="levelPressureLabel" destination="Zgy-bA-T2g" id="e4u-un-ydE"/>
+                        <outlet property="warningHeartImageView" destination="rpI-qR-emi" id="8wS-GC-oy4"/>
+                        <outlet property="warningPressureImageView" destination="2iJ-bI-Mc1" id="xR9-pc-97p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZp-v1-4Ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2585,7 +2585,7 @@
         <image name="weightUser" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GZv-Iw-HFg"/>
+        <segue reference="YmQ-om-mKB"/>
         <segue reference="duM-Fx-yD8"/>
         <segue reference="XCP-4K-IKw"/>
     </inferredMetricsTieBreakers>

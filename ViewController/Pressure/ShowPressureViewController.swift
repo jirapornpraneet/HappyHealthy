@@ -12,11 +12,11 @@ import RealmSwift
 class ShowPressureViewController: UIViewController {
 
     @IBOutlet var datatimeLabel: UILabel!
-    @IBOutlet var costPresureTopLabel: UILabel!
-    @IBOutlet var costPresureDownLabel: UILabel!
-    @IBOutlet var levelPresureImageView: UIImageView!
-    @IBOutlet var levelPresureLabel: UILabel!
-    @IBOutlet var warningPresureImageView: UIImageView!
+    @IBOutlet var costPressureTopLabel: UILabel!
+    @IBOutlet var costPressureDownLabel: UILabel!
+    @IBOutlet var levelPressureImageView: UIImageView!
+    @IBOutlet var levelPressureLabel: UILabel!
+    @IBOutlet var warningPressureImageView: UIImageView!
 
     @IBOutlet var costHeartLabel: UILabel!
     @IBOutlet var levelHeartImageView: UIImageView!
@@ -51,9 +51,9 @@ class ShowPressureViewController: UIViewController {
         costHeartRate = pressureResource?.last?.costHeartRate ?? 0
 
         datatimeLabel.text = pressureResource?.last?.dateTime
-        costPresureTopLabel.text = String(format: "%i", pressureResource?.last?.costPressureTop ?? 0)
-        costPresureDownLabel.text = String(format: "%i", pressureResource?.last?.costPressureDown ?? 0)
-        levelPresureLabel.text = pressureResource?.last?.pressureLevel
+        costPressureTopLabel.text = String(format: "%i", pressureResource?.last?.costPressureTop ?? 0)
+        costPressureDownLabel.text = String(format: "%i", pressureResource?.last?.costPressureDown ?? 0)
+        levelPressureLabel.text = pressureResource?.last?.pressureLevel
 
         costHeartLabel.text = String(format: "%i", pressureResource?.last?.costHeartRate ?? 0)
         levelHeartLabel.text = pressureResource?.last?.heartRateLevel
@@ -66,20 +66,20 @@ class ShowPressureViewController: UIViewController {
         getPresureDown()
 
         if costTop < costDown! {
-            levelPresureLabel.backgroundColor = colorsLevelPressure[costTop]
-            levelPresureImageView.image = imagesLevelPressure[costTop]
+            levelPressureLabel.backgroundColor = colorsLevelPressure[costTop]
+            levelPressureImageView.image = imagesLevelPressure[costTop]
             if costTop == 0 {
-                warningPresureImageView.image = R.image.warning()
+                warningPressureImageView.image = R.image.warning()
             } else {
-                warningPresureImageView.image = nil
+                warningPressureImageView.image = nil
             }
         } else {
-            levelPresureLabel.backgroundColor = colorsLevelPressure[costDown]
-            levelPresureImageView.image = imagesLevelPressure[costDown]
+            levelPressureLabel.backgroundColor = colorsLevelPressure[costDown]
+            levelPressureImageView.image = imagesLevelPressure[costDown]
             if costDown == 0 {
-                warningPresureImageView.image = R.image.warning()
+                warningPressureImageView.image = R.image.warning()
             } else {
-                warningPresureImageView.image = nil
+                warningPressureImageView.image = nil
             }
         }
     }
