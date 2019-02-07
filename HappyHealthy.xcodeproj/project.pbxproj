@@ -30,6 +30,7 @@
 		ABFACA422208215E00F45500 /* PressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA412208215E00F45500 /* PressureViewController.swift */; };
 		ABFACA442208245800F45500 /* PressureResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA432208245800F45500 /* PressureResource.swift */; };
 		ABFACA4622082D3100F45500 /* ShowPressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA4522082D3100F45500 /* ShowPressureViewController.swift */; };
+		ABFE01B3220C118C009E1612 /* FoodResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE01B2220C118C009E1612 /* FoodResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		ABFACA412208215E00F45500 /* PressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureViewController.swift; sourceTree = "<group>"; };
 		ABFACA432208245800F45500 /* PressureResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureResource.swift; sourceTree = "<group>"; };
 		ABFACA4522082D3100F45500 /* ShowPressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPressureViewController.swift; sourceTree = "<group>"; };
+		ABFE01B2220C118C009E1612 /* FoodResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodResource.swift; sourceTree = "<group>"; };
 		E0C0E8FE8BFBAE1EF4840B72 /* Pods-HappyHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyHealthy.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyHealthy/Pods-HappyHealthy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				AB21D0F021F975CA00F316D3 /* DiabetesResrouce.swift */,
 				AB282CD722044B9D00C45591 /* KidneyResrouce.swift */,
 				ABFACA432208245800F45500 /* PressureResource.swift */,
+				ABFE01B2220C118C009E1612 /* FoodResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -268,7 +271,7 @@
 			);
 			name = R.swift;
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,6 +359,7 @@
 				AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */,
 				AB282CDB22044C8200C45591 /* KidneyViewController.swift in Sources */,
 				AB282CD822044B9D00C45591 /* KidneyResrouce.swift in Sources */,
+				ABFE01B3220C118C009E1612 /* FoodResource.swift in Sources */,
 				AB21D0F621F995C500F316D3 /* ShowDiabetesViewController.swift in Sources */,
 				AB21D0F421F9772E00F316D3 /* DiabetesViewController.swift in Sources */,
 			);
