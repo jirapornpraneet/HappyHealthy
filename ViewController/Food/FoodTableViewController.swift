@@ -15,6 +15,16 @@ class FoodTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let foodNames = ["food1", "food2"]
+        for foodName in foodNames {
+            let foodResource = FoodResource()
+            foodResource.foodName = foodName
+            try? realm?.write {
+                realm?.add(foodResource)
+            }
+        }
+        let food = realm?.objects(FoodResource.self)
+        print("food\(String(describing: food))")
 
     }
 
