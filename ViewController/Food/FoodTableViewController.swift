@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class FoodViewController: UIViewController {
+class FoodTableViewController: UITableViewController {
     
     var realm = try? Realm()
 

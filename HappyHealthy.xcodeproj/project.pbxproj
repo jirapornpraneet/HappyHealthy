@@ -31,7 +31,7 @@
 		ABFACA442208245800F45500 /* PressureResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA432208245800F45500 /* PressureResource.swift */; };
 		ABFACA4622082D3100F45500 /* ShowPressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA4522082D3100F45500 /* ShowPressureViewController.swift */; };
 		ABFE01B3220C118C009E1612 /* FoodResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE01B2220C118C009E1612 /* FoodResource.swift */; };
-		ABFE01B6220C1E51009E1612 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE01B5220C1E51009E1612 /* FoodViewController.swift */; };
+		ABFE01B6220C1E51009E1612 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE01B5220C1E51009E1612 /* FoodTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +62,7 @@
 		ABFACA432208245800F45500 /* PressureResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureResource.swift; sourceTree = "<group>"; };
 		ABFACA4522082D3100F45500 /* ShowPressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPressureViewController.swift; sourceTree = "<group>"; };
 		ABFE01B2220C118C009E1612 /* FoodResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodResource.swift; sourceTree = "<group>"; };
-		ABFE01B5220C1E51009E1612 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		ABFE01B5220C1E51009E1612 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
 		E0C0E8FE8BFBAE1EF4840B72 /* Pods-HappyHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyHealthy.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyHealthy/Pods-HappyHealthy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,7 +188,7 @@
 		ABFE01B4220C1E43009E1612 /* Food */ = {
 			isa = PBXGroup;
 			children = (
-				ABFE01B5220C1E51009E1612 /* FoodViewController.swift */,
+				ABFE01B5220C1E51009E1612 /* FoodTableViewController.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB282CDD2204574600C45591 /* ShowKidneyViewController.swift in Sources */,
-				ABFE01B6220C1E51009E1612 /* FoodViewController.swift in Sources */,
+				ABFE01B6220C1E51009E1612 /* FoodTableViewController.swift in Sources */,
 				AB21D0F121F975CA00F316D3 /* DiabetesResrouce.swift in Sources */,
 				ABFACA442208245800F45500 /* PressureResource.swift in Sources */,
 				AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */,
