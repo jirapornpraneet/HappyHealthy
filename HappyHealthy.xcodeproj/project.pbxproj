@@ -26,6 +26,7 @@
 		ABA5902921F7184A0071BB5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA5902821F7184A0071BB5D /* ProfileViewController.swift */; };
 		ABB1BE3A22093A5F00934371 /* HistoryPressureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1BE3922093A5F00934371 /* HistoryPressureTableViewController.swift */; };
 		ABB1BE3D22094A8C00934371 /* ReportHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1BE3C22094A8C00934371 /* ReportHealthViewController.swift */; };
+		ABD76404220D3CDD00357E9E /* food.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABD76403220D3CDD00357E9E /* food.plist */; };
 		ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */; };
 		ABFACA422208215E00F45500 /* PressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA412208215E00F45500 /* PressureViewController.swift */; };
 		ABFACA442208245800F45500 /* PressureResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA432208245800F45500 /* PressureResource.swift */; };
@@ -57,6 +58,7 @@
 		ABA5902821F7184A0071BB5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ABB1BE3922093A5F00934371 /* HistoryPressureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPressureTableViewController.swift; sourceTree = "<group>"; };
 		ABB1BE3C22094A8C00934371 /* ReportHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHealthViewController.swift; sourceTree = "<group>"; };
+		ABD76403220D3CDD00357E9E /* food.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = food.plist; sourceTree = "<group>"; };
 		ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryKidneyTableViewController.swift; sourceTree = "<group>"; };
 		ABFACA412208215E00F45500 /* PressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureViewController.swift; sourceTree = "<group>"; };
 		ABFACA432208245800F45500 /* PressureResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureResource.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				AB91CECB21BFA36800267BD3 /* Main.storyboard */,
 				AB91CECE21BFA36A00267BD3 /* Assets.xcassets */,
 				AB91CED021BFA36A00267BD3 /* LaunchScreen.storyboard */,
+				ABD76403220D3CDD00357E9E /* food.plist */,
 				AB91CED321BFA36A00267BD3 /* Info.plist */,
 				AB59CEB121F84DA80068849E /* R.generated.swift */,
 			);
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD76404220D3CDD00357E9E /* food.plist in Resources */,
 				AB91CED221BFA36A00267BD3 /* LaunchScreen.storyboard in Resources */,
 				AB91CECF21BFA36A00267BD3 /* Assets.xcassets in Resources */,
 				AB91CECD21BFA36800267BD3 /* Main.storyboard in Resources */,
