@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             let foodName = dictFood?.object(forKey: "foodName") as? String
             let foodAmount = dictFood?.object(forKey: "foodAmount") as? NSNumber
             let foodCalories = dictFood?.object(forKey: "foodCalories") as? NSNumber
-            let foodUnit = dictFood?.object(forKey: "foodCalories") as? String
+            let foodUnit = dictFood?.object(forKey: "foodUnit") as? String
             let foodNetUnit = dictFood?.object(forKey: "foodNetUnit") as? String
             let foodFat = dictFood?.object(forKey: "foodFat") as? NSNumber
             let foodProtein = dictFood?.object(forKey: "foodProtein") as? NSNumber
