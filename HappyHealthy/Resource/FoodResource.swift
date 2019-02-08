@@ -22,4 +22,5 @@ class FoodResource: Object {
     @objc dynamic var foodSugar: Double = 0.0
     @objc dynamic var foodSodium: Double = 0.0
     @objc dynamic var foodDetail: String?
+    @objc dynamic var foodType = 0
 }
