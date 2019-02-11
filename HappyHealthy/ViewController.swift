@@ -31,8 +31,8 @@ class ViewController: UIViewController {
 
         for item in 1...dictFoodPlistPath.count {
             let dictFood = dictFoodPlistPath.object(forKey: String(format: "Food - %i", item)) as? NSDictionary
+            let foodId = dictFood?.object(forKey: "foodId") as? NSNumber
             let foodName = dictFood?.object(forKey: "foodName") as? String
-            let foodAmount = dictFood?.object(forKey: "foodAmount") as? NSNumber
             let foodCalories = dictFood?.object(forKey: "foodCalories") as? NSNumber
             let foodUnit = dictFood?.object(forKey: "foodUnit") as? String
             let foodNetUnit = dictFood?.object(forKey: "foodNetUnit") as? String
@@ -42,12 +42,12 @@ class ViewController: UIViewController {
             let foodSugars = dictFood?.object(forKey: "foodSugars") as? NSNumber
             let foodCarbohydrate = dictFood?.object(forKey: "foodCarbohydrate") as? NSNumber
             let foodNetweight = dictFood?.object(forKey: "foodNetweight") as? NSNumber
-            let foodType = dictFood?.object(forKey: "foodType") as? NSNumber
+            let foodDetail = dictFood?.object(forKey: "foodDetail") as? String
 
             let foodResource = FoodResource()
-            foodResource.foodId = item
+            foodResource.foodId = Int(truncating: foodId!)
             foodResource.foodName = foodName
-            foodResource.foodAmount = Int(truncating: foodAmount ?? 0)
+            foodResource.foodAmount = 1
             foodResource.foodCalories = Double(truncating: foodCalories ?? 0.0)
             foodResource.foodUnit = foodUnit ?? ""
             foodResource.foodNetUnit = foodNetUnit ?? ""
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             foodResource.foodSugar = Double(truncating: foodSugars ?? 0.0)
             foodResource.foodCarbohydrate = Double(truncating: foodCarbohydrate ?? 0.0)
             foodResource.foodNetweight = Double(truncating: foodNetweight ?? 0.0)
-            foodResource.foodType = Int(truncating: foodType ?? 0)
+            foodResource.foodDetail = foodDetail ?? ""
 
             try? realm?.write {
                 realm?.add(foodResource)
