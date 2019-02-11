@@ -29,6 +29,7 @@
 		ABD76404220D3CDD00357E9E /* food.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABD76403220D3CDD00357E9E /* food.plist */; };
 		ABF238BF221123C90006F311 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF238BE221123C90006F311 /* FoodDetailViewController.swift */; };
 		ABF238C122113C680006F311 /* FoodHistoryResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF238C022113C680006F311 /* FoodHistoryResource.swift */; };
+		ABF238C3221168460006F311 /* exercise.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABF238C2221168460006F311 /* exercise.plist */; };
 		ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */; };
 		ABFACA422208215E00F45500 /* PressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA412208215E00F45500 /* PressureViewController.swift */; };
 		ABFACA442208245800F45500 /* PressureResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA432208245800F45500 /* PressureResource.swift */; };
@@ -63,6 +64,7 @@
 		ABD76403220D3CDD00357E9E /* food.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = food.plist; sourceTree = "<group>"; };
 		ABF238BE221123C90006F311 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
 		ABF238C022113C680006F311 /* FoodHistoryResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodHistoryResource.swift; sourceTree = "<group>"; };
+		ABF238C2221168460006F311 /* exercise.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = exercise.plist; sourceTree = "<group>"; };
 		ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryKidneyTableViewController.swift; sourceTree = "<group>"; };
 		ABFACA412208215E00F45500 /* PressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureViewController.swift; sourceTree = "<group>"; };
 		ABFACA432208245800F45500 /* PressureResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureResource.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				AB91CECB21BFA36800267BD3 /* Main.storyboard */,
 				AB91CECE21BFA36A00267BD3 /* Assets.xcassets */,
 				AB91CED021BFA36A00267BD3 /* LaunchScreen.storyboard */,
+				ABF238C2221168460006F311 /* exercise.plist */,
 				ABD76403220D3CDD00357E9E /* food.plist */,
 				AB91CED321BFA36A00267BD3 /* Info.plist */,
 				AB59CEB121F84DA80068849E /* R.generated.swift */,
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF238C3221168460006F311 /* exercise.plist in Resources */,
 				ABD76404220D3CDD00357E9E /* food.plist in Resources */,
 				AB91CED221BFA36A00267BD3 /* LaunchScreen.storyboard in Resources */,
 				AB91CECF21BFA36A00267BD3 /* Assets.xcassets in Resources */,
