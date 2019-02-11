@@ -5,1380 +5,407 @@
 	<key>Exercise - 1</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>2.3</real>
+		<integer>60</integer>
+		<key>exerciseDescription</key>
+		<string>เดินปกติ 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>เดินปกติ 1นาที ลดปริมาณแคลอรี่ได้ 2 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>1</integer>
 		<key>exerciseName</key>
-		<string>กวาดบ้าน ถูบ้าน</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>เดินปกติ</string>
 	</dict>
 	<key>Exercise - 2</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>3.3</real>
+		<integer>120</integer>
+		<key>exerciseDescription</key>
+		<string>เดินเร็ว 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>เดินเร็ว 1นาที ลดปริมาณแคลอรี่ได้ 4 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>2</integer>
 		<key>exerciseName</key>
-		<string>ทำกับข้าว</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>เดินเร็ว</string>
 	</dict>
 	<key>Exercise - 3</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>2.5</real>
+		<integer>180</integer>
+		<key>exerciseDescription</key>
+		<string>วิ่งจ็อคกิ้ง 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>วิ่งจ๊อกกิ้ง 1 นาที ลดปริมาณแคลอรี่ได้ 6 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>3</integer>
 		<key>exerciseName</key>
-		<string>ล้างจาน เก็บจาน</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>วิ่งจ็อคกิ้ง</string>
 	</dict>
 	<key>Exercise - 4</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>1.8</real>
+		<integer>240</integer>
+		<key>exerciseDescription</key>
+		<string>ขี่จักรยานเล่น (แบบช้าๆ) 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>ขี่จักรยาน 1นาที ลดปริมาณแคลอรี่ได้ 4 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>4</integer>
 		<key>exerciseName</key>
-		<string>รีดผ้า</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ขี่จักยาน</string>
 	</dict>
 	<key>Exercise - 5</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>2</integer>
+		<real>112.5</real>
+		<key>exerciseDescription</key>
+		<string>กวาดบ้าน ถูบ้าน 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>กวาดบ้าน ถูบ้าน 1นาที ลดปริมาณแคลอรี่ได้ 2.3 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>5</integer>
 		<key>exerciseName</key>
-		<string>ล้างทำความสะอาดห้องน้ำ</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>กวาดบ้าน ถูบ้าน</string>
 	</dict>
 	<key>Exercise - 6</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>2.5</real>
+		<integer>90</integer>
+		<key>exerciseDescription</key>
+		<string>ทำกับข้าว 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>ทำกับข้าว 1นาที ลดปริมาณแคลอรี่ได้ 3 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>6</integer>
 		<key>exerciseName</key>
-		<string>รดน้ำต้นไม้</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ทำกับข้าว</string>
 	</dict>
 	<key>Exercise - 7</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>3.5</real>
+		<integer>63</integer>
+		<key>exerciseDescription</key>
+		<string>ล้างจาน เก็บจาน 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>ล้างจาน เก็บจาน 1นาที ลดปริมาณแคลอรี่ได้ 2.5 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>7</integer>
 		<key>exerciseName</key>
-		<string>เดิน/วิงเล่นกับเด็ก</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ล้างจาน เก็บจาน</string>
 	</dict>
 	<key>Exercise - 8</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>2</integer>
+		<integer>75</integer>
+		<key>exerciseDescription</key>
+		<string>รีดผ้า 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>รีดผ้า 1นาที ลดปริมาณแคลอรี่ได้ 1.8 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>8</integer>
 		<key>exerciseName</key>
-		<string>อุ้มเด็กเล่น</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>รีดผ้า</string>
 	</dict>
 	<key>Exercise - 9</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>3</integer>
+		<integer>60</integer>
+		<key>exerciseDescription</key>
+		<string>ล้างทำความสะอาดห้องน้ำ 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>ล้างทำความสะอาดห้องน้ำ 1นาที ลดปริมาณแคลอรี่ได้ 2 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>9</integer>
 		<key>exerciseName</key>
-		<string>เดิน/วิ่งเล่นกับสัตว์เลี้ยง</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ล้างทำความสะอาดห้องน้ำ</string>
 	</dict>
 	<key>Exercise - 10</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>4</integer>
+		<integer>60</integer>
+		<key>exerciseDescription</key>
+		<string>รดน้ำต้นไม้ 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>รดน้ำต้นไม้ 1นาที ลดปริมาณแคลอรี่ได้ 2.5 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>10</integer>
 		<key>exerciseName</key>
-		<string>ดูแลผูสูงอายุ/คนพิการ(อาบน้ำแต่งตัว/เคลื่อนย้ายจากเตียง)</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>รดน้ำต้นไม้</string>
 	</dict>
 	<key>Exercise - 11</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>3.8</real>
+		<integer>150</integer>
+		<key>exerciseDescription</key>
+		<string>ล้างรถ 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>ล้างรถ 1นาที ลดปริมาณแคลอรี่ได้ 2 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>11</integer>
 		<key>exerciseName</key>
-		<string>งานช่างไม้</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ล้างรถ</string>
 	</dict>
 	<key>Exercise - 12</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>3.3</real>
+		<integer>135</integer>
+		<key>exerciseDescription</key>
+		<string>ตัดหญ้า 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>ตัดหญ้า 1นาที ลดปริมาณแคลอรี่ได้ 5.5 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>12</integer>
 		<key>exerciseName</key>
-		<string>ทาสี</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ตัดหญ้า</string>
 	</dict>
 	<key>Exercise - 13</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>2</integer>
+		<integer>120</integer>
+		<key>exerciseDescription</key>
+		<string>ปลูกต้นไม้ 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>ปลูกต้นไม้ 1นาที ลดปริมาณแคลอรี่ได้ 4.5 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>13</integer>
 		<key>exerciseName</key>
-		<string>ล้างรถ</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ปลูกต้นไม้</string>
 	</dict>
 	<key>Exercise - 14</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>5.5</real>
+		<integer>150</integer>
+		<key>exerciseDescription</key>
+		<string>แบดมินตั้น 30 นาที/1เซท</string>
+		<key>exerciseDetail</key>
+		<string>แบดมินตัน 1นาที ลดปริมาณแคลอรี่ได้ 5.5 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>14</integer>
 		<key>exerciseName</key>
-		<string>ตัดหญ้า</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>แบดมินตั้น</string>
 	</dict>
 	<key>Exercise - 15</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>4.5</real>
+		<integer>90</integer>
+		<key>exerciseDescription</key>
+		<string>โยคะ 30 นาที /1เซท</string>
+		<key>exerciseDetail</key>
+		<string>โยคะ 1นาที ลดปริมาณแคลอรี่ได้ 3.3 kcal</string>
+		<key>exerciseDisease</key>
+		<string>เหมาะสมสำหรับผู้มีโรคประจำตัว เบาหวาน,ความดัน,ไต</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>15</integer>
 		<key>exerciseName</key>
-		<string>ปลูกต้นไม้</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>โยคะ</string>
 	</dict>
 	<key>Exercise - 16</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>3.5</real>
+		<integer>30</integer>
+		<key>exerciseDescription</key>
+		<string>ขับรถยนต์ 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>ขับรถยนต์ 1 นาที ลดปริมาณแคลอรี่ได้ 1 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>16</integer>
 		<key>exerciseName</key>
-		<string>เก็บผัก/ผลไม้</string>
-		<key>exerciseType</key>
-		<integer>1</integer>
+		<string>ขับรถยนต์</string>
 	</dict>
 	<key>Exercise - 17</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>2</integer>
+		<integer>210</integer>
+		<key>exerciseDescription</key>
+		<string>เต้นแอโรบิค 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>เต้นแอโรบิค 1 นาที ลดปริมาณแคลอรี่ได้ 7 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>17</integer>
 		<key>exerciseName</key>
-		<string>เดินปกติ</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>เต้นแอโรบิค</string>
 	</dict>
 	<key>Exercise - 18</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>4.3</real>
+		<integer>90</integer>
+		<key>exerciseDescription</key>
+		<string>โบว์ลิ่ง 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>โบว์ลิ่ง 1 นาที ลดปริมาณแคลอรี่ได้ 3 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>18</integer>
 		<key>exerciseName</key>
-		<string>เดินเร็ว</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>โบว์ลิ่ง</string>
 	</dict>
 	<key>Exercise - 19</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>8.300000000000001</real>
+		<integer>90</integer>
+		<key>exerciseDescription</key>
+		<string>ไดร์ฟกอล์ฟ 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>ไดร์ฟกอล์ฟ 1 นาที ลดปริมาณแคลอรี่ได้  3 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>19</integer>
 		<key>exerciseName</key>
-		<string>เดินเร็วมากที่สุด</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>ไดร์ฟกอล์ฟ</string>
 	</dict>
 	<key>Exercise - 20</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>3.5</real>
+		<integer>300</integer>
+		<key>exerciseDescription</key>
+		<string>ยูโด 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>ยูโด 1 นาที ลดปริมาณแคลอรี่ได้ 10 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>20</integer>
 		<key>exerciseName</key>
-		<string>เดินลงบันได</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>ยูโด</string>
 	</dict>
 	<key>Exercise - 21</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>4</integer>
+		<integer>300</integer>
+		<key>exerciseDescription</key>
+		<string>เทควันโด้ 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>เทควันโด้ 1 นาที ลดปริมาณแคลอรี่ได้ 10 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>21</integer>
 		<key>exerciseName</key>
-		<string>เดินขึ้นบันได</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>เทควันโด้</string>
 	</dict>
 	<key>Exercise - 22</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>8.300000000000001</real>
+		<integer>300</integer>
+		<key>exerciseDescription</key>
+		<string>มวยไทย 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>มวยไทย 1 นาที ลดปริมาณแคลอรี่ได้ 10 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>22</integer>
 		<key>exerciseName</key>
-		<string>เดินยกของขึ้นบันได</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>มวยไทย</string>
 	</dict>
 	<key>Exercise - 23</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>7.8</real>
+		<integer>300</integer>
+		<key>exerciseDescription</key>
+		<string>ฟุตบอล 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>ฟุตบอล 1 นาที ลดปริมาณแคลอรี่ได้ 10 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>23</integer>
 		<key>exerciseName</key>
-		<string>เดินป่า</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>ฟุตบอล</string>
 	</dict>
 	<key>Exercise - 24</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<real>6.3</real>
+		<integer>120</integer>
+		<key>exerciseDescription</key>
+		<string>เล่นวอลเลย์บอล 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>เล่นวอลเลย์บอล 1 นาที  ลดปริมาณแคลอรี่ได้ 4 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>24</integer>
 		<key>exerciseName</key>
-		<string>เดินขึ้นเนิน</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
+		<string>เล่นวอลเลย์บอล</string>
 	</dict>
 	<key>Exercise - 25</key>
 	<dict>
 		<key>exerciseCalories</key>
-		<integer>6</integer>
+		<integer>330</integer>
+		<key>exerciseDescription</key>
+		<string>กระโดดเชือก 30 นาที/ 1 เซท</string>
+		<key>exerciseDetail</key>
+		<string>กระโดดเชือก 1 นาที ลดปริมาณแคลอรี่ได้ 11 kcal</string>
 		<key>exerciseDuration</key>
-		<integer>1</integer>
+		<integer>30</integer>
 		<key>exerciseId</key>
 		<integer>25</integer>
 		<key>exerciseName</key>
-		<string>วิ่งจ็อคกิ้ง</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
-	</dict>
-	<key>Exercise - 26</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>11</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>26</integer>
-		<key>exerciseName</key>
-		<string>วิ่ง</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
-	</dict>
-	<key>Exercise - 27</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>16</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>27</integer>
-		<key>exerciseName</key>
-		<string>วิ่งเร็ว</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
-	</dict>
-	<key>Exercise - 28</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>15</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>28</integer>
-		<key>exerciseName</key>
-		<string>วิ่งขึ้นบันได</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
-	</dict>
-	<key>Exercise - 29</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>13.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>29</integer>
-		<key>exerciseName</key>
-		<string>วิ่งมาราธอน</string>
-		<key>exerciseType</key>
-		<integer>2</integer>
-	</dict>
-	<key>Exercise - 30</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>7</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>30</integer>
-		<key>exerciseName</key>
-		<string>แบดมินตั้น แข่งขัน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 31</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>5.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>31</integer>
-		<key>exerciseName</key>
-		<string>แบดมินตั้น ออกกำลังกาย</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 32</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>6.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>32</integer>
-		<key>exerciseName</key>
-		<string>เล่นบาสเก็ตบอล</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 33</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>4.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>33</integer>
-		<key>exerciseName</key>
-		<string>ชู๊สบาส</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 34</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>7.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>34</integer>
-		<key>exerciseName</key>
-		<string>นั่งรถเข็นเล่นบาสเก็ตบอล</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 35</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>2.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>35</integer>
-		<key>exerciseName</key>
-		<string>บิลเลียด</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 36</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>3</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>36</integer>
-		<key>exerciseName</key>
-		<string>โบว์ลิ่ง</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 37</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>5.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>37</integer>
-		<key>exerciseName</key>
-		<string>ต่อยมวย ชกกระสอบทราย</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 38</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>38</integer>
-		<key>exerciseName</key>
-		<string>ยิมนาสติก เชียร์หลีดเดอร์</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 39</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>39</integer>
-		<key>exerciseName</key>
-		<string>ฟันดาบ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 40</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>3</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>40</integer>
-		<key>exerciseName</key>
-		<string>จานร่อน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 41</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>4.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>41</integer>
-		<key>exerciseName</key>
-		<string>เล่นกอล์ฟในสนามจริง</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 42</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>3</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>42</integer>
-		<key>exerciseName</key>
-		<string>ไดร์ฟกอล์ฟ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 43</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>8</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>43</integer>
-		<key>exerciseName</key>
-		<string>เล่นแฮนด์บอล</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 44</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>5.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>44</integer>
-		<key>exerciseName</key>
-		<string>ขี่ม้า</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 45</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>8</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>45</integer>
-		<key>exerciseName</key>
-		<string>ขี่ม้าเล่นโปโล</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 46</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>10.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>46</integer>
-		<key>exerciseName</key>
-		<string>ยูโด</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 47</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>10.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>47</integer>
-		<key>exerciseName</key>
-		<string>เทควันโด้</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 48</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>10.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>48</integer>
-		<key>exerciseName</key>
-		<string>คาราเต้</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 49</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>10.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>49</integer>
-		<key>exerciseName</key>
-		<string>มวยไทย</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 50</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>4</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>50</integer>
-		<key>exerciseName</key>
-		<string>ขี่มอไซค์วิบาก</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 51</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>5.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>51</integer>
-		<key>exerciseName</key>
-		<string>ไต่หน้าผา</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 52</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>5</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>52</integer>
-		<key>exerciseName</key>
-		<string>เล่นเสก็ตบอร์ด</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 53</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>7.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>53</integer>
-		<key>exerciseName</key>
-		<string>เล่นโรลเลอร์เบลด</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 54</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>10</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>54</integer>
-		<key>exerciseName</key>
-		<string>ฟุตบอล</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 55</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>7.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>55</integer>
-		<key>exerciseName</key>
-		<string>เล่นสควอซ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 56</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>4</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>56</integer>
-		<key>exerciseName</key>
-		<string>เล่นปิงปอง</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 57</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>3</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>57</integer>
-		<key>exerciseName</key>
-		<string>รำมวยจีน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 58</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>7.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>58</integer>
-		<key>exerciseName</key>
-		<string>เล่นเทนนิส</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 59</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>4</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>59</integer>
-		<key>exerciseName</key>
-		<string>เล่นวอลเลย์บอล</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 60</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>8</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>60</integer>
-		<key>exerciseName</key>
-		<string>เล่นวอลเลย์บอลชายหาด</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 61</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>61</integer>
-		<key>exerciseName</key>
-		<string>มวยปล้ำ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 62</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>4</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>62</integer>
-		<key>exerciseName</key>
-		<string>ขว้างจักร</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 63</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>4</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>63</integer>
-		<key>exerciseName</key>
-		<string>ขว้างค้อน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 64</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>64</integer>
-		<key>exerciseName</key>
-		<string>กระโดดสูง</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 65</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>65</integer>
-		<key>exerciseName</key>
-		<string>กระโดดไกล</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 66</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>66</integer>
-		<key>exerciseName</key>
-		<string>เขย่งก้าวกระโดด</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 67</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>67</integer>
-		<key>exerciseName</key>
-		<string>พุ่งแหลน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 68</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>6</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>68</integer>
-		<key>exerciseName</key>
-		<string>กระโดดค้ำถ่อ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 69</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>10</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>69</integer>
-		<key>exerciseName</key>
-		<string>วิ่งวิบาก</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 70</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>10</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>70</integer>
-		<key>exerciseName</key>
-		<string>วิ่งข้ามร้ว</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 71</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>11</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>71</integer>
-		<key>exerciseName</key>
 		<string>กระโดดเชือก</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 72</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>5.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>72</integer>
-		<key>exerciseName</key>
-		<string>พายเรือแคนู/คายัค</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 73</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>11</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>73</integer>
-		<key>exerciseName</key>
-		<string>พายเรือแคนู/คายัคแข่งขัน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 74</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>7</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>74</integer>
-		<key>exerciseName</key>
-		<string>ขี่เจ็ตสกี</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 75</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>5</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>75</integer>
-		<key>exerciseName</key>
-		<string>ดำน้ำตื้น</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 76</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>4.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>76</integer>
-		<key>exerciseName</key>
-		<string>ว่ายน้ำท่ากรรเชียง</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 77</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>9.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>77</integer>
-		<key>exerciseName</key>
-		<string>ว่ายน้ำท่ากรรเชียงแข่งขัน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 78</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>5.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>78</integer>
-		<key>exerciseName</key>
-		<string>ว่ายน้ำท่ากบ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 79</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>10.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>79</integer>
-		<key>exerciseName</key>
-		<string>ว่ายน้ำท่ากบแข่งขัน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 80</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>13.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>80</integer>
-		<key>exerciseName</key>
-		<string>ว่ายน้ำท่าผีเสื้อ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 81</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>8.300000000000001</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>81</integer>
-		<key>exerciseName</key>
-		<string>ว่ายน้ำท่าฟรีสไตล์</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 82</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>10</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>82</integer>
-		<key>exerciseName</key>
-		<string>ว่ายน้ำท่าฟรีสไตล์แข่งขัน</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 83</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>5.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>83</integer>
-		<key>exerciseName</key>
-		<string>กายบริหารในน้ำ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 84</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>10</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>84</integer>
-		<key>exerciseName</key>
-		<string>เล่นโปโลในน้ำ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 85</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>3</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>85</integer>
-		<key>exerciseName</key>
-		<string>เล่นวอลเลย์บอลน้ำ</string>
-		<key>exerciseType</key>
-		<integer>3</integer>
-	</dict>
-	<key>Exercise - 86</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>8</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>86</integer>
-		<key>exerciseName</key>
-		<string>วิดพื้น/โหนบาร์</string>
-		<key>exerciseType</key>
-		<integer>4</integer>
-	</dict>
-	<key>Exercise - 87</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>4.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>87</integer>
-		<key>exerciseName</key>
-		<string>เล่นเครื่องกรรเชียงบกระดับปานกลาง</string>
-		<key>exerciseType</key>
-		<integer>4</integer>
-	</dict>
-	<key>Exercise - 88</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>12</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>88</integer>
-		<key>exerciseName</key>
-		<string>เล่นเครื่องกรรเชียงบกระดับหนัก</string>
-		<key>exerciseType</key>
-		<integer>4</integer>
-	</dict>
-	<key>Exercise - 89</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>2.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>89</integer>
-		<key>exerciseName</key>
-		<string>ยืดเหยียดกล้ามเนื้อ</string>
-		<key>exerciseType</key>
-		<integer>4</integer>
-	</dict>
-	<key>Exercise - 90</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>3</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>90</integer>
-		<key>exerciseName</key>
-		<string>พิลาทิส(pilates)</string>
-		<key>exerciseType</key>
-		<integer>4</integer>
-	</dict>
-	<key>Exercise - 91</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>2.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>91</integer>
-		<key>exerciseName</key>
-		<string>เล่นฟิตบอล</string>
-		<key>exerciseType</key>
-		<integer>4</integer>
-	</dict>
-	<key>Exercise - 92</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>3.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>92</integer>
-		<key>exerciseName</key>
-		<string>โยคะ</string>
-		<key>exerciseType</key>
-		<integer>4</integer>
-	</dict>
-	<key>Exercise - 93</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>0.95</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>93</integer>
-		<key>exerciseName</key>
-		<string>นอนหลับ</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 94</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>1</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>94</integer>
-		<key>exerciseName</key>
-		<string>ดูโทรทัศน์</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 95</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>1.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>95</integer>
-		<key>exerciseName</key>
-		<string>นั่งเฉย/ฟังเพลง/อ่านหนังสือ</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 96</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>1.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>96</integer>
-		<key>exerciseName</key>
-		<string>ยืนเฉย</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 97</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>1</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>97</integer>
-		<key>exerciseName</key>
-		<string>เล่นเกมส์คอมพิวเตอร์</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 98</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>2.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>98</integer>
-		<key>exerciseName</key>
-		<string>เล่นวีดีโอเกมส์ มีการขยับ(Wii fit)</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 99</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>2.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>99</integer>
-		<key>exerciseName</key>
-		<string>ทำงานศิลปะ/งานฝีมือ</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 100</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>2.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>100</integer>
-		<key>exerciseName</key>
-		<string>เดินช็อปปิ้งโดยใช้รถเข็น</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 101</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<integer>5</integer>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>101</integer>
-		<key>exerciseName</key>
-		<string>เต้นบัลเลต์ โมเดิร์น แจ๊ส</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 102</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>7.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>102</integer>
-		<key>exerciseName</key>
-		<string>เต้นแอโรบิค</string>
-		<key>exerciseType</key>
-		<integer>5</integer>
-	</dict>
-	<key>Exercise - 103</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>2.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>103</integer>
-		<key>exerciseName</key>
-		<string>ขับรถบรรทุก รถแทร็คเตอร์ รถบัส</string>
-		<key>exerciseType</key>
-		<integer>6</integer>
-	</dict>
-	<key>Exercise - 104</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>1.3</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>104</integer>
-		<key>exerciseName</key>
-		<string>ขับรถยนต์</string>
-		<key>exerciseType</key>
-		<integer>6</integer>
-	</dict>
-	<key>Exercise - 105</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>1.8</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>105</integer>
-		<key>exerciseName</key>
-		<string>ขับเครื่องบิน</string>
-		<key>exerciseType</key>
-		<integer>6</integer>
-	</dict>
-	<key>Exercise - 106</key>
-	<dict>
-		<key>exerciseCalories</key>
-		<real>3.5</real>
-		<key>exerciseDuration</key>
-		<integer>1</integer>
-		<key>exerciseId</key>
-		<integer>106</integer>
-		<key>exerciseName</key>
-		<string>ขับมอเตอร์ไซค์</string>
-		<key>exerciseType</key>
-		<integer>6</integer>
 	</dict>
 </dict>
 </plist>
