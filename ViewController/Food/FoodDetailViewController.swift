@@ -26,6 +26,7 @@ class FoodDetailViewController: UIViewController {
 
     var foodDetailResource: FoodResource!
     var totalAmount: Double!
+    var realm = try? Realm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,10 @@ class FoodDetailViewController: UIViewController {
     }
 
     func getDataFoodDetail() {
+        totalAmount = 1.0
         nameFoodLabel.text = foodDetailResource.foodName
         kcalFoodLabel.text = String(format: "%.02f", foodDetailResource.foodCalories)
-        amountFoodTextField.text = String(format: "%i", foodDetailResource.foodAmount)
+        amountFoodTextField.text = String(format: "%.02f", totalAmount)
         unitFoodLabel.text = foodDetailResource.foodUnit
         netWeightFoodLabel.text = String(format: "%.02f", foodDetailResource.foodNetweight)
         netUnitFoodLabel.text = foodDetailResource.foodNetUnit
@@ -52,6 +54,7 @@ class FoodDetailViewController: UIViewController {
             return
         }
 
+        totalAmount = 1.0
         totalAmount = Double(amountFoodTextField.text ?? "")
         setDataDetailFood(totalAmount: totalAmount!)
     }
@@ -79,7 +82,7 @@ class FoodDetailViewController: UIViewController {
                                           handler: { (_) in
                                             alertShow.dismiss(animated: true, completion: nil)
                                             self.addDataHistoryFood()
-            self.performSegue(withIdentifier: "ShowHistoryFood", sender: sender)
+//            self.performSegue(withIdentifier: "ShowHistoryFood", sender: sender)
         }))
         alertShow.addAction(UIAlertAction(title: "ยกเลิก" ,
                                           style: UIAlertAction.Style.default,
@@ -93,12 +96,31 @@ class FoodDetailViewController: UIViewController {
         let date = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
-        let result = formatter.string(from: date)
-//        let foodHistoryResource = FoodHistoryTable()
-//        foodHistoryResource.History_Food_Date = result
-//        foodHistoryResource.Food_Id = Int((getFoodTable?.Food_Id)!)
-//        foodHistoryResource.Food_TotalAmount = Double(amountFoodTextField.text!)
-//        dbHelper.insertFoodHistory(dataRowFoodHistoryTable: foodHistoryResource)
+        let saveDate = formatter.string(from: date)
+        let foodHistoryResource = realm?.objects(FoodHistoryResource.self)
+        let foodHistoryResources = FoodHistoryResource()
+
+        if foodHistoryResource?.count == 0 {
+            foodHistoryResources.historyFoodId = 1
+        } else {
+            foodHistoryResources.historyFoodId = (foodHistoryResource?.last?.historyFoodId)! + 1
+        }
+
+        foodHistoryResources.historyFoodDate = saveDate
+        foodHistoryResources.foodId = foodDetailResource.foodId
+        foodHistoryResources.foodTotalAmount = totalAmount
+        foodHistoryResources.sumFoodCalories = foodDetailResource.foodCalories * totalAmount
+        foodHistoryResources.sumFoodProtein = foodDetailResource.foodProtein * totalAmount
+        foodHistoryResources.sumFoodFat = foodDetailResource.foodFat * totalAmount
+        foodHistoryResources.sumFoodCarbohydrate = foodDetailResource.foodCarbohydrate * totalAmount
+        foodHistoryResources.sumFoodSugar = foodDetailResource.foodSugar * totalAmount
+        foodHistoryResources.sumFoodSodium = foodDetailResource.foodSodium * totalAmount
+
+        try? realm?.write {
+            realm?.add(foodHistoryResources)
+        }
+        
+        print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
     }
 
 }
