@@ -27,6 +27,7 @@
 		ABB1BE3A22093A5F00934371 /* HistoryPressureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1BE3922093A5F00934371 /* HistoryPressureTableViewController.swift */; };
 		ABB1BE3D22094A8C00934371 /* ReportHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1BE3C22094A8C00934371 /* ReportHealthViewController.swift */; };
 		ABD76404220D3CDD00357E9E /* food.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABD76403220D3CDD00357E9E /* food.plist */; };
+		ABF238BF221123C90006F311 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF238BE221123C90006F311 /* FoodDetailViewController.swift */; };
 		ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */; };
 		ABFACA422208215E00F45500 /* PressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA412208215E00F45500 /* PressureViewController.swift */; };
 		ABFACA442208245800F45500 /* PressureResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFACA432208245800F45500 /* PressureResource.swift */; };
@@ -59,6 +60,7 @@
 		ABB1BE3922093A5F00934371 /* HistoryPressureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPressureTableViewController.swift; sourceTree = "<group>"; };
 		ABB1BE3C22094A8C00934371 /* ReportHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHealthViewController.swift; sourceTree = "<group>"; };
 		ABD76403220D3CDD00357E9E /* food.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = food.plist; sourceTree = "<group>"; };
+		ABF238BE221123C90006F311 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
 		ABFACA3E22081A9800F45500 /* HistoryKidneyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryKidneyTableViewController.swift; sourceTree = "<group>"; };
 		ABFACA412208215E00F45500 /* PressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureViewController.swift; sourceTree = "<group>"; };
 		ABFACA432208245800F45500 /* PressureResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureResource.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				ABFE01B5220C1E51009E1612 /* FoodTableViewController.swift */,
+				ABF238BE221123C90006F311 /* FoodDetailViewController.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				AB59CEB221F84DA80068849E /* R.generated.swift in Sources */,
 				ABFACA4622082D3100F45500 /* ShowPressureViewController.swift in Sources */,
 				AB59CEB621F861580068849E /* InstructionViewController.swift in Sources */,
+				ABF238BF221123C90006F311 /* FoodDetailViewController.swift in Sources */,
 				ABB1BE3A22093A5F00934371 /* HistoryPressureTableViewController.swift in Sources */,
 				ABA5902921F7184A0071BB5D /* ProfileViewController.swift in Sources */,
 				AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */,
