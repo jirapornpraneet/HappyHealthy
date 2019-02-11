@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 
 class FoodResource: Object {
+    @objc dynamic var foodId = 0
     @objc dynamic var foodName: String?
     @objc dynamic var foodCalories: Double = 0.0
     @objc dynamic var foodAmount = 0

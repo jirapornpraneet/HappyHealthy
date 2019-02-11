@@ -45,6 +45,7 @@ class ViewController: UIViewController {
             let foodType = dictFood?.object(forKey: "foodType") as? NSNumber
 
             let foodResource = FoodResource()
+            foodResource.foodId = item
             foodResource.foodName = foodName
             foodResource.foodAmount = Int(truncating: foodAmount ?? 0)
             foodResource.foodCalories = Double(truncating: foodCalories ?? 0.0)
