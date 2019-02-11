@@ -9,23 +9,101 @@
 import UIKit
 import RealmSwift
 
-class FoodTableViewController: UITableViewController {
-    
+class FoodTableViewCell: UITableViewCell {
+    @IBOutlet weak var nameFoodLabel: UILabel!
+    @IBOutlet weak var kcalFoodLabel: UILabel!
+    @IBOutlet weak var detailFoodLabel: UILabel!
+    @IBOutlet weak var unitFoodLabel: UILabel!
+}
+
+class FoodTableViewController: UITableViewController, UISearchBarDelegate,
+UISearchDisplayDelegate {
+
+    @IBOutlet var searchBar: UISearchBar!
+
     var realm = try? Realm()
+    var foodResource: Results<FoodResource>!
+    var listedFoods: Results<FoodResource>!
+    var indexRow: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let foodNames = ["food1", "food2"]
-        for foodName in foodNames {
-            let foodResource = FoodResource()
-            foodResource.foodName = foodName
-            try? realm?.write {
-                realm?.add(foodResource)
-            }
-        }
-        let food = realm?.objects(FoodResource.self)
-        print("food\(String(describing: food))")
+        print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
+        foodResource = realm?.objects(FoodResource.self)
+        listedFoods = foodResource
+        searchBar.delegate = self
+    }
 
+    // MARK: - Table view data source
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if listedFoods.count == 0 {
+            return 1
+        }
+        return listedFoods.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellNotFound = UITableViewCell.init()
+        cellNotFound.textLabel?.text = "ไม่มีข้อมูล"
+        cellNotFound.textLabel?.textAlignment = .center
+        if listedFoods.count == 0 {
+            return cellNotFound
+        }
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.foodCells,
+                                                 for: indexPath as IndexPath)!
+        let cellData = listedFoods[indexPath.row]
+        cell.nameFoodLabel.text = cellData.foodName
+        cell.kcalFoodLabel.text = String(format: "%.02f", (cellData.foodCalories))
+        cell.detailFoodLabel.text = cellData.foodDetail
+        cell.unitFoodLabel.text = cellData.foodUnit
+        cell.layoutIfNeeded()
+        return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        indexRow = indexPath.row
+        self.performSegue(withIdentifier: R.segue.foodTableViewController.foodDetail, sender: self)
+    }
+
+    // MARK: Segue
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let typedInfo = R.segue.foodTableViewController.foodDetail(segue: segue) {
+            typedInfo.destination.foodDetailResource = foodResource[indexRow]
+        }
+    }
+
+    // MARK: - UISearchDisplayDelegate
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+        searchBar.text = ""
+        searchBar.showsCancelButton = false
+        listedFoods = foodResource
+        tableView.reloadData()
+    }
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == "" {
+            searchBar.showsCancelButton = false
+            listedFoods = foodResource
+            tableView.reloadData()
+            return
+        }
+
+        searchBar.showsCancelButton = true
+        doSearch(searchText: searchText.lowercased())
+    }
+
+    func doSearch(searchText: String) {
+        let predicate = NSPredicate(format: "foodName BEGINSWITH [c]%@", searchText)
+        listedFoods = self.realm?.objects(FoodResource.self)
+            .filter(predicate)
+            .sorted(byKeyPath: "foodName", ascending: true)
+        tableView.reloadData()
     }
 
 }
