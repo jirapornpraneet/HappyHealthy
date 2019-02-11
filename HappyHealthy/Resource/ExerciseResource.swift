@@ -14,7 +14,7 @@ class ExerciseResource: Object {
     @objc dynamic var exerciseName: String?
     @objc dynamic var exerciseCalories: Double = 0.0
     @objc dynamic var exerciseDuration: Double = 0.0
-    @objc dynamic var exerciseDisease: Double = 0.0
+    @objc dynamic var exerciseDisease: String?
     @objc dynamic var exerciseDetail: String?
     @objc dynamic var exerciseDescription: String?
 }
