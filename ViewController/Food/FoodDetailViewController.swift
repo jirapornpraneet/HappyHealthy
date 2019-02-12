@@ -109,6 +109,8 @@ class FoodDetailViewController: UIViewController {
         foodHistoryResources.historyFoodDate = saveDate
         foodHistoryResources.foodId = foodDetailResource.foodId
         foodHistoryResources.foodName = foodDetailResource.foodName
+        foodHistoryResources.foodUnit = foodDetailResource.foodUnit
+        foodHistoryResources.foodDetail = foodDetailResource.foodDetail
         foodHistoryResources.foodTotalAmount = totalAmount
         foodHistoryResources.sumFoodCalories = foodDetailResource.foodCalories * totalAmount
         foodHistoryResources.sumFoodProtein = foodDetailResource.foodProtein * totalAmount

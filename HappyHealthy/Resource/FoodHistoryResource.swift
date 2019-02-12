@@ -14,6 +14,8 @@ class FoodHistoryResource: Object {
     @objc dynamic var historyFoodDate: String?
     @objc dynamic var foodId = 0
     @objc dynamic var foodName: String?
+    @objc dynamic var foodUnit: String?
+    @objc dynamic var foodDetail: String?
     @objc dynamic var foodTotalAmount: Double = 0.0
     @objc dynamic var sumFoodCalories: Double = 0.0
     @objc dynamic var sumFoodProtein: Double = 0.0
