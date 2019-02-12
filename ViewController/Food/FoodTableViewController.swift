@@ -22,15 +22,15 @@ UISearchDisplayDelegate {
     @IBOutlet var searchBar: UISearchBar!
 
     var realm = try? Realm()
-    var foodResource: Results<FoodResource>!
+    var foodResources: Results<FoodResource>!
     var listedFoods: Results<FoodResource>!
     var indexRow: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
-        foodResource = realm?.objects(FoodResource.self)
-        listedFoods = foodResource
+        foodResources = realm?.objects(FoodResource.self)
+        listedFoods = foodResources
         searchBar.delegate = self
     }
 
@@ -72,7 +72,7 @@ UISearchDisplayDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.foodTableViewController.foodDetail(segue: segue) {
-            typedInfo.destination.foodDetailResource = foodResource[indexRow]
+            typedInfo.destination.foodDetailResource = foodResources[indexRow]
         }
     }
 
@@ -82,14 +82,14 @@ UISearchDisplayDelegate {
         view.endEditing(true)
         searchBar.text = ""
         searchBar.showsCancelButton = false
-        listedFoods = foodResource
+        listedFoods = foodResources
         tableView.reloadData()
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == "" {
             searchBar.showsCancelButton = false
-            listedFoods = foodResource
+            listedFoods = foodResources
             tableView.reloadData()
             return
         }
