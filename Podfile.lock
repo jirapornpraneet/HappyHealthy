@@ -6,18 +6,18 @@ PODS:
   - R.swift (5.0.2):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
-  - Realm (3.12.0):
-    - Realm/Headers (= 3.12.0)
-  - Realm/Headers (3.12.0)
-  - RealmSwift (3.12.0):
-    - Realm (= 3.12.0)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
   - SwiftLint (0.29.1)
 
 DEPENDENCIES:
   - AAPickerView (~> 1.0)
   - ImageSlideshow (~> 1.6.1)
   - R.swift (~> 5.0.2)
-  - RealmSwift (~> 3.12.0)
+  - RealmSwift (~> 3.13.1)
   - SwiftLint (~> 0.29.1)
 
 SPEC REPOS:
@@ -35,10 +35,10 @@ SPEC CHECKSUMS:
   ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
   R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
-  Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
-  RealmSwift: 5576324033f0aa5ef1e0a839a3da2281dff47a7f
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: b7ab9fd1a8f713f34462203ecb44c983a73ecbc0
+PODFILE CHECKSUM: e51a04f835f54f9540e576a59741ca71c9d53ebe
 
 COCOAPODS: 1.5.3
