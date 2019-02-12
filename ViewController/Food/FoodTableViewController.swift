@@ -72,7 +72,7 @@ UISearchDisplayDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.foodTableViewController.foodDetail(segue: segue) {
-            typedInfo.destination.foodDetailResource = foodResources[indexRow]
+            typedInfo.destination.foodDetailResource = listedFoods[indexRow]
         }
     }
 
