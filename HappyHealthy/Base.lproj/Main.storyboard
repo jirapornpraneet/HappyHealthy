@@ -2237,7 +2237,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -3199,10 +3199,162 @@
                             <outlet property="delegate" destination="leb-uZ-v8W" id="g9h-QX-eZu"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="Z9Y-sY-XdY" kind="show" identifier="ExerciseDetail" id="hHH-bJ-Lfp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiL-ru-508" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="324.375" y="4681.6901408450703"/>
+        </scene>
+        <!--บันทึกออกกำลังกาย-->
+        <scene sceneID="3O5-2X-Zd0">
+            <objects>
+                <viewController storyboardIdentifier="DetailExe" title="บันทึกออกกำลังกาย" id="Z9Y-sY-XdY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3oJ-Gi-igy"/>
+                        <viewControllerLayoutGuide type="bottom" id="B5C-UR-ppJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aSn-S7-usI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อออกกำลังกาย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jA-ce-TXz">
+                                <rect key="frame" x="33" y="85" width="265" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p1z-rL-lw3"/>
+                                    <constraint firstAttribute="width" constant="265" id="pY1-gG-7Ft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.65866281019999995" green="0.89810546869999996" blue="0.66894121920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ออกกำลังกาย 30 นาที / 1 เซท" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAE-aK-iib">
+                                <rect key="frame" x="16" y="143" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0xG-4S-hjE"/>
+                                    <constraint firstAttribute="width" constant="288" id="IcY-z6-359"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เหมาะสำหรับผู้เป็นโรคอะไร" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9A3-XM-BFG">
+                                <rect key="frame" x="41" y="289" width="238" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19.5" id="Yxs-UP-lE4"/>
+                                    <constraint firstAttribute="width" constant="238" id="wSR-MB-C1A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.65189027789999998" green="0.89034324880000004" blue="0.66284531349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คำอธิบายออกกำลังกาย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ado-HT-Iak">
+                                <rect key="frame" x="22" y="343" width="276" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Unt-uA-97C"/>
+                                    <constraint firstAttribute="width" constant="276" id="nHR-Ja-TDn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6i5-M9-ehe">
+                                <rect key="frame" x="173" y="196" width="125" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ค่าแคลอรี่" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxb-m0-E1P">
+                                        <rect key="frame" x="8" y="8" width="109" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="V7P-Xu-4Ty"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="พลังงาน(กิโลแคลอรี่)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uz-Di-xBx">
+                                        <rect key="frame" x="2" y="37" width="121" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="RtO-9z-Lax"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65866281019999995" green="0.89810546869999996" blue="0.66894121920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wxb-m0-E1P" firstAttribute="leading" secondItem="6i5-M9-ehe" secondAttribute="leading" constant="8" id="0AO-4N-Jab"/>
+                                    <constraint firstAttribute="height" constant="66" id="0oV-0G-gVd"/>
+                                    <constraint firstItem="3Uz-Di-xBx" firstAttribute="top" secondItem="wxb-m0-E1P" secondAttribute="bottom" constant="3" id="bT6-1J-SiX"/>
+                                    <constraint firstItem="3Uz-Di-xBx" firstAttribute="leading" secondItem="6i5-M9-ehe" secondAttribute="leading" constant="2" id="cAS-cG-at9"/>
+                                    <constraint firstAttribute="trailing" secondItem="wxb-m0-E1P" secondAttribute="trailing" constant="8" id="jjR-LP-LXT"/>
+                                    <constraint firstAttribute="width" constant="125" id="lLt-Ur-60h"/>
+                                    <constraint firstItem="wxb-m0-E1P" firstAttribute="top" secondItem="6i5-M9-ehe" secondAttribute="top" constant="8" id="vM3-9r-gbx"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Uz-Di-xBx" secondAttribute="trailing" constant="2" id="w7c-nI-Hcx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7S-d7-VI4">
+                                <rect key="frame" x="33" y="196" width="125" height="66"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-nI-Mvp">
+                                        <rect key="frame" x="10" y="8" width="105" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kou-Xx-num"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เซท" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5a-uE-TzL">
+                                        <rect key="frame" x="41.5" y="41" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="1EW-xA-MXe"/>
+                                            <constraint firstAttribute="width" constant="42" id="AQW-Jz-XBD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65866281019999995" green="0.89810546869999996" blue="0.66894121920000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="f5a-uE-TzL" firstAttribute="top" secondItem="tk2-nI-Mvp" secondAttribute="bottom" constant="3" id="3T2-7E-gZq"/>
+                                    <constraint firstItem="tk2-nI-Mvp" firstAttribute="leading" secondItem="k7S-d7-VI4" secondAttribute="leading" constant="10" id="PGb-wf-LXQ"/>
+                                    <constraint firstAttribute="width" constant="125" id="S5E-fJ-g6v"/>
+                                    <constraint firstAttribute="height" constant="66" id="eGN-Um-Rks"/>
+                                    <constraint firstItem="f5a-uE-TzL" firstAttribute="centerX" secondItem="k7S-d7-VI4" secondAttribute="centerX" id="mnw-0s-eBB"/>
+                                    <constraint firstItem="tk2-nI-Mvp" firstAttribute="top" secondItem="k7S-d7-VI4" secondAttribute="top" constant="8" id="nOw-eO-Lkf"/>
+                                    <constraint firstAttribute="trailing" secondItem="tk2-nI-Mvp" secondAttribute="trailing" constant="10" id="w0Z-Xb-ip6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ado-HT-Iak" firstAttribute="top" secondItem="9A3-XM-BFG" secondAttribute="bottom" constant="34.5" id="5bj-62-6vr"/>
+                            <constraint firstItem="9A3-XM-BFG" firstAttribute="centerX" secondItem="aSn-S7-usI" secondAttribute="centerX" id="8IK-Ed-CKM"/>
+                            <constraint firstItem="ado-HT-Iak" firstAttribute="centerX" secondItem="aSn-S7-usI" secondAttribute="centerX" id="GN3-d0-Bk1"/>
+                            <constraint firstItem="1jA-ce-TXz" firstAttribute="centerX" secondItem="aSn-S7-usI" secondAttribute="centerX" constant="5.5" id="Il9-q9-OE9"/>
+                            <constraint firstItem="1jA-ce-TXz" firstAttribute="top" secondItem="3oJ-Gi-igy" secondAttribute="bottom" constant="21" id="M6a-nt-dqv"/>
+                            <constraint firstItem="6i5-M9-ehe" firstAttribute="leading" secondItem="k7S-d7-VI4" secondAttribute="trailing" constant="15" id="OCm-2i-6gf"/>
+                            <constraint firstItem="yAE-aK-iib" firstAttribute="centerX" secondItem="aSn-S7-usI" secondAttribute="centerX" id="QDs-Hk-fpr"/>
+                            <constraint firstItem="6i5-M9-ehe" firstAttribute="top" secondItem="yAE-aK-iib" secondAttribute="bottom" constant="8" id="QKu-uF-nr4"/>
+                            <constraint firstItem="6i5-M9-ehe" firstAttribute="baseline" secondItem="k7S-d7-VI4" secondAttribute="baseline" id="RXp-mE-1Jt"/>
+                            <constraint firstItem="9A3-XM-BFG" firstAttribute="top" secondItem="6i5-M9-ehe" secondAttribute="bottom" constant="27" id="UQP-Nt-Ybs"/>
+                            <constraint firstItem="k7S-d7-VI4" firstAttribute="centerX" secondItem="aSn-S7-usI" secondAttribute="centerX" constant="-64.5" id="Uuh-dH-Kne"/>
+                            <constraint firstItem="k7S-d7-VI4" firstAttribute="top" secondItem="yAE-aK-iib" secondAttribute="bottom" constant="8" id="Wi7-IJ-YHW"/>
+                            <constraint firstItem="yAE-aK-iib" firstAttribute="top" secondItem="1jA-ce-TXz" secondAttribute="bottom" constant="8" id="Y1A-xL-hiS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W8t-c6-VrV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="บันทึกออกกำลังกาย" id="fii-rJ-0Vi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="lyE-9K-vNX">
+                            <color key="tintColor" red="0.65337723560000005" green="0.89089843749999997" blue="0.66357316340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPx-w7-yF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233.75" y="4681.6901408450703"/>
         </scene>
     </scenes>
     <resources>
