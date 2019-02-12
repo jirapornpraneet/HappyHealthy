@@ -400,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IH-8d-Bb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328" y="1740"/>
+            <point key="canvasLocation" x="-1151" y="1754"/>
         </scene>
         <!--คำแนะนำ-->
         <scene sceneID="Xnr-IX-oS2">
@@ -999,7 +999,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRj-U7-u48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="1731"/>
+            <point key="canvasLocation" x="-388" y="1754"/>
         </scene>
         <!--History Diabetes Table View Controller-->
         <scene sceneID="9it-pI-jSu">
@@ -1128,7 +1128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3b-jH-b0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854.375" y="1719.7183098591549"/>
+            <point key="canvasLocation" x="309" y="1754"/>
         </scene>
         <!--ไต-->
         <scene sceneID="P4x-JE-GZc">
@@ -1261,7 +1261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24Z-sk-dAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="326" y="2405"/>
+            <point key="canvasLocation" x="-1176" y="2429"/>
         </scene>
         <!--แสดงข้อมูลโรคไต-->
         <scene sceneID="8Sd-22-tah">
@@ -1406,7 +1406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uo-wy-LwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="2404"/>
+            <point key="canvasLocation" x="-388" y="2429"/>
         </scene>
         <!--History Kidney Table View Controller-->
         <scene sceneID="LpQ-PO-riW">
@@ -1512,7 +1512,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWA-98-dBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854" y="2404"/>
+            <point key="canvasLocation" x="324" y="2429"/>
         </scene>
         <!--ความดันโลหิต-->
         <scene sceneID="zrw-hH-ZBS">
@@ -1744,7 +1744,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAz-uO-yPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="3129"/>
+            <point key="canvasLocation" x="-1123" y="3151"/>
         </scene>
         <!--History Pressure Table View Controller-->
         <scene sceneID="1lL-wr-juR">
@@ -1927,7 +1927,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJD-z2-Krl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1794.375" y="3127.8169014084506"/>
+            <point key="canvasLocation" x="308" y="3162"/>
         </scene>
         <!--แสดงข้อมูลความดันโลหิต-->
         <scene sceneID="h5J-hi-KoP">
@@ -2201,7 +2201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZp-v1-4Ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="3172"/>
+            <point key="canvasLocation" x="-388" y="3193"/>
         </scene>
         <!--Food Table View Controller-->
         <scene sceneID="cAe-gl-5rO">
@@ -2221,7 +2221,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -2325,7 +2325,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBj-AA-jfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347" y="3953"/>
+            <point key="canvasLocation" x="-1123" y="3922"/>
         </scene>
         <!--Report Health View Controller-->
         <scene sceneID="nyi-FG-Fug">
@@ -3078,7 +3078,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fpn-35-XCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1233.75" y="3952.8169014084506"/>
+            <point key="canvasLocation" x="-431" y="3921"/>
         </scene>
         <!--Exercise Table View Controller-->
         <scene sceneID="ivL-ml-d36">
@@ -3195,7 +3195,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiL-ru-508" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.375" y="4681.6901408450703"/>
+            <point key="canvasLocation" x="-1211" y="4627"/>
         </scene>
         <!--บันทึกออกกำลังกาย-->
         <scene sceneID="3O5-2X-Zd0">
@@ -3358,7 +3358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPx-w7-yF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1233.75" y="4681.6901408450703"/>
+            <point key="canvasLocation" x="-493" y="4627"/>
         </scene>
         <!--รายงาน-->
         <scene sceneID="0bC-wM-bT0">
@@ -3389,6 +3389,9 @@
                                                 <state key="normal" title="ดูข้อมูล">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="YCA-0d-0lW" kind="show" id="OSe-rd-j5S"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9a-sO-9FL">
                                                 <rect key="frame" x="106" y="90" width="108" height="21"/>
@@ -3863,6 +3866,121 @@
             </objects>
             <point key="canvasLocation" x="926" y="1050"/>
         </scene>
+        <!--ข้อมูลการบริโภค-->
+        <scene sceneID="2dw-No-YSL">
+            <objects>
+                <tableViewController id="YCA-0d-0lW" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wt9-3D-NWA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="WIG-01-PA9">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCells" rowHeight="68" id="14s-Rs-G2K">
+                                <rect key="frame" x="0.0" y="72" width="320" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14s-Rs-G2K" id="BZw-7E-5XV">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="xLH-aH-2ra">
+                                            <rect key="frame" x="5" y="8.5" width="51" height="51"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="51" id="3m7-ta-RJE"/>
+                                                <constraint firstAttribute="width" constant="51" id="ysm-jF-eyx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gce-tT-Bjv">
+                                            <rect key="frame" x="61" y="8" width="147" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="NFe-RK-yth"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ต่อ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FR5-5d-VQD">
+                                            <rect key="frame" x="252" y="31" width="20" height="14.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="mtT-Ev-5Oc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1P1-Xu-rTz">
+                                            <rect key="frame" x="272" y="31" width="40" height="14.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="fzX-wS-CyE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-6h-Thj">
+                                            <rect key="frame" x="212" y="8" width="65" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="Qhu-2Z-Qvc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kcal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-kr-4An">
+                                            <rect key="frame" x="282" y="8" width="30" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="2Ga-o4-6Bx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucb-2T-ouV">
+                                            <rect key="frame" x="61" y="48" width="251" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="SwS-EA-5n1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="textColor" red="1" green="0.63347493690000001" blue="0.50137492250000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ucb-2T-ouV" secondAttribute="trailing" constant="8" id="CSp-Qq-hZc"/>
+                                        <constraint firstItem="lDg-6h-Thj" firstAttribute="leading" secondItem="gce-tT-Bjv" secondAttribute="trailing" constant="4" id="DnI-yQ-YdY"/>
+                                        <constraint firstItem="xLH-aH-2ra" firstAttribute="leading" secondItem="BZw-7E-5XV" secondAttribute="leading" constant="5" id="GmY-1w-sdN"/>
+                                        <constraint firstItem="xLH-aH-2ra" firstAttribute="centerY" secondItem="BZw-7E-5XV" secondAttribute="centerY" id="M8Z-rJ-9ES"/>
+                                        <constraint firstAttribute="trailing" secondItem="1P1-Xu-rTz" secondAttribute="trailing" constant="8" id="Q3X-Nl-KFe"/>
+                                        <constraint firstItem="1P1-Xu-rTz" firstAttribute="top" secondItem="lDg-6h-Thj" secondAttribute="bottom" constant="7" id="Qph-zt-PzP"/>
+                                        <constraint firstItem="gce-tT-Bjv" firstAttribute="leading" secondItem="xLH-aH-2ra" secondAttribute="trailing" constant="5" id="Uj3-Bx-PSL"/>
+                                        <constraint firstItem="lDg-6h-Thj" firstAttribute="top" secondItem="BZw-7E-5XV" secondAttribute="top" constant="8" id="YLv-lG-pL1"/>
+                                        <constraint firstItem="1P1-Xu-rTz" firstAttribute="leading" secondItem="FR5-5d-VQD" secondAttribute="trailing" id="Zdq-O8-Mt3"/>
+                                        <constraint firstItem="8LJ-kr-4An" firstAttribute="leading" secondItem="lDg-6h-Thj" secondAttribute="trailing" constant="5" id="eu5-bH-JUX"/>
+                                        <constraint firstItem="8LJ-kr-4An" firstAttribute="top" secondItem="BZw-7E-5XV" secondAttribute="top" constant="8" id="f7F-Gl-882"/>
+                                        <constraint firstItem="FR5-5d-VQD" firstAttribute="top" secondItem="lDg-6h-Thj" secondAttribute="bottom" constant="7" id="fOh-Ld-JF3"/>
+                                        <constraint firstItem="ucb-2T-ouV" firstAttribute="leading" secondItem="xLH-aH-2ra" secondAttribute="trailing" constant="5" id="fuf-mA-Xkw"/>
+                                        <constraint firstItem="ucb-2T-ouV" firstAttribute="top" secondItem="FR5-5d-VQD" secondAttribute="bottom" constant="2.5" id="l7q-4U-jhd"/>
+                                        <constraint firstAttribute="trailing" secondItem="8LJ-kr-4An" secondAttribute="trailing" constant="8" id="lfC-Jb-QZs"/>
+                                        <constraint firstItem="gce-tT-Bjv" firstAttribute="top" secondItem="BZw-7E-5XV" secondAttribute="top" constant="8" id="tSU-M8-UrK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YCA-0d-0lW" id="AaE-IJ-DIP"/>
+                            <outlet property="delegate" destination="YCA-0d-0lW" id="CBv-PT-tOA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ข้อมูลการบริโภค" id="Adh-B3-eqX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tk-Rs-pNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="1937"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ageUser" width="64" height="64"/>
@@ -3892,8 +4010,8 @@
         <image name="weightUser" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GZv-Iw-HFg"/>
-        <segue reference="cwc-Qy-34Q"/>
+        <segue reference="YmQ-om-mKB"/>
+        <segue reference="dhb-E4-Dgh"/>
         <segue reference="XCP-4K-IKw"/>
     </inferredMetricsTieBreakers>
 </document>
