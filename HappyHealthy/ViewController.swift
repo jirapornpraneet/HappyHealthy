@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     var realm = try? Realm()
     var foodResource: Results<FoodResource>!
+    var exerciseResource: Results<ExerciseResource>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,11 @@ class ViewController: UIViewController {
         foodResource = realm?.objects(FoodResource.self)
         if foodResource.count == 0 {
             addDataFoodPlistToDataBaseRealm()
+        }
+
+        exerciseResource = realm?.objects(ExerciseResource.self)
+        if exerciseResource.count == 0 {
+            addDataExercisePlistToDataBaseRealm()
         }
     }
 
@@ -61,6 +67,37 @@ class ViewController: UIViewController {
 
             try? realm?.write {
                 realm?.add(foodResource)
+            }
+        }
+    }
+
+    func addDataExercisePlistToDataBaseRealm() {
+        var dictExercisePlistPath: NSDictionary!
+        if let exercisePlistPath = R.file.exercisePlist()?.path {
+            dictExercisePlistPath = NSDictionary(contentsOfFile: exercisePlistPath)
+            for item in 1...dictExercisePlistPath.count {
+                let dictExercise = dictExercisePlistPath
+                    .object(forKey: String(format: "Exercise - %i", item)) as? NSDictionary
+                let exerciseId = dictExercise?.object(forKey: "exerciseId") as? NSNumber
+                let exerciseName = dictExercise?.object(forKey: "exerciseName") as? String
+                let exerciseCalories = dictExercise?.object(forKey: "exerciseCalories") as? NSNumber
+                let exerciseDuration = dictExercise?.object(forKey: "exerciseDuration") as? NSNumber
+                let exerciseDisease = dictExercise?.object(forKey: "exerciseDisease") as? String
+                let exerciseDetail = dictExercise?.object(forKey: "exerciseDetail") as? String
+                let exerciseDescription = dictExercise?.object(forKey: "exerciseDescription") as? String
+
+                let exerciseResource = ExerciseResource()
+                exerciseResource.exerciseId = Int(truncating: exerciseId!)
+                exerciseResource.exerciseName = exerciseName
+                exerciseResource.exerciseCalories = Double(truncating: exerciseCalories ?? 0.0)
+                exerciseResource.exerciseDuration = Double(truncating: exerciseDuration ?? 0.0)
+                exerciseResource.exerciseDisease = exerciseDisease ?? ""
+                exerciseResource.exerciseDetail = exerciseDetail ?? ""
+                exerciseResource.exerciseDescription = exerciseDescription ?? ""
+
+                try? realm?.write {
+                    realm?.add(exerciseResource)
+                }
             }
         }
     }
