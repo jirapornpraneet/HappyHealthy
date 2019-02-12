@@ -65,6 +65,7 @@ class ExerciseDetailViewController: UIViewController {
                                           handler: { (_) in
                                             alertShow.dismiss(animated: true, completion: nil)
                                             self.addDataHistoryExercise()
+                                            self.navigationController?.popViewController(animated: true)
         }))
         alertShow.addAction(UIAlertAction(title: "ยกเลิก",
                                           style: UIAlertAction.Style.default,

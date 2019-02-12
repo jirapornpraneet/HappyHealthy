@@ -82,7 +82,7 @@ class FoodDetailViewController: UIViewController {
                                           handler: { (_) in
                                             alertShow.dismiss(animated: true, completion: nil)
                                             self.addDataHistoryFood()
-//            self.performSegue(withIdentifier: "ShowHistoryFood", sender: sender)
+                                            self.navigationController?.popViewController(animated: true)
         }))
         alertShow.addAction(UIAlertAction(title: "ยกเลิก" ,
                                           style: UIAlertAction.Style.default,
