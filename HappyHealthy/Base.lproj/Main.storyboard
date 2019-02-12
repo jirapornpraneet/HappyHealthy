@@ -2237,7 +2237,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -3310,6 +3310,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="durationExerciseTextFieldEditingChanged:" destination="Z9Y-sY-XdY" eventType="editingChanged" id="VqD-Sr-ONi"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เซท" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5a-uE-TzL">
                                         <rect key="frame" x="41.5" y="41" width="42" height="21"/>
@@ -3355,8 +3358,19 @@
                     <navigationItem key="navigationItem" title="บันทึกออกกำลังกาย" id="fii-rJ-0Vi">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="lyE-9K-vNX">
                             <color key="tintColor" red="0.65337723560000005" green="0.89089843749999997" blue="0.66357316340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveDataHistoryExercise:" destination="Z9Y-sY-XdY" id="bnD-xA-uVU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionExerciseLabel" destination="yAE-aK-iib" id="lXv-zV-RbD"/>
+                        <outlet property="detailExerciseLabel" destination="ado-HT-Iak" id="gaR-Fo-hGw"/>
+                        <outlet property="diseaseExerciseLabel" destination="9A3-XM-BFG" id="VSI-qS-FLM"/>
+                        <outlet property="durationExerciseTextField" destination="tk2-nI-Mvp" id="xGC-bc-Cwx"/>
+                        <outlet property="kcalExerciseLabel" destination="wxb-m0-E1P" id="0pV-7R-SG5"/>
+                        <outlet property="nameExerciseLabel" destination="1jA-ce-TXz" id="O6g-xP-D1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPx-w7-yF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
