@@ -2221,7 +2221,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -3363,7 +3363,7 @@
         <!--รายงาน-->
         <scene sceneID="0bC-wM-bT0">
             <objects>
-                <viewController storyboardIdentifier="ShowHistoryFood" id="Idb-nC-oma" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowHistoryFood" id="Idb-nC-oma" customClass="ReportFoodandExerciseViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fxc-lp-0Nf"/>
                         <viewControllerLayoutGuide type="bottom" id="o0r-CP-yUF"/>
@@ -3847,6 +3847,17 @@
                     <navigationItem key="navigationItem" id="cka-k6-n7n"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="750"/>
+                    <connections>
+                        <outlet property="dateTimePicker" destination="FMb-LP-q5u" id="N2C-WY-UUc"/>
+                        <outlet property="exerciseTotalCaloriesLabel" destination="srO-4T-qlz" id="znT-os-OAF"/>
+                        <outlet property="foodTotalCaloriesLabel" destination="d9a-sO-9FL" id="PTH-Oj-1H9"/>
+                        <outlet property="sumCarbohydateLabel" destination="snT-i6-VEL" id="zGy-vW-qK0"/>
+                        <outlet property="sumFatLabel" destination="Z3j-2e-dU7" id="al7-FH-Z2u"/>
+                        <outlet property="sumProtinLabel" destination="EYQ-jt-FTv" id="vJ7-3v-stR"/>
+                        <outlet property="sumSodiumLabel" destination="gdL-vR-9vt" id="Zbp-Gd-aJI"/>
+                        <outlet property="sumSugarLabel" destination="BDp-Ap-3ZE" id="8NW-kl-8Fo"/>
+                        <outlet property="sumTotalCaloriesLabel" destination="p4T-vu-Vin" id="vvn-wG-2ju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uim-lT-REV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
