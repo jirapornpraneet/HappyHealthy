@@ -58,7 +58,7 @@ UISearchDisplayDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.historyFoodCells,
                                                  for: indexPath as IndexPath)!
         let cellData = listedHistoryFoods[indexPath.row]
-        cell.dateTimeLabel.text = dateTime
+        cell.dateTimeLabel.text = String(format: "ข้อมูลวันที่  %@", dateTime)
         cell.nameFoodLabel.text = cellData.foodName
         cell.kcalFoodLabel.text = String(format: "%.02f", cellData.sumFoodCalories)
         cell.detailFoodLabel.text = cellData.foodDetail
