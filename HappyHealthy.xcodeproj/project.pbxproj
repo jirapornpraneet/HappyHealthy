@@ -22,6 +22,7 @@
 		AB7D6F3D22127CD300862DC8 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D6F3C22127CD300862DC8 /* ExerciseDetailViewController.swift */; };
 		AB7D6F3F221281B600862DC8 /* ExerciseHistoryResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D6F3E221281B600862DC8 /* ExerciseHistoryResource.swift */; };
 		AB7D6F4122128CC600862DC8 /* ReportFoodandExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D6F4022128CC600862DC8 /* ReportFoodandExerciseViewController.swift */; };
+		AB7D6F432212B37500862DC8 /* HistoryFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D6F422212B37500862DC8 /* HistoryFoodTableViewController.swift */; };
 		AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC721BFA36800267BD3 /* AppDelegate.swift */; };
 		AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC921BFA36800267BD3 /* ViewController.swift */; };
 		AB91CECD21BFA36800267BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB91CECB21BFA36800267BD3 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		AB7D6F3C22127CD300862DC8 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		AB7D6F3E221281B600862DC8 /* ExerciseHistoryResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHistoryResource.swift; sourceTree = "<group>"; };
 		AB7D6F4022128CC600862DC8 /* ReportFoodandExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportFoodandExerciseViewController.swift; sourceTree = "<group>"; };
+		AB7D6F422212B37500862DC8 /* HistoryFoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryFoodTableViewController.swift; sourceTree = "<group>"; };
 		AB91CEC421BFA36800267BD3 /* HappyHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB91CEC721BFA36800267BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB91CEC921BFA36800267BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			children = (
 				ABFE01B5220C1E51009E1612 /* FoodTableViewController.swift */,
 				ABF238BE221123C90006F311 /* FoodDetailViewController.swift */,
+				AB7D6F422212B37500862DC8 /* HistoryFoodTableViewController.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				AB59CEB221F84DA80068849E /* R.generated.swift in Sources */,
 				ABFACA4622082D3100F45500 /* ShowPressureViewController.swift in Sources */,
 				AB59CEB621F861580068849E /* InstructionViewController.swift in Sources */,
+				AB7D6F432212B37500862DC8 /* HistoryFoodTableViewController.swift in Sources */,
 				ABF238BF221123C90006F311 /* FoodDetailViewController.swift in Sources */,
 				ABB1BE3A22093A5F00934371 /* HistoryPressureTableViewController.swift in Sources */,
 				ABA5902921F7184A0071BB5D /* ProfileViewController.swift in Sources */,

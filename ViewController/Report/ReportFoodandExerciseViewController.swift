@@ -112,4 +112,12 @@ class ReportFoodandExerciseViewController: UIViewController {
         exerciseTotalCaloriesLabel.text = String(format: "%.02f", sumExerciseCalories)
         sumTotalCaloriesLabel.text = String(format: "%.02f", sumTotalCalories)
     }
+
+    // MARK: Segue
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let typedInfo = R.segue.reportFoodandExerciseViewController.showHistoryFood(segue: segue) {
+            typedInfo.destination.dateTime = saveDate
+        }
+    }
 }
