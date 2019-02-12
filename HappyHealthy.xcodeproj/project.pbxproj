@@ -19,6 +19,7 @@
 		AB59CEB221F84DA80068849E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59CEB121F84DA80068849E /* R.generated.swift */; };
 		AB59CEB621F861580068849E /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59CEB521F861580068849E /* InstructionViewController.swift */; };
 		AB7D6F3B221275B600862DC8 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D6F3A221275B600862DC8 /* ExerciseTableViewController.swift */; };
+		AB7D6F3D22127CD300862DC8 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D6F3C22127CD300862DC8 /* ExerciseDetailViewController.swift */; };
 		AB91CEC821BFA36800267BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC721BFA36800267BD3 /* AppDelegate.swift */; };
 		AB91CECA21BFA36800267BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91CEC921BFA36800267BD3 /* ViewController.swift */; };
 		AB91CECD21BFA36800267BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB91CECB21BFA36800267BD3 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		AB59CEB121F84DA80068849E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AB59CEB521F861580068849E /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		AB7D6F3A221275B600862DC8 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		AB7D6F3C22127CD300862DC8 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		AB91CEC421BFA36800267BD3 /* HappyHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB91CEC721BFA36800267BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB91CEC921BFA36800267BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				AB7D6F3A221275B600862DC8 /* ExerciseTableViewController.swift */,
+				AB7D6F3C22127CD300862DC8 /* ExerciseDetailViewController.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				AB7D6F3B221275B600862DC8 /* ExerciseTableViewController.swift in Sources */,
 				ABFACA3F22081A9800F45500 /* HistoryKidneyTableViewController.swift in Sources */,
 				ABF238C122113C680006F311 /* FoodHistoryResource.swift in Sources */,
+				AB7D6F3D22127CD300862DC8 /* ExerciseDetailViewController.swift in Sources */,
 				ABB1BE3D22094A8C00934371 /* ReportHealthViewController.swift in Sources */,
 				ABF238C52211702A0006F311 /* ExerciseResource.swift in Sources */,
 				ABFACA422208215E00F45500 /* PressureViewController.swift in Sources */,
