@@ -119,7 +119,6 @@ class FoodDetailViewController: UIViewController {
         try? realm?.write {
             realm?.add(foodHistoryResources)
         }
-        
         print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
     }
 
