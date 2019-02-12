@@ -2237,7 +2237,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -3096,10 +3096,10 @@
             </objects>
             <point key="canvasLocation" x="1233.75" y="3952.8169014084506"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Exercise Table View Controller-->
         <scene sceneID="ivL-ml-d36">
             <objects>
-                <tableViewController id="leb-uZ-v8W" sceneMemberID="viewController">
+                <tableViewController id="leb-uZ-v8W" customClass="ExerciseTableViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pWa-Tg-FeH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3110,7 +3110,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCells" rowHeight="68" id="NbE-VM-8Nt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCells" rowHeight="68" id="NbE-VM-8Nt" customClass="ExerciseTableViewCell" customModule="HappyHealthy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NbE-VM-8Nt" id="fgD-Y2-yLo">
@@ -3192,6 +3192,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="diseaseExerciseLabel" destination="TjH-yx-7JZ" id="GYc-5c-X9s"/>
+                                    <outlet property="kcalExerciseLabel" destination="bXi-pf-XEl" id="Yf3-Z3-nss"/>
+                                    <outlet property="nameExerciseLabel" destination="MCb-nB-Dt1" id="nQu-cJ-sqQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -3200,6 +3205,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="searchBar" destination="j5W-NJ-hkM" id="NlG-xp-ZGP"/>
                         <segue destination="Z9Y-sY-XdY" kind="show" identifier="ExerciseDetail" id="hHH-bJ-Lfp"/>
                     </connections>
                 </tableViewController>
@@ -3210,7 +3216,7 @@
         <!--บันทึกออกกำลังกาย-->
         <scene sceneID="3O5-2X-Zd0">
             <objects>
-                <viewController storyboardIdentifier="DetailExe" title="บันทึกออกกำลังกาย" id="Z9Y-sY-XdY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailExe" title="บันทึกออกกำลังกาย" id="Z9Y-sY-XdY" customClass="ExerciseDetailViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3oJ-Gi-igy"/>
                         <viewControllerLayoutGuide type="bottom" id="B5C-UR-ppJ"/>

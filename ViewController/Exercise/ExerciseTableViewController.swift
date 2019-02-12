@@ -7,84 +7,99 @@
 //
 
 import UIKit
+import RealmSwift
 
-class ExerciseTableViewController: UITableViewController {
+class ExerciseTableViewCell: UITableViewCell {
+    @IBOutlet weak var nameExerciseLabel: UILabel!
+    @IBOutlet weak var kcalExerciseLabel: UILabel!
+    @IBOutlet weak var diseaseExerciseLabel: UILabel!
+}
+
+class ExerciseTableViewController: UITableViewController, UISearchBarDelegate,
+UISearchDisplayDelegate {
+
+    @IBOutlet var searchBar: UISearchBar!
+
+    var realm = try? Realm()
+    var exerciseResources: Results<ExerciseResource>!
+    var listedExercises: Results<ExerciseResource>!
+    var indexRow: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        exerciseResources = realm?.objects(ExerciseResource.self)
+        listedExercises = exerciseResources
+        searchBar.delegate = self
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if listedExercises.count == 0 {
+            return 1
+        }
+        return listedExercises.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cellNotFound = UITableViewCell.init()
+        cellNotFound.textLabel?.text = "ไม่มีข้อมูล"
+        cellNotFound.textLabel?.textAlignment = .center
+        if listedExercises.count == 0 {
+            return cellNotFound
+        }
 
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.exerciseCells,
+                                                 for: indexPath as IndexPath)!
+        let cellData = listedExercises[indexPath.row]
+        cell.nameExerciseLabel.text = cellData.exerciseName
+        cell.kcalExerciseLabel.text = String(format: "%.02f", (cellData.exerciseCalories))
+        cell.diseaseExerciseLabel.text = cellData.exerciseDisease
+        cell.layoutIfNeeded()
         return cell
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        indexRow = indexPath.row
+        self.performSegue(withIdentifier: R.segue.exerciseTableViewController.exerciseDetail, sender: self)
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
+    // MARK: Segue
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let typedInfo = R.segue.exerciseTableViewController.exerciseDetail(segue: segue) {
+            typedInfo.destination.exerciseDetailResource = listedExercises[indexRow]
+        }
     }
-    */
 
+    // MARK: - UISearchDisplayDelegate
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+        searchBar.text = ""
+        searchBar.showsCancelButton = false
+        listedExercises = exerciseResources
+        tableView.reloadData()
+    }
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == "" {
+            searchBar.showsCancelButton = false
+            listedExercises = exerciseResources
+            tableView.reloadData()
+            return
+        }
+
+        searchBar.showsCancelButton = true
+        doSearch(searchText: searchText.lowercased())
+    }
+
+    func doSearch(searchText: String) {
+        let predicate = NSPredicate(format: "exerciseName BEGINSWITH [c]%@", searchText)
+        listedExercises = self.realm?.objects(ExerciseResource.self)
+            .filter(predicate)
+            .sorted(byKeyPath: "exerciseName", ascending: true)
+        tableView.reloadData()
+    }
 }
