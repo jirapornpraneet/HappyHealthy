@@ -2221,7 +2221,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -3068,12 +3068,12 @@
                         <outlet property="fatFoodLabel" destination="cMQ-zY-j6W" id="X8B-mu-4jt"/>
                         <outlet property="kcalFoodLabel" destination="h4u-t8-7Cv" id="E1c-Vj-5rN"/>
                         <outlet property="nameFoodLabel" destination="aZ0-lV-zYP" id="TEA-S0-yEk"/>
-                        <outlet property="netUnitFoodLabel" destination="JKU-y6-3RR" id="67I-xV-VEJ"/>
+                        <outlet property="netUnitFoodLabel" destination="Y0Q-jq-4lY" id="EQd-9x-ncd"/>
                         <outlet property="netWeightFoodLabel" destination="uEO-K1-Frp" id="WRy-Gj-e3Y"/>
                         <outlet property="proteinFoodLabel" destination="94i-fa-Jmf" id="XQF-UY-bZP"/>
                         <outlet property="sodiumFoodLabel" destination="pE4-Jm-p6L" id="TbM-MA-P3Z"/>
                         <outlet property="sugarsFoodLabel" destination="BY3-aD-Lh5" id="KSw-1Y-e1X"/>
-                        <outlet property="unitFoodLabel" destination="Y0Q-jq-4lY" id="Sy9-7F-TUB"/>
+                        <outlet property="unitFoodLabel" destination="JKU-y6-3RR" id="V6B-cg-hTN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fpn-35-XCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3887,7 +3887,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14s-Rs-G2K" id="BZw-7E-5XV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="xLH-aH-2ra">
