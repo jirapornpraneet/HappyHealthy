@@ -162,6 +162,7 @@ class PressureViewController: UIViewController {
     }
 
     func saveDataPressureAndCostHeart() {
+        let pressureResource = realm?.objects(PressureResource.self)
         let pressure = PressureResource()
         pressure.dateTime = dateTime
         pressure.costPressureTop = Int(costPressureTopTextField.text!)!
@@ -169,6 +170,12 @@ class PressureViewController: UIViewController {
         pressure.costHeartRate = Int(costHeartTextField.text!)!
         pressure.pressureLevel = pressureLevel
         pressure.heartRateLevel = heartRateLevel
+
+        if pressureResource?.count == 0 {
+            pressure.pressureId = 1
+        } else {
+            pressure.pressureId = (pressureResource?.last?.pressureId)! + 1
+        }
 
         try? realm?.write {
             realm?.add(pressure)

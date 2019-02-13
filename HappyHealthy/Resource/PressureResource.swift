@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 
 class PressureResource: Object {
+    @objc dynamic var pressureId = 0
     @objc dynamic var dateTime: String?
     @objc dynamic var costPressureTop = 0
     @objc dynamic var costPressureDown = 0
