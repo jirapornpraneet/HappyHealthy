@@ -43,20 +43,10 @@ UISearchDisplayDelegate {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if listedHistoryFoods.count == 0 {
-            return 1
-        }
         return listedHistoryFoods.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellNotFound = UITableViewCell.init()
-        cellNotFound.textLabel?.text = "ไม่มีข้อมูล"
-        cellNotFound.textLabel?.textAlignment = .center
-        if listedHistoryFoods.count == 0 {
-            return cellNotFound
-        }
-
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.historyFoodCells,
                                                  for: indexPath as IndexPath)!
         let cellData = listedHistoryFoods[indexPath.row]
@@ -67,6 +57,21 @@ UISearchDisplayDelegate {
         cell.unitFoodLabel.text = String(format: "%.02f  %@", cellData.foodTotalAmount, cellData.foodUnit!)
         cell.layoutIfNeeded()
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCell.EditingStyle,
+                            forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            if let foodHistoryResources = listedHistoryFoods?[indexPath.row] {
+                try? realm?.write {realm?
+                    .delete((realm?.objects(FoodHistoryResource.self)
+                        .filter("historyFoodId = %@",
+                                foodHistoryResources.historyFoodId))!)
+                }
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            }
+        }
     }
 
     // MARK: - UISearchDisplayDelegate
