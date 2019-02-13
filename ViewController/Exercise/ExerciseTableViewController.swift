@@ -27,6 +27,9 @@ UISearchDisplayDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
         exerciseResources = realm?.objects(ExerciseResource.self)
         listedExercises = exerciseResources
         searchBar.delegate = self

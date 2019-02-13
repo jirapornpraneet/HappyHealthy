@@ -28,6 +28,9 @@ UISearchDisplayDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
         print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
         foodResources = realm?.objects(FoodResource.self)
         listedFoods = foodResources

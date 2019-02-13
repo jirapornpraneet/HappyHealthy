@@ -29,6 +29,9 @@ UISearchDisplayDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
         print("RealmTest\(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
         let predicate = NSPredicate(format: "historyFoodDate = %@", dateTime as CVarArg)
         let foodHistoryResources = self.realm!.objects(FoodHistoryResource.self).filter(predicate)
