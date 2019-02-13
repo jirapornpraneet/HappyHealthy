@@ -25,7 +25,6 @@ UISearchDisplayDelegate {
     var realm = try? Realm()
     var historyFoodResources: Results<FoodHistoryResource>!
     var listedHistoryFoods: Results<FoodHistoryResource>!
-    var indexRow: Int = 0
     var dateTime: String = ""
 
     override func viewDidLoad() {
