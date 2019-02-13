@@ -43,20 +43,10 @@ UISearchDisplayDelegate {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if listedHistoryExercises.count == 0 {
-            return 1
-        }
         return listedHistoryExercises.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellNotFound = UITableViewCell.init()
-        cellNotFound.textLabel?.text = "ไม่มีข้อมูล"
-        cellNotFound.textLabel?.textAlignment = .center
-        if listedHistoryExercises.count == 0 {
-            return cellNotFound
-        }
-
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.historyExerciseCells,
                                                  for: indexPath as IndexPath)!
         let cellData = listedHistoryExercises[indexPath.row]
@@ -67,6 +57,21 @@ UISearchDisplayDelegate {
         cell.totalDurationLabel.text = String(format: "ต่อ  %.02f  เซท", cellData.exerciseTotalSet)
         cell.layoutIfNeeded()
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCell.EditingStyle,
+                            forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            if let exercisesHistoryResources = listedHistoryExercises?[indexPath.row] {
+                try? realm?.write {realm?
+                    .delete((realm?.objects(ExerciseHistoryResource.self)
+                        .filter("historyExerciseId = %@",
+                                exercisesHistoryResources.historyExerciseId))!)
+                }
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            }
+        }
     }
 
     // MARK: - UISearchDisplayDelegate
