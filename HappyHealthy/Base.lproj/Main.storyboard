@@ -1001,7 +1001,7 @@
             </objects>
             <point key="canvasLocation" x="-388" y="1754"/>
         </scene>
-        <!--History Diabetes Table View Controller-->
+        <!--ประวัติบันทึกค่าน้ำตาล-->
         <scene sceneID="9it-pI-jSu">
             <objects>
                 <tableViewController id="zVk-00-ni5" customClass="HistoryDiabetesTableViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1125,6 +1125,7 @@
                             <outlet property="delegate" destination="zVk-00-ni5" id="Wht-Qh-DxS"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="ประวัติบันทึกค่าน้ำตาล" id="S79-ra-iLh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3b-jH-b0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1408,7 +1409,7 @@
             </objects>
             <point key="canvasLocation" x="-388" y="2429"/>
         </scene>
-        <!--History Kidney Table View Controller-->
+        <!--ประวัติบันทึกค่าไต-->
         <scene sceneID="LpQ-PO-riW">
             <objects>
                 <tableViewController id="Wbc-C9-m40" customClass="HistoryKidneyTableViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1509,6 +1510,7 @@
                             <outlet property="delegate" destination="Wbc-C9-m40" id="p1k-wp-zbP"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="ประวัติบันทึกค่าไต" id="7mE-o6-48t"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWA-98-dBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1746,7 +1748,7 @@
             </objects>
             <point key="canvasLocation" x="-1123" y="3151"/>
         </scene>
-        <!--History Pressure Table View Controller-->
+        <!--ประวัติบันทึกค่าความดันโลหิต-->
         <scene sceneID="1lL-wr-juR">
             <objects>
                 <tableViewController id="lWT-EU-ztx" customClass="HistoryPressureTableViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
@@ -1924,6 +1926,7 @@
                             <outlet property="delegate" destination="lWT-EU-ztx" id="gPS-bv-oqs"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="ประวัติบันทึกค่าความดันโลหิต" id="tRO-Pz-5Ue"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJD-z2-Krl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2203,7 +2206,7 @@
             </objects>
             <point key="canvasLocation" x="-388" y="3193"/>
         </scene>
-        <!--Food Table View Controller-->
+        <!--รายการอาหาร-->
         <scene sceneID="cAe-gl-5rO">
             <objects>
                 <tableViewController id="MGs-gI-Qtk" customClass="FoodTableViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
@@ -2221,7 +2224,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -2318,6 +2321,7 @@
                             <outlet property="delegate" destination="MGs-gI-Qtk" id="EPT-VF-nmD"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="รายการอาหาร" id="SBa-oJ-5Fi"/>
                     <connections>
                         <outlet property="searchBar" destination="QXq-F7-drd" id="iXw-zB-YaY"/>
                         <segue destination="6pm-OC-juV" kind="show" identifier="FoodDetail" id="EVp-LY-Yd9"/>
@@ -3080,7 +3084,7 @@
             </objects>
             <point key="canvasLocation" x="-431" y="3921"/>
         </scene>
-        <!--Exercise Table View Controller-->
+        <!--รายการออกกำลังกาย-->
         <scene sceneID="ivL-ml-d36">
             <objects>
                 <tableViewController id="leb-uZ-v8W" customClass="ExerciseTableViewController" customModule="HappyHealthy" customModuleProvider="target" sceneMemberID="viewController">
@@ -3188,6 +3192,7 @@
                             <outlet property="delegate" destination="leb-uZ-v8W" id="g9h-QX-eZu"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="รายการออกกำลังกาย" id="7xS-dn-xqg"/>
                     <connections>
                         <outlet property="searchBar" destination="j5W-NJ-hkM" id="NlG-xp-ZGP"/>
                         <segue destination="Z9Y-sY-XdY" kind="show" identifier="ExerciseDetail" id="hHH-bJ-Lfp"/>
@@ -3899,7 +3904,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14s-Rs-G2K" id="BZw-7E-5XV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="xLH-aH-2ra">
