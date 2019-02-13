@@ -57,7 +57,7 @@ UISearchDisplayDelegate {
         cell.nameFoodLabel.text = cellData.foodName
         cell.kcalFoodLabel.text = String(format: "%.02f", (cellData.foodCalories))
         cell.detailFoodLabel.text = cellData.foodDetail
-        cell.unitFoodLabel.text = cellData.foodUnit
+        cell.unitFoodLabel.text = String(format: "1  %@", cellData.foodUnit!)
         cell.layoutIfNeeded()
         return cell
     }
