@@ -28,20 +28,10 @@ class HistoryKidneyTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if kidneyResource.count == 0 {
-            return 1
-        }
         return kidneyResource.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellNotFound = UITableViewCell.init()
-        cellNotFound.textLabel?.text = "ไม่มีข้อมูล"
-        cellNotFound.textLabel?.textAlignment = .center
-        if kidneyResource.count == 0 {
-            return cellNotFound
-        }
-
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.historyKidneyCells,
                                                  for: indexPath as IndexPath)!
         let cellData = kidneyResource[indexPath.row]
@@ -50,5 +40,20 @@ class HistoryKidneyTableViewController: UITableViewController {
         cell.levelKidneyLabel.text = cellData.kidneyLevel
         cell.layoutIfNeeded()
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCell.EditingStyle,
+                            forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            if let kidneyResources = kidneyResource?[indexPath.row] {
+                try? realm?.write {realm?
+                    .delete((realm?.objects(KidneyResrouce.self)
+                        .filter("kidneyId = %@",
+                                kidneyResources.kidneyId))!)
+                }
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            }
+        }
     }
 }
