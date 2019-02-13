@@ -56,6 +56,8 @@ class ReportHealthViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.navigationItem.title = "รายงานสุขภาพ"
         configPicker()
         getDataKidney()
         getDataDiabetes()

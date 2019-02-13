@@ -28,6 +28,11 @@ class ViewController: UIViewController {
             addDataExercisePlistToDataBaseRealm()
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.navigationItem.title = "Happy Healthy"
+    }
 
     func addDataFoodPlistToDataBaseRealm() {
         var dictFoodPlistPath: NSDictionary!

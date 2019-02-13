@@ -38,6 +38,8 @@ class ReportFoodandExerciseViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.navigationItem.title = "รายงานการบริโภคและการออกกำลังกาย"
         configPicker()
         getDataFoodHistory()
         getDataExerciseHistory()
