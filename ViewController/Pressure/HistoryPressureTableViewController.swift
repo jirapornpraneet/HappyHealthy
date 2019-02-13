@@ -31,20 +31,10 @@ class HistoryPressureTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if pressureResource.count == 0 {
-            return 1
-        }
         return pressureResource.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellNotFound = UITableViewCell.init()
-        cellNotFound.textLabel?.text = "ไม่มีข้อมูล"
-        cellNotFound.textLabel?.textAlignment = .center
-        if pressureResource.count == 0 {
-            return cellNotFound
-        }
-
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.historyPressureCells,
                                                  for: indexPath as IndexPath)!
         let cellData = pressureResource[indexPath.row]
@@ -56,5 +46,20 @@ class HistoryPressureTableViewController: UITableViewController {
         cell.levelHeartLabel.text = cellData.heartRateLevel
         cell.layoutIfNeeded()
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCell.EditingStyle,
+                            forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            if let pressureResources = pressureResource?[indexPath.row] {
+                try? realm?.write {realm?
+                    .delete((realm?.objects(PressureResource.self)
+                        .filter("pressureId = %@",
+                                pressureResources.pressureId))!)
+                }
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            }
+        }
     }
 }
