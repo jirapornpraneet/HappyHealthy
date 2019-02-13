@@ -71,6 +71,12 @@ class ReportFoodandExerciseViewController: UIViewController {
         var sumCalories = 0.0
 
         if foodHistoryResources.count == 0 {
+            foodTotalCaloriesLabel.text = String(format: "%.02f", 0.0)
+            sumProtinLabel.text = String(format: "%.02f", 0.0)
+            sumCarbohydateLabel.text = String(format: "%.02f", 0.0)
+            sumFatLabel.text = String(format: "%.02f", 0.0)
+            sumSugarLabel.text = String(format: "%.02f", 0.0)
+            sumSodiumLabel.text = String(format: "%.02f", 0.0)
             return
         }
 
@@ -100,6 +106,8 @@ class ReportFoodandExerciseViewController: UIViewController {
         var sumExerciseCalories = 0.0
 
         if exerciseHistoryResources.count == 0 {
+            exerciseTotalCaloriesLabel.text = String(format: "%.02f", 0.0)
+            sumTotalCaloriesLabel.text = String(format: "%.02f", 0.0)
             return
         }
 
