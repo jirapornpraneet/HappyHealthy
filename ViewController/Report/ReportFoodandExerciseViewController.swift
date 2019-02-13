@@ -118,6 +118,8 @@ class ReportFoodandExerciseViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.reportFoodandExerciseViewController.showHistoryFood(segue: segue) {
             typedInfo.destination.dateTime = saveDate
+        } else if  let typedInfo2 = R.segue.reportFoodandExerciseViewController.showHistoryExercise(segue: segue) {
+            typedInfo2.destination.dateTime = saveDate
         }
     }
 }
