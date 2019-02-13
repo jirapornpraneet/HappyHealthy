@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 
 class DiabetesResrouce: Object {
+    @objc dynamic var diabetesId = 0
     @objc dynamic var dateTime: String?
     @objc dynamic var costSugar = 0
     @objc dynamic var diabetesLevel: String?

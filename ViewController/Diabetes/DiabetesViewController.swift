@@ -104,11 +104,18 @@ class DiabetesViewController: UIViewController {
     }
 
     func saveDataDiabetes() {
+        let diabetesResource = realm?.objects(DiabetesResrouce.self)
         let diabetes = DiabetesResrouce()
         diabetes.dateTime = dateTime
         diabetes.costSugar = Int(costSugarTextField.text ?? "") ?? 0
         diabetes.diabetesLevel = diabetesLevel
         diabetes.statusEating = statusEating
+
+        if diabetesResource?.count == 0 {
+            diabetes.diabetesId = 1
+        } else {
+            diabetes.diabetesId = (diabetesResource?.last?.diabetesId)! + 1
+        }
 
         try? realm?.write {
             realm?.add(diabetes)
