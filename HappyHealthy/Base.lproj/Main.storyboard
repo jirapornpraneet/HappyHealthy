@@ -2221,7 +2221,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9N-my-exo" id="iMv-PF-y4i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-Xy-LwG">
@@ -3378,7 +3378,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZO-jk-6f3">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y84-4U-5yL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y84-4U-5yL">
                                                 <rect key="frame" x="32" y="87" width="46" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.63347493690000001" blue="0.50137492250000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -3386,9 +3386,13 @@
                                                     <constraint firstAttribute="width" constant="46" id="dj0-oG-6lB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="tintColor" red="1" green="0.34509803919999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="ดูข้อมูล">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="YCA-0d-0lW" kind="show" identifier="ShowHistoryFood" id="OSe-rd-j5S"/>
                                                 </connections>
@@ -3403,7 +3407,7 @@
                                                 <color key="textColor" red="1" green="0.63347493690000001" blue="0.50137492250000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-XO-fl2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-XO-fl2">
                                                 <rect key="frame" x="32" y="171" width="46" height="30"/>
                                                 <color key="backgroundColor" red="0.61612638230000005" green="0.93648630379999998" blue="0.67848393149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -3411,9 +3415,13 @@
                                                     <constraint firstAttribute="height" constant="30" id="SRh-YH-U7k"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="tintColor" red="0.23787054255953327" green="0.70594067258883242" blue="0.51113837994417988" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="ดูข้อมูล">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="ayE-bq-GUL" kind="show" identifier="ShowHistoryExercise" id="nv4-fd-Bqb"/>
                                                 </connections>
@@ -3452,13 +3460,13 @@
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ควรบริโภค 30-50 กรัมต่อวัน)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQb-qg-xZe">
-                                                        <rect key="frame" x="141" y="27" width="136" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ควรบริโภค 30-50 กรัมต่อวัน)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQb-qg-xZe">
+                                                        <rect key="frame" x="112" y="27" width="160" height="21"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="136" id="TwT-A6-XKT"/>
+                                                            <constraint firstAttribute="width" constant="160" id="TwT-A6-XKT"/>
                                                             <constraint firstAttribute="height" constant="21" id="XgW-yR-kue"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3489,7 +3497,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="qvR-Pn-uEY" secondAttribute="trailing" constant="8" id="Zgr-Ey-zWb"/>
                                                     <constraint firstAttribute="height" constant="48" id="dBm-sw-r9f"/>
                                                     <constraint firstItem="eed-2u-IOL" firstAttribute="top" secondItem="oq6-Q7-zvt" secondAttribute="top" constant="10" id="fiJ-gv-sEk"/>
-                                                    <constraint firstAttribute="trailing" secondItem="nQb-qg-xZe" secondAttribute="trailing" constant="1" id="oJN-Ox-iR5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nQb-qg-xZe" secondAttribute="trailing" constant="6" id="oJN-Ox-iR5"/>
                                                     <constraint firstItem="eed-2u-IOL" firstAttribute="leading" secondItem="oq6-Q7-zvt" secondAttribute="leading" constant="8" id="pUf-3K-z7N"/>
                                                     <constraint firstItem="qvR-Pn-uEY" firstAttribute="leading" secondItem="EYQ-jt-FTv" secondAttribute="trailing" constant="29" id="uF0-h2-qdB"/>
                                                     <constraint firstItem="qvR-Pn-uEY" firstAttribute="top" secondItem="oq6-Q7-zvt" secondAttribute="top" constant="11" id="wsv-oH-XiI"/>
@@ -3499,13 +3507,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trL-fy-bPL">
                                                 <rect key="frame" x="21" y="274" width="278" height="48"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ควรบริโภค 200-300 กรัมต่อวัน)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw4-sw-816">
-                                                        <rect key="frame" x="128" y="27" width="146" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ควรบริโภค 200-300 กรัมต่อวัน)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw4-sw-816">
+                                                        <rect key="frame" x="92" y="27" width="180" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="EJp-9a-v6h"/>
-                                                            <constraint firstAttribute="width" constant="146" id="EfP-EC-5QH"/>
+                                                            <constraint firstAttribute="width" constant="180" id="EfP-EC-5QH"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3542,7 +3550,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.93141663070000003" green="0.69000142809999998" blue="0.53336489200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="yw4-sw-816" secondAttribute="trailing" constant="4" id="A6A-ZP-Fo8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yw4-sw-816" secondAttribute="trailing" constant="6" id="A6A-ZP-Fo8"/>
                                                     <constraint firstAttribute="bottom" secondItem="yw4-sw-816" secondAttribute="bottom" id="GhN-mE-7Md"/>
                                                     <constraint firstAttribute="trailing" secondItem="b4G-Vh-BAM" secondAttribute="trailing" constant="8" id="IWE-aq-zM1"/>
                                                     <constraint firstItem="b4G-Vh-BAM" firstAttribute="top" secondItem="trL-fy-bPL" secondAttribute="top" constant="11" id="Nru-MV-pPa"/>
@@ -3576,13 +3584,13 @@
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ควรบริโภคเกิน 66.6 กรัมต่อวัน)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9If-bx-hpz">
-                                                        <rect key="frame" x="134" y="27" width="142" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ควรบริโภคเกิน 66.6 กรัมต่อวัน)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9If-bx-hpz">
+                                                        <rect key="frame" x="92" y="27" width="180" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="IuE-mD-eF9"/>
-                                                            <constraint firstAttribute="width" constant="142" id="z15-m5-6ZC"/>
+                                                            <constraint firstAttribute="width" constant="180" id="z15-m5-6ZC"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3600,7 +3608,7 @@
                                                 <color key="backgroundColor" red="0.79265725610000004" green="0.64996171000000003" blue="0.81572973729999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="3Gq-uP-lh5"/>
-                                                    <constraint firstAttribute="trailing" secondItem="9If-bx-hpz" secondAttribute="trailing" constant="2" id="Dd4-Iz-a79"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9If-bx-hpz" secondAttribute="trailing" constant="6" id="Dd4-Iz-a79"/>
                                                     <constraint firstAttribute="trailing" secondItem="zra-Fs-f3J" secondAttribute="trailing" constant="8" id="F9U-W6-jgL"/>
                                                     <constraint firstAttribute="bottom" secondItem="9If-bx-hpz" secondAttribute="bottom" id="NwK-B7-mOE"/>
                                                     <constraint firstItem="zra-Fs-f3J" firstAttribute="leading" secondItem="Z3j-2e-dU7" secondAttribute="trailing" constant="29" id="WRI-PP-YKB"/>
@@ -3633,13 +3641,13 @@
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ไม่ควรบริโภคเกิน 40 กรัมต่อวัน)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uF8-EB-rie">
-                                                        <rect key="frame" x="133" y="27" width="139" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ไม่ควรบริโภคเกิน 40 กรัมต่อวัน)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uF8-EB-rie">
+                                                        <rect key="frame" x="92" y="27" width="180" height="21"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="139" id="RPT-3h-Xf1"/>
+                                                            <constraint firstAttribute="width" constant="180" id="RPT-3h-Xf1"/>
                                                             <constraint firstAttribute="height" constant="21" id="YPw-Cc-Z0B"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3690,13 +3698,13 @@
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ไม่ควรบริโภคเกิน 2,300 มิลลิกรัมต่อวัน)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-kX-aLP">
-                                                        <rect key="frame" x="100" y="27" width="172" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ไม่ควรบริโภคเกิน 2,300 มิลลิกรัมต่อวัน)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-kX-aLP">
+                                                        <rect key="frame" x="52" y="27" width="220" height="21"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="172" id="0di-LD-7hP"/>
+                                                            <constraint firstAttribute="width" constant="220" id="0di-LD-7hP"/>
                                                             <constraint firstAttribute="height" constant="21" id="7Pb-Kz-miN"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3785,6 +3793,10 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.97948136679999998" blue="0.96338215910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3887,7 +3899,7 @@
                                 <rect key="frame" x="0.0" y="72" width="320" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14s-Rs-G2K" id="BZw-7E-5XV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfood" translatesAutoresizingMaskIntoConstraints="NO" id="xLH-aH-2ra">
@@ -4168,7 +4180,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="YmQ-om-mKB"/>
-        <segue reference="dhb-E4-Dgh"/>
+        <segue reference="cwc-Qy-34Q"/>
         <segue reference="XCP-4K-IKw"/>
     </inferredMetricsTieBreakers>
 </document>
