@@ -84,10 +84,17 @@ class KidneyViewController: UIViewController {
     }
 
     func saveDataKidney() {
+        let kidneyResource = realm?.objects(KidneyResrouce.self)
         let kidney = KidneyResrouce()
         kidney.dateTime = dateTime
         kidney.costGFR = Int(costGFRTextField.text!)!
         kidney.kidneyLevel = kidneyLevel
+
+        if kidneyResource?.count == 0 {
+            kidney.kidneyId = 1
+        } else {
+            kidney.kidneyId = (kidneyResource?.last?.kidneyId)! + 1
+        }
 
         try? realm?.write {
             realm?.add(kidney)
