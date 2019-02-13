@@ -61,7 +61,7 @@ UISearchDisplayDelegate {
         cell.nameExerciseLabel.text = cellData.exerciseName
         cell.kcalExerciseLabel.text = String(format: "%.02f", cellData.sumExerciseCalories)
         cell.diseaseExerciseLabel.text = cellData.exerciseDisease
-        cell.totalDurationLabel.text = String(format: "ต่อ  %.02f  เซท", cellData.exerciseTotalDuration)
+        cell.totalDurationLabel.text = String(format: "ต่อ  %.02f  เซท", cellData.exerciseTotalSet)
         cell.layoutIfNeeded()
         return cell
     }

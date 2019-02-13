@@ -93,7 +93,7 @@ class ExerciseDetailViewController: UIViewController {
         exerciseHistoryResources.exerciseId = exerciseDetailResource.exerciseId
         exerciseHistoryResources.exerciseName = exerciseDetailResource.exerciseName
         exerciseHistoryResources.exerciseDisease = exerciseDetailResource.exerciseDisease
-        exerciseHistoryResources.exerciseTotalDuration = totalDuration
+        exerciseHistoryResources.exerciseTotalSet = totalDuration
         exerciseHistoryResources.sumExerciseCalories = exerciseDetailResource.exerciseCalories * totalDuration
 
         try? realm?.write {
