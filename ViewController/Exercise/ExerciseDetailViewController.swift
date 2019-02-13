@@ -91,6 +91,8 @@ class ExerciseDetailViewController: UIViewController {
 
         exerciseHistoryResources.historyExerciseDate = saveDate
         exerciseHistoryResources.exerciseId = exerciseDetailResource.exerciseId
+        exerciseHistoryResources.exerciseName = exerciseDetailResource.exerciseName
+        exerciseHistoryResources.exerciseDisease = exerciseDetailResource.exerciseDisease
         exerciseHistoryResources.exerciseTotalDuration = totalDuration
         exerciseHistoryResources.sumExerciseCalories = exerciseDetailResource.exerciseCalories * totalDuration
 
