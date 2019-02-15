@@ -24,7 +24,8 @@ class ReportFoodandExerciseViewController: UIViewController {
 
     var realm = try? Realm()
     var saveDate: String = ""
-    var sumFoodCalories = 0.0
+    var sumTotalFoodCalories = 0.0
+    var sumTotalExerciseCalories = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,7 @@ class ReportFoodandExerciseViewController: UIViewController {
         configPicker()
         getDataFoodHistory()
         getDataExerciseHistory()
+        getTotalCalories()
     }
 
     func configPicker() {
@@ -58,6 +60,7 @@ class ReportFoodandExerciseViewController: UIViewController {
             self.saveDate = setDate
             self.getDataFoodHistory()
             self.getDataExerciseHistory()
+            self.getTotalCalories()
         }
     }
 
@@ -79,6 +82,7 @@ class ReportFoodandExerciseViewController: UIViewController {
             sumFatLabel.text = String(format: "%.02f", 0.0)
             sumSugarLabel.text = String(format: "%.02f", 0.0)
             sumSodiumLabel.text = String(format: "%.02f", 0.0)
+            sumTotalFoodCalories = 0.0
             return
         }
 
@@ -92,7 +96,7 @@ class ReportFoodandExerciseViewController: UIViewController {
             sumSodium += foodHistoryResource.sumFoodSodium
         }
 
-        sumFoodCalories = sumCalories
+        sumTotalFoodCalories = sumCalories
         foodTotalCaloriesLabel.text = String(format: "%.02f", sumCalories)
         sumProtinLabel.text = String(format: "%.02f", sumProtin)
         sumCarbohydateLabel.text = String(format: "%.02f", sumCarbohydate)
@@ -109,7 +113,7 @@ class ReportFoodandExerciseViewController: UIViewController {
 
         if exerciseHistoryResources.count == 0 {
             exerciseTotalCaloriesLabel.text = String(format: "%.02f", 0.0)
-            sumTotalCaloriesLabel.text = String(format: "%.02f", 0.0)
+            sumTotalExerciseCalories = 0.0
             return
         }
 
@@ -118,8 +122,12 @@ class ReportFoodandExerciseViewController: UIViewController {
             sumExerciseCalories += exerciseHistoryDateResource.sumExerciseCalories
         }
 
-        let sumTotalCalories = sumFoodCalories - sumExerciseCalories
+        sumTotalExerciseCalories = sumExerciseCalories
         exerciseTotalCaloriesLabel.text = String(format: "%.02f", sumExerciseCalories)
+    }
+
+    func getTotalCalories() {
+        let sumTotalCalories = sumTotalFoodCalories - sumTotalExerciseCalories
         sumTotalCaloriesLabel.text = String(format: "%.02f", sumTotalCalories)
     }
 
